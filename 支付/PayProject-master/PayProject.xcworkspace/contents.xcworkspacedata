@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:ApplePay-Objective-C/ApplePay-Objective-C.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:UnionPay-Objective-C/UnionPay-Objective-C.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:AliPay-Objective-C/AliPay-Objective-C.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:WeChatPay-Objective-C/WeChatPay-Objective-C.xcodeproj">
+   </FileRef>
+</Workspace>

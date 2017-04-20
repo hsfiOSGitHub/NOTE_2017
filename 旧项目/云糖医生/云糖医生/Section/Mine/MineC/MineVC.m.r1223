@@ -1,0 +1,241 @@
+//
+//  MineVC.m
+//  SZB_doctor
+//
+//  Created by monkey2016 on 16/8/26.
+//  Copyright © 2016年 monkey2016. All rights reserved.
+//
+
+#import "MineVC.h"
+#import "SZBNetDataManager+PersonalInformation.h"
+#import "MyCertificateViewController.h"
+
+
+@interface MineVC ()<UITableViewDelegate, UITableViewDataSource,UIAlertViewDelegate,UINavigationControllerDelegate,UIImagePickerControllerDelegate>
+@property (weak, nonatomic) IBOutlet UITableView *tableV;
+@property (nonatomic, assign) BOOL isTakePhoto;
+
+@end
+
+@implementation MineVC
+# pragma mark 懒加载
+
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    self.tableV.delegate = self;
+    self.tableV.dataSource = self;
+     //注册cell
+    [self.tableV registerNib:[UINib nibWithNibName:@"MineInformationTableViewCell" bundle:nil] forCellReuseIdentifier:@"MineInformationTableViewCellID"];
+    [self.tableV registerNib:[UINib nibWithNibName:@"MineMoreTableViewCell" bundle:nil] forCellReuseIdentifier:@"MineMoreTableViewCellID"];
+}
+
+#pragma mark - UITableViewDataSource
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return 8;
+}
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (indexPath.row == 0) {
+        MineInformationTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MineInformationTableViewCellID" forIndexPath:indexPath];
+        //头像
+        UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(selectImage:)];
+        [cell.headImageV addGestureRecognizer:tap];
+        cell.headImageV.tag = 888;
+        
+        return cell;
+    }else {
+        MineMoreTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MineMoreTableViewCellID" forIndexPath:indexPath];
+        NSArray *arr = @[@"我要认证",@"排班设置", @"我的收藏", @"系统设置", @"我的名片", @"账户信息", @"我报名的会议"];
+         NSArray *imageArr = @[@"图层-3",@"排班-1", @"收藏", @"系统设置", @"我的名片", @"账户信息", @"我报名的会议"];
+        if (indexPath.row == 1) {
+            cell.renzhengLable.hidden = NO;
+        }else {
+            cell.renzhengLable.hidden = YES;
+        }
+        cell.MineListStyleLable.text = arr[indexPath.row - 1];
+        cell.MsmallImageV.image = [UIImage imageNamed:imageArr[indexPath.row - 1]];
+      
+        return cell;
+    }
+}
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    switch (indexPath.row) {
+        case 0:{
+            //个人信息
+            CertificateTableViewController *CertificateVC = [[CertificateTableViewController alloc]init];
+            self.hidesBottomBarWhenPushed = YES;
+            [self.navigationController pushViewController:CertificateVC animated:YES];
+            self.hidesBottomBarWhenPushed = NO;
+        }
+            break;
+        case 1:{
+            //认证
+            MyCertificateViewController *MyCerVC = [[MyCertificateViewController alloc]init];
+            self.hidesBottomBarWhenPushed = YES;
+            [self.navigationController pushViewController:MyCerVC animated:YES];
+            self.hidesBottomBarWhenPushed = NO;
+        }
+            break;
+        case 2:{
+            //排班设置
+            SchedulingSetTableViewController *SVC = [[SchedulingSetTableViewController alloc]init];
+            self.hidesBottomBarWhenPushed = YES;
+            [self.navigationController pushViewController:SVC animated:YES];
+            self.hidesBottomBarWhenPushed = NO;
+        }
+            break;
+        case 3:{
+            //我的收藏
+            MyCollectViewController *CollectVC = [[MyCollectViewController alloc]init];
+            self.hidesBottomBarWhenPushed = YES;
+            [self.navigationController pushViewController:CollectVC animated:YES];
+            self.hidesBottomBarWhenPushed = NO;
+        }
+            break;
+        case 4:{
+            //系统设置
+            SystemSetVC *SVC = [[SystemSetVC alloc]init];
+            self.hidesBottomBarWhenPushed = YES;
+            [self.navigationController pushViewController:SVC animated:YES];
+            self.hidesBottomBarWhenPushed = NO;
+        }
+            break;
+        case 5:{
+            //我的名片
+            MyCardViewController *CardVC = [[MyCardViewController alloc]init];
+            self.hidesBottomBarWhenPushed = YES;
+            [self.navigationController pushViewController:CardVC animated:YES];
+            self.hidesBottomBarWhenPushed = NO;
+        }
+            break;
+        case 6:{
+            //账号信息
+            AccountInformationViewController *AVC = [[AccountInformationViewController alloc]init];
+            self.hidesBottomBarWhenPushed = YES;
+            [self.navigationController pushViewController:AVC animated:YES];
+            self.hidesBottomBarWhenPushed = NO;
+        }
+            break;
+        case 7:{
+            //我报名的会议
+            MyMeetingListVC *MyMeetingVC = [[MyMeetingListVC alloc]init];
+            self.hidesBottomBarWhenPushed = YES;
+            [self.navigationController pushViewController:MyMeetingVC animated:YES];
+            self.hidesBottomBarWhenPushed = NO;
+        }
+            break;
+            
+        default:
+            break;
+    }
+    
+}
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (indexPath.row == 0) {
+        return 120;
+    }else {
+        return 80;
+    }
+    
+}
+
+//点击图像选取图片
+- (void)selectImage:(UITapGestureRecognizer *)tap {
+     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"请选择" message:nil delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"从相册选择", @"拍照", nil] ;
+    [alert show];
+}
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
+    if (buttonIndex == 1){
+         [self openAlbum];
+    }else{
+        [self takePhoto];
+    }
+
+}
+/**
+ *  打开相册
+ */
+- (void)openAlbum
+{
+    if (![UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypePhotoLibrary]) return;
+    _isTakePhoto = NO;
+    UIImagePickerController *ipc = [[UIImagePickerController alloc] init];
+    ipc.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+    ipc.allowsEditing = YES;
+    ipc.delegate = self;
+    [self presentViewController:ipc animated:YES completion:nil];
+}
+//拍照
+- (void)takePhoto {
+    if (![UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) return;
+    _isTakePhoto = YES;
+    
+    UIImagePickerController *ip = [[UIImagePickerController alloc] init];
+    ip.sourceType = UIImagePickerControllerSourceTypeCamera;
+    
+    ip.delegate = self;
+    if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
+        [self presentViewController:ip animated:YES completion:nil];
+    }
+}
+#pragma mark - UIImagePickerControllerDelegate
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
+{
+    UIImage *image;
+    [picker dismissViewControllerAnimated:YES completion:nil];
+    if (_isTakePhoto) {
+        image = info[UIImagePickerControllerOriginalImage];
+    } else {
+        image = info[UIImagePickerControllerEditedImage];
+        
+    }
+    UIImage *uploadImage = [self scaleFromImage:image toSize:CGSizeMake(86, 86)];
+    UIImageView *tempV = (UIImageView *)[self.view viewWithTag:888];
+    tempV.image = uploadImage;
+    // 1.取出选中的图片
+    NSData *data = UIImageJPEGRepresentation(uploadImage, 1.0);
+    [[SZBNetDataManager manager] uploadUserHeadImageWithFile:data andRandomString:[ToolManager getCurrentTimeStamp] andCode:@"9ed8640fa5b11673c14ff65ebc918419" success:^(NSURLSessionDataTask *task, id responseObject) {
+        
+        if ([responseObject[@"res"] isEqualToString:@"1001"]) {
+            NSDictionary *dict = [responseObject objectForKey:@"info"][0];
+            //保存用户的图片信息
+            [ZXUD setObject:dict[@"pic"] forKey:@"userpic"];
+            [ZXUD synchronize];
+       }
+    } failed:^(NSURLSessionTask *task, NSError *error) {
+        UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"上传图片出错" message:nil preferredStyle:UIAlertControllerStyleActionSheet];
+        [self presentViewController:alert animated:YES completion:^{
+            
+        }];
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            [self dismissViewControllerAnimated:YES completion:nil];
+        });
+    }];
+}
+// 改变图像的尺寸，方便上传服务器
+- (UIImage *) scaleFromImage: (UIImage *) image toSize: (CGSize) size
+{
+    UIGraphicsBeginImageContext(size);
+    [image drawInRect:CGRectMake(0, 0, size.width, size.height)];
+    UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return newImage;
+}
+
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+/*
+ #pragma mark - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+ }
+ */
+
+@end

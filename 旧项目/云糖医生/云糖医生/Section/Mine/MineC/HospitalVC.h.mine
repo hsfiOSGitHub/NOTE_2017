@@ -1,0 +1,18 @@
+//
+//  HospitalVC.h
+//  SZB_doctor
+//
+//  Created by monkey2016 on 16/9/21.
+//  Copyright © 2016年 monkey2016. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+
+
+@interface HospitalVC : UIViewController
+@property (nonatomic,strong) NSNumber *city_id;
+@property (nonatomic,strong) NSString *provinceName;
+@property (nonatomic,strong) NSString *cityName;
+
+@end

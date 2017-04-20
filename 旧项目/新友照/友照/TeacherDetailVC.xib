@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TeacherDetailVC">
+            <connections>
+                <outlet property="appointmentBtn" destination="yLm-6C-oo8" id="paL-cf-RuI"/>
+                <outlet property="tableView" destination="tic-Mj-gpR" id="k2V-Sd-1ra"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="tic-Mj-gpR">
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yLm-6C-oo8">
+                    <color key="backgroundColor" red="0.28235294117647058" green="0.5607843137254902" blue="0.9137254901960784" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="3dq-li-Qhu"/>
+                    </constraints>
+                    <state key="normal" title="预约教练">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="appointmentBtnAction:" destination="-1" eventType="touchUpInside" id="b0O-fu-vcq"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="tic-Mj-gpR" secondAttribute="trailing" id="BZ0-Wk-oZn"/>
+                <constraint firstAttribute="bottom" secondItem="yLm-6C-oo8" secondAttribute="bottom" id="GlD-Z9-nCh"/>
+                <constraint firstItem="tic-Mj-gpR" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Lto-sz-xBw"/>
+                <constraint firstAttribute="trailing" secondItem="yLm-6C-oo8" secondAttribute="trailing" id="NRi-Ar-45M"/>
+                <constraint firstItem="tic-Mj-gpR" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Xq9-Vr-L6D"/>
+                <constraint firstItem="yLm-6C-oo8" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="hOb-eF-7nl"/>
+                <constraint firstItem="yLm-6C-oo8" firstAttribute="top" secondItem="tic-Mj-gpR" secondAttribute="bottom" id="xPP-Fo-tJq"/>
+            </constraints>
+            <point key="canvasLocation" x="25.5" y="52.5"/>
+        </view>
+    </objects>
+</document>

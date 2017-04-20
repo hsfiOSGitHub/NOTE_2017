@@ -1,0 +1,6 @@
+framework module UMComDataStorage {
+  umbrella header "UMComDataStorage.h"
+
+  export *
+  module * { export * }
+}

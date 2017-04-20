@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="71" id="KGk-i7-Jjw" customClass="SportsTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="331" height="71"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="331" height="70"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jew-xx-Mmo">
+                        <color key="backgroundColor" red="0.92549019607843142" green="0.92549019607843142" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="WyU-0K-vzX"/>
+                        </constraints>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="椭圆" translatesAutoresizingMaskIntoConstraints="NO" id="VJV-zZ-hQw">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="Dqm-en-Qj7"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ZH-sx-7zA">
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RKC-sP-wh8">
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ufN-aW-YzN">
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="ufN-aW-YzN" secondAttribute="trailing" constant="20" id="2J8-SI-9X0"/>
+                    <constraint firstItem="ufN-aW-YzN" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="36v-Ie-mTQ"/>
+                    <constraint firstAttribute="bottom" secondItem="Jew-xx-Mmo" secondAttribute="bottom" id="6cY-cY-kC4"/>
+                    <constraint firstAttribute="trailing" secondItem="Jew-xx-Mmo" secondAttribute="trailing" id="7zf-mR-uiu"/>
+                    <constraint firstItem="ufN-aW-YzN" firstAttribute="width" secondItem="9ZH-sx-7zA" secondAttribute="width" multiplier="1:3" id="9sX-Xv-l98"/>
+                    <constraint firstItem="9ZH-sx-7zA" firstAttribute="leading" secondItem="VJV-zZ-hQw" secondAttribute="trailing" constant="10" id="Auq-d5-YYh"/>
+                    <constraint firstItem="RKC-sP-wh8" firstAttribute="top" secondItem="9ZH-sx-7zA" secondAttribute="bottom" constant="2" id="Mlu-aw-dmx"/>
+                    <constraint firstItem="9ZH-sx-7zA" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="UMt-ci-zCT"/>
+                    <constraint firstItem="Jew-xx-Mmo" firstAttribute="top" secondItem="RKC-sP-wh8" secondAttribute="bottom" constant="10" id="aFY-mM-XJo"/>
+                    <constraint firstItem="ufN-aW-YzN" firstAttribute="leading" secondItem="9ZH-sx-7zA" secondAttribute="trailing" constant="10" id="fY1-oX-tBY"/>
+                    <constraint firstItem="RKC-sP-wh8" firstAttribute="leading" secondItem="VJV-zZ-hQw" secondAttribute="trailing" constant="10" id="j32-fL-FcA"/>
+                    <constraint firstItem="VJV-zZ-hQw" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="mp2-iV-sfy"/>
+                    <constraint firstItem="Jew-xx-Mmo" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="obK-f8-RTa"/>
+                    <constraint firstItem="RKC-sP-wh8" firstAttribute="height" secondItem="9ZH-sx-7zA" secondAttribute="height" id="pq6-QV-W0G"/>
+                    <constraint firstItem="Jew-xx-Mmo" firstAttribute="top" secondItem="ufN-aW-YzN" secondAttribute="bottom" id="pvO-Mg-sg0"/>
+                    <constraint firstAttribute="bottom" secondItem="VJV-zZ-hQw" secondAttribute="bottom" id="y7e-Iu-9wb"/>
+                    <constraint firstItem="VJV-zZ-hQw" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="25" id="yq9-o2-Dx6"/>
+                    <constraint firstItem="Jew-xx-Mmo" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="40" id="zJF-XQ-5lA"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="obK-f8-RTa"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="detailLable" destination="ufN-aW-YzN" id="JyR-Ax-WM3"/>
+                <outlet property="styleLable" destination="9ZH-sx-7zA" id="PQh-jx-nL2"/>
+                <outlet property="timeLable" destination="RKC-sP-wh8" id="4Cc-nG-AHa"/>
+                <outlet property="xianV" destination="Jew-xx-Mmo" id="C8e-3A-uoe"/>
+            </connections>
+            <point key="canvasLocation" x="245.5" y="326.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="椭圆" width="10" height="78"/>
+    </resources>
+</document>

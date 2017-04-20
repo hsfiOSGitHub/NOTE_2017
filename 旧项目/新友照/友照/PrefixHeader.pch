@@ -1,0 +1,165 @@
+//
+//  PrefixHeader.pch
+//  友照
+//
+//  Created by ZX on 16/11/17.
+//  Copyright © 2016年 ZX_XPH. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+//头文件
+
+//网络单例
+#import "ZXNetDataManager.h"
+//网络请求方法
+#import "ZXNetDataManager+ZXJiaoXiaoData.h"
+#import "ZXNetDataManager+ZXkesan_xiangqing.h"
+//弹出框
+#import "MBProgressHUD+MJ.h"
+#import "MBProgressHUD.h"
+//导航栏按钮
+#import "BBBadgeBarButtonItem.h"
+//百度地图
+//引入base相关所有的头文件
+#import <BaiduMapAPI_Base/BMKBaseComponent.h>
+//引入地图功能所有的头文件
+#import <BaiduMapAPI_Map/BMKMapComponent.h>
+//引入检索功能所有的头文件
+#import <BaiduMapAPI_Search/BMKSearchComponent.h>
+//引入云检索功能所有的头文件
+#import <BaiduMapAPI_Cloud/BMKCloudSearchComponent.h>
+//引入定位功能所有的头文件
+#import <BaiduMapAPI_Location/BMKLocationComponent.h>
+//引入计算工具所有的头文件
+#import <BaiduMapAPI_Utils/BMKUtilsComponent.h>
+//引入周边雷达功能所有的头文件
+#import <BaiduMapAPI_Radar/BMKRadarComponent.h>
+//只引入所需的单个头文件
+#import <BaiduMapAPI_Map/BMKMapView.h>
+//上拉加载下拉刷新
+#import "MJRefresh.h"
+
+#import "nav_ViewController.h"
+//登录
+#import "ZX_Login_ViewController.h"
+//随机数
+#import "ZXDriveGOHelper.h"
+//网络单例
+#import "ZXwangLuoDanLi.h"
+//MD5
+#import "ZXDriveGOHelper.h"
+#import "NSString+Hashing.h"
+#import "UIView+FrameExtension.h"
+//友盟社区
+#import <UMCommunitySDK/UMCommunitySDK.h>
+#import "UMCommunityUI.h"
+#import "UMComMessageManager.h"
+#import "UMComLoginManager.h"
+#import "ZXKongKaQuanView.h"
+//宏定义
+
+//打印的日志
+#ifdef DEBUG
+#define YZLog(...) \
+YZLog(@"%@第%d行:%@\n---------------------------",[[NSString stringWithFormat:@"%s",__FILE__] componentsSeparatedByString:@"/"][[[NSString stringWithFormat:@"%s",__FILE__] componentsSeparatedByString:@"/"].count-1], __LINE__, [NSString stringWithFormat:__VA_ARGS__]);
+#else
+#define YZLog(...)
+#endif
+
+//宽
+#define KScreenWidth  [UIScreen mainScreen].bounds.size.width
+//高
+#define KScreenHeight [UIScreen mainScreen].bounds.size.height
+//存储
+#define ZXUD [NSUserDefaults standardUserDefaults]
+
+#define ZX_URL @"http://test.youzhaola.com/api/v23/index.php"
+
+
+//文字的颜色
+
+//黑色
+#define  ZX_Black_Color [UIColor colorWithRed:51 / 255.0 green:51/ 255.0 blue:51 / 255.0 alpha:1]
+//深灰
+#define  ZX_DarkGray_Color [UIColor colorWithRed:102 / 255.0 green:102/ 255.0 blue:102 / 255.0 alpha:1]
+//浅灰
+#define  ZX_LightGray_Color [UIColor colorWithRed:153 / 255.0 green:153/ 255.0 blue:153 / 255.0 alpha:1]
+
+// 颜色
+
+//背景色
+#define ZX_BG_COLOR [UIColor colorWithRed:238 / 255.0 green:238/ 255.0 blue:238 / 255.0 alpha:1]
+//导航栏的颜色
+#define dao_hang_lan_Color [UIColor colorWithRed:60/255.0 green:148/255.0 blue:237/255.0 alpha:1]
+//一级标题颜色
+#define yi_ji_biao_ti_color [UIColor colorWithRed:193/255.0 green:193/255.0 blue:193/255.0 alpha:1]
+
+//二级标题颜色
+#define er_ji_biao_ti_color [UIColor colorWithRed:80/255.0 green:80/255.0 blue:80/255.0 alpha:1]
+
+#define hongse [UIColor colorWithRed:255/255.0 green:103/255.0 blue:105/255.0 alpha:1]
+
+//预约成功
+#define YuYueSuccessColor [UIColor colorWithRed:129/255.0 green:214/255.0 blue:58/255.0 alpha:1]
+
+//预约失败
+#define YuYueFailedColor [UIColor colorWithRed:255/255.0 green:112/255.0 blue:68/255.0 alpha:1]
+
+//预约审核
+#define YuYueAuditColor [UIColor colorWithRed:255/255.0 green:215/255.0 blue:0/255.0 alpha:1]
+
+//正常状态（没预约的时候）
+#define YuYueNormalColor [UIColor colorWithRed:108/255.0 green:169/255.0 blue:255/255.0 alpha:1]
+
+//按钮视图下方tableView的y值
+#define KTableView_Y 116
+//功能按钮的高度
+#define ZXFUNCTION_BTN_HEIGHT 50
+//功能按钮的分割线剪切高度
+#define ZXFUNCTION_SPAD_CUT_HEIGHT 3.0f
+
+//>>>>>>>>>>>>>>>>>>common<<<<<<<<<<<<<<<<<<<<<<
+#import "one_ViewController.h"//一级页面父类（push时hide tabbar）
+#import "ZXSeconBaseViewController.h" //二级界面父类
+#import "UIImageView+WebCache.h"//加载网络图片
+#import "CAShapeLayer+HSFMaskLayer.h"//用于星星评价
+#import "HSFImageHelper.h"//放大图片
+#import "NSString+Distance.h"//计算距离
+#import "MJRefresh.h"//下拉刷新，上拉加载
+#import "HSFRefreshGifHeader.h"//自定义下拉刷新GIF动画
+#import "HSFRefreshNormalHeader.h"//自定义下拉刷新（无动画）
+#import "HSFRefreshAutoGifFooter.h"//自定义上拉加载更多GIF动画
+#import "HSFRefreshAutoNormalFooter.h"//自定义上拉加载更多（无动画）
+#import "UIButton+HSFButton.h"//自定义uibutton
+//颜色值 RGB
+#define KRGB(R,G,B,A) [UIColor colorWithRed:R/255.0 green:G/255.0 blue:B/255.0 alpha:A]
+#import "HSFLodingView.h"//加载中动画
+#import "MBProgressHUD+bottom.h"//底部弹出HUD
+#import "StarsView.h"//星星
+#import "SGSegmentedControl.h"
+
+//数据库操作
+#define KfilePath  [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)[0] stringByAppendingPathComponent:@"exercises.db"]
+#import "ZXBaseTopicModel.h"
+#import "ZXTopicManager.h"
+#import "UIImage+WebP.h"//加载webp图片
+#import <AVFoundation/AVFoundation.h>
+#import "QuestionVC.h"//答题控制器
+#import "SpecialQuestionVC.h"//专题练习
+#import "MockVC.h"//模拟考试
+#import "HSFValueHelper.h"
+
+//>>>>>>>>>>>>>>>>>>报名<<<<<<<<<<<<<<<<<<<<<<<
+//网络请求
+#import "ZXNetDataManager+SchoolList.h"//驾校列表
+
+//model
+#import "SchoolListModel.h"//驾校列表
+#import "SchoolDetailModel.h"//驾校详情
+#import "SchoolCommentModel.h"//驾校详情评论
+#import "TeacherListModel.h"//教练列表
+#import "SchoolImageListModel.h"//驾校实拍图集
+
+#endif 

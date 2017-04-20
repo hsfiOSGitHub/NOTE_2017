@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SignUpView">
+            <rect key="frame" x="0.0" y="0.0" width="485" height="348"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="13o-y8-bNx">
+                    <color key="backgroundColor" red="0.82088514400000001" green="0.82088514400000001" blue="0.82088514400000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="rT4-EP-lax"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wX1-y3-4Rm">
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.35281004580000003" green="0.35281004580000003" blue="0.35281004580000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bEQ-X6-aeg">
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i9k-tD-Kpr">
+                            <state key="normal" title="取消"/>
+                            <connections>
+                                <action selector="cancelEvent:" destination="iN0-l3-epB" eventType="touchUpInside" id="m2j-4x-B20"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Yj-Sy-YY4">
+                            <state key="normal" title="确定"/>
+                            <connections>
+                                <action selector="okEvent:" destination="iN0-l3-epB" eventType="touchUpInside" id="fLc-ij-ixY"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="1Yj-Sy-YY4" firstAttribute="width" secondItem="i9k-tD-Kpr" secondAttribute="width" id="7zz-jj-8UR"/>
+                        <constraint firstItem="1Yj-Sy-YY4" firstAttribute="height" secondItem="bEQ-X6-aeg" secondAttribute="height" multiplier="1/2" id="9Rf-ag-KL7"/>
+                        <constraint firstItem="1Yj-Sy-YY4" firstAttribute="centerY" secondItem="bEQ-X6-aeg" secondAttribute="centerY" id="Ab6-ZU-oEH"/>
+                        <constraint firstItem="1Yj-Sy-YY4" firstAttribute="leading" secondItem="i9k-tD-Kpr" secondAttribute="trailing" constant="15" id="H3j-oz-q4o"/>
+                        <constraint firstItem="i9k-tD-Kpr" firstAttribute="height" secondItem="bEQ-X6-aeg" secondAttribute="height" multiplier="1/2" id="JTR-QB-76m"/>
+                        <constraint firstItem="i9k-tD-Kpr" firstAttribute="centerY" secondItem="bEQ-X6-aeg" secondAttribute="centerY" id="KAC-lT-Zht"/>
+                        <constraint firstItem="i9k-tD-Kpr" firstAttribute="leading" secondItem="bEQ-X6-aeg" secondAttribute="leading" constant="15" id="tUP-3N-hqh"/>
+                        <constraint firstAttribute="trailing" secondItem="1Yj-Sy-YY4" secondAttribute="trailing" constant="15" id="xEE-R1-JFt"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="报名" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wuA-Yi-aIQ">
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <color key="textColor" red="0.29063727094240843" green="0.29063727094240843" blue="0.29063727094240843" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="wX1-y3-4Rm" secondAttribute="trailing" constant="10" id="3y0-OU-EwK"/>
+                <constraint firstItem="wuA-Yi-aIQ" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="1/5" id="7ID-xb-wGq"/>
+                <constraint firstItem="13o-y8-bNx" firstAttribute="top" secondItem="wuA-Yi-aIQ" secondAttribute="bottom" id="BTu-qc-b1N"/>
+                <constraint firstItem="bEQ-X6-aeg" firstAttribute="top" secondItem="wX1-y3-4Rm" secondAttribute="bottom" id="I0D-YC-vcu"/>
+                <constraint firstItem="wuA-Yi-aIQ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="RO0-H2-YD7"/>
+                <constraint firstItem="13o-y8-bNx" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="SBP-ud-fxH"/>
+                <constraint firstAttribute="bottom" secondItem="bEQ-X6-aeg" secondAttribute="bottom" id="Ydt-5r-ihU"/>
+                <constraint firstItem="wX1-y3-4Rm" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="2/5" id="dX9-5f-Jg7"/>
+                <constraint firstAttribute="trailing" secondItem="wuA-Yi-aIQ" secondAttribute="trailing" id="gaI-F2-Cek"/>
+                <constraint firstItem="wX1-y3-4Rm" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="lIO-g8-0cD"/>
+                <constraint firstItem="wX1-y3-4Rm" firstAttribute="top" secondItem="13o-y8-bNx" secondAttribute="bottom" id="mT8-m2-F8X"/>
+                <constraint firstItem="bEQ-X6-aeg" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="nAc-VK-fIE"/>
+                <constraint firstItem="wuA-Yi-aIQ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="qkY-5M-sHy"/>
+                <constraint firstAttribute="trailing" secondItem="bEQ-X6-aeg" secondAttribute="trailing" id="yxu-26-bvj"/>
+                <constraint firstAttribute="trailing" secondItem="13o-y8-bNx" secondAttribute="trailing" id="z4N-ZV-JBS"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="cancel" destination="i9k-tD-Kpr" id="rae-bw-exg"/>
+                <outlet property="message" destination="wX1-y3-4Rm" id="evw-Rg-r9j"/>
+                <outlet property="ok" destination="1Yj-Sy-YY4" id="Atw-k5-bhJ"/>
+                <outlet property="title" destination="wuA-Yi-aIQ" id="de4-B8-2ZF"/>
+            </connections>
+            <point key="canvasLocation" x="432.5" y="242"/>
+        </view>
+    </objects>
+</document>

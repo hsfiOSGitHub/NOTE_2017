@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ZXOpinionFeedBackVC">
+            <connections>
+                <outlet property="opinionTextView" destination="tD6-gb-wZg" id="TRh-r2-wuh"/>
+                <outlet property="phoneTextFiled" destination="5Bl-Yf-Eha" id="pMA-eZ-lk4"/>
+                <outlet property="placeholderLable" destination="6F6-S3-X69" id="Ylf-Ee-nvO"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="faf-NE-6jQ">
+                    <subviews>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入您的手机号（选填）" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5Bl-Yf-Eha">
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="qqn-Mc-lEY"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="5Bl-Yf-Eha" firstAttribute="leading" secondItem="faf-NE-6jQ" secondAttribute="leading" constant="8" id="0PD-XA-HZC"/>
+                        <constraint firstAttribute="trailing" secondItem="5Bl-Yf-Eha" secondAttribute="trailing" constant="8" id="ANV-J5-7dy"/>
+                        <constraint firstItem="5Bl-Yf-Eha" firstAttribute="leading" secondItem="faf-NE-6jQ" secondAttribute="leading" constant="15" id="Ile-xq-kGw"/>
+                        <constraint firstItem="5Bl-Yf-Eha" firstAttribute="top" secondItem="faf-NE-6jQ" secondAttribute="top" constant="5" id="Z2Z-gN-UaO"/>
+                        <constraint firstAttribute="height" constant="50" id="hU6-Ht-mu1"/>
+                        <constraint firstAttribute="trailing" secondItem="5Bl-Yf-Eha" secondAttribute="trailing" constant="15" id="xIx-TP-nvB"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="0PD-XA-HZC"/>
+                            <exclude reference="ANV-J5-7dy"/>
+                        </mask>
+                    </variation>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ziz-VL-oYw">
+                    <subviews>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="tD6-gb-wZg">
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        </textView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6F6-S3-X69">
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="uvI-Na-u1A"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="0.77647058823529413" green="0.77647058823529413" blue="0.792156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="tD6-gb-wZg" firstAttribute="top" secondItem="Ziz-VL-oYw" secondAttribute="top" id="E0p-h1-hmP"/>
+                        <constraint firstAttribute="height" constant="200" id="KVJ-TM-EMq"/>
+                        <constraint firstItem="6F6-S3-X69" firstAttribute="top" secondItem="Ziz-VL-oYw" secondAttribute="top" id="M4i-io-mmk"/>
+                        <constraint firstItem="6F6-S3-X69" firstAttribute="leading" secondItem="Ziz-VL-oYw" secondAttribute="leading" constant="15" id="aIO-Qn-wMX"/>
+                        <constraint firstAttribute="bottom" secondItem="tD6-gb-wZg" secondAttribute="bottom" id="cVz-vU-Svt"/>
+                        <constraint firstItem="tD6-gb-wZg" firstAttribute="leading" secondItem="Ziz-VL-oYw" secondAttribute="leading" constant="15" id="hfd-6V-b1U"/>
+                        <constraint firstAttribute="trailing" secondItem="6F6-S3-X69" secondAttribute="trailing" constant="15" id="m3l-L1-urh"/>
+                        <constraint firstAttribute="trailing" secondItem="tD6-gb-wZg" secondAttribute="trailing" constant="15" id="uCb-qm-I2E"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.95294117647058818" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Ziz-VL-oYw" secondAttribute="trailing" id="C5l-GM-PZI"/>
+                <constraint firstItem="faf-NE-6jQ" firstAttribute="top" secondItem="Ziz-VL-oYw" secondAttribute="bottom" constant="10" id="Jgu-CW-7zI"/>
+                <constraint firstItem="faf-NE-6jQ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="QYM-ti-b07"/>
+                <constraint firstItem="Ziz-VL-oYw" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="RTF-iR-iJ0"/>
+                <constraint firstItem="Ziz-VL-oYw" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="10" id="hjK-3Q-be7"/>
+                <constraint firstItem="Ziz-VL-oYw" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="mW2-K2-MHz"/>
+                <constraint firstAttribute="trailing" secondItem="faf-NE-6jQ" secondAttribute="trailing" id="wao-LV-Rzj"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="RTF-iR-iJ0"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="121.5" y="139.5"/>
+        </view>
+    </objects>
+</document>

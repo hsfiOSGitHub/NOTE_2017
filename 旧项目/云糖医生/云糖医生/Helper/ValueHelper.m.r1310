@@ -1,0 +1,32 @@
+//
+//  ValueHelper.m
+//  SZB_doctor
+//
+//  Created by monkey2016 on 16/9/21.
+//  Copyright © 2016年 monkey2016. All rights reserved.
+//
+
+#import "ValueHelper.h"
+
+static ValueHelper *helper;
+@implementation ValueHelper
+//单例的创建
++(instancetype)sharedHelper{
+    if (!helper) {
+        static dispatch_once_t onceToken;
+        dispatch_once(&onceToken, ^{
+            helper = [[ValueHelper alloc]init];
+        });
+    }
+    return helper;
+}
+
+//懒加载
+-(NSString *)sexStr{
+    if (!_sexStr) {
+        _sexStr = @"女";
+    }
+    return _sexStr;
+}
+
+@end

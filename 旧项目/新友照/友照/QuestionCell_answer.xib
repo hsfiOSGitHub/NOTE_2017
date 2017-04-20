@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="123" id="KGk-i7-Jjw" customClass="QuestionCell_answer">
+            <rect key="frame" x="0.0" y="0.0" width="391" height="123"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="391" height="122"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OQB-TM-c4s">
+                        <rect key="frame" x="10" y="41.5" width="371" height="40"/>
+                        <color key="backgroundColor" red="0.94523237179487185" green="0.94523237179487185" blue="0.94523237179487185" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A、撒打算啊第三方阿四发生的啊十分大" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b13-pM-0R0">
+                        <rect key="frame" x="50" y="52.5" width="331" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.2077724359" green="0.2077724359" blue="0.2077724359" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e7a-e2-SHU">
+                        <rect key="frame" x="10" y="41.5" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="Zjs-aA-FrS"/>
+                            <constraint firstAttribute="width" constant="40" id="ee0-JA-Tus"/>
+                        </constraints>
+                        <state key="normal" image="错误_单选"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="OQB-TM-c4s" firstAttribute="leading" secondItem="e7a-e2-SHU" secondAttribute="leading" id="5Am-LE-LHc"/>
+                    <constraint firstItem="e7a-e2-SHU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="CFR-YO-pyb"/>
+                    <constraint firstItem="b13-pM-0R0" firstAttribute="centerY" secondItem="e7a-e2-SHU" secondAttribute="centerY" id="D6l-j3-ixd"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="e7a-e2-SHU" secondAttribute="bottom" constant="5" id="FN3-U9-HNs"/>
+                    <constraint firstItem="OQB-TM-c4s" firstAttribute="top" secondItem="e7a-e2-SHU" secondAttribute="top" id="QxD-G5-u1x"/>
+                    <constraint firstItem="OQB-TM-c4s" firstAttribute="trailing" secondItem="b13-pM-0R0" secondAttribute="trailing" id="e7A-cz-jSP"/>
+                    <constraint firstItem="OQB-TM-c4s" firstAttribute="bottom" secondItem="e7a-e2-SHU" secondAttribute="bottom" id="fnB-DR-et9"/>
+                    <constraint firstItem="e7a-e2-SHU" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="keG-qb-WtC"/>
+                    <constraint firstItem="b13-pM-0R0" firstAttribute="leading" secondItem="e7a-e2-SHU" secondAttribute="trailing" id="qE2-pX-Tln"/>
+                    <constraint firstAttribute="trailing" secondItem="b13-pM-0R0" secondAttribute="trailing" constant="10" id="qnF-ee-uZ2"/>
+                    <constraint firstItem="e7a-e2-SHU" firstAttribute="top" relation="greaterThanOrEqual" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="tJJ-75-V0C"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="bgView" destination="OQB-TM-c4s" id="9jB-vn-gPv"/>
+                <outlet property="optionStr" destination="b13-pM-0R0" id="AfC-ep-fhQ"/>
+                <outlet property="seleteBtn" destination="e7a-e2-SHU" id="k10-hO-kKf"/>
+            </connections>
+            <point key="canvasLocation" x="50.5" y="144.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="错误_单选" width="20" height="20"/>
+    </resources>
+</document>

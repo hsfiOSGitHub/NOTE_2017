@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="94" id="KGk-i7-Jjw" customClass="EditScheduleCell2">
+            <rect key="frame" x="0.0" y="0.0" width="466" height="94"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="466" height="94"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="emergency_edit" translatesAutoresizingMaskIntoConstraints="NO" id="B1y-Lx-Hhu">
+                        <rect key="frame" x="10" y="32.5" width="30" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="I6V-Ko-2U2"/>
+                            <constraint firstAttribute="height" constant="30" id="czx-5L-gjw"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="事件紧急程度" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o9y-3N-pgk">
+                        <rect key="frame" x="40" y="38" width="104" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.096294070509999996" green="0.096294070509999996" blue="0.096294070509999996" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="A" translatesAutoresizingMaskIntoConstraints="NO" id="j19-gR-Knc">
+                        <rect key="frame" x="371.5" y="32.5" width="30" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="fNH-lB-M9A"/>
+                            <constraint firstAttribute="width" constant="30" id="vqr-nO-yJ6"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="十分紧急" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="haS-cv-8sa">
+                        <rect key="frame" x="406.5" y="41" width="49.5" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.34673477559999999" green="0.34673477559999999" blue="0.34673477559999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="o9y-3N-pgk" firstAttribute="leading" secondItem="B1y-Lx-Hhu" secondAttribute="trailing" id="1VW-Hq-rCs"/>
+                    <constraint firstItem="j19-gR-Knc" firstAttribute="centerY" secondItem="B1y-Lx-Hhu" secondAttribute="centerY" id="2c8-k2-nNe"/>
+                    <constraint firstItem="o9y-3N-pgk" firstAttribute="centerY" secondItem="B1y-Lx-Hhu" secondAttribute="centerY" id="6h8-XH-Qee"/>
+                    <constraint firstAttribute="trailing" secondItem="haS-cv-8sa" secondAttribute="trailing" constant="10" id="96w-em-W6Y"/>
+                    <constraint firstItem="haS-cv-8sa" firstAttribute="leading" secondItem="j19-gR-Knc" secondAttribute="trailing" constant="5" id="CPZ-Xh-uHu"/>
+                    <constraint firstItem="haS-cv-8sa" firstAttribute="centerY" secondItem="B1y-Lx-Hhu" secondAttribute="centerY" id="E26-nu-Gkp"/>
+                    <constraint firstItem="B1y-Lx-Hhu" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="FZk-rn-2gD"/>
+                    <constraint firstItem="B1y-Lx-Hhu" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="GM1-Pq-jZ1"/>
+                    <constraint firstItem="B1y-Lx-Hhu" firstAttribute="top" relation="greaterThanOrEqual" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="J67-MS-oHT"/>
+                    <constraint firstItem="j19-gR-Knc" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="o9y-3N-pgk" secondAttribute="trailing" constant="10" id="ShS-a4-sqg"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="B1y-Lx-Hhu" secondAttribute="bottom" constant="10" id="naA-Pf-Ydc"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="emergencyStr" destination="haS-cv-8sa" id="TIl-gM-gjQ"/>
+                <outlet property="emergencyType" destination="j19-gR-Knc" id="HMx-uS-ufV"/>
+            </connections>
+            <point key="canvasLocation" x="98" y="77"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="A" width="25" height="25"/>
+        <image name="emergency_edit" width="20" height="20"/>
+    </resources>
+</document>

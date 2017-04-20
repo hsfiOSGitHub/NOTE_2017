@@ -1,0 +1,271 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    font-family: '微软雅黑 Regular', '微软雅黑';
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+.header {
+    width: 100%;
+    height: 160px;
+}
+
+.header.color-fda2a2 {
+    background: #fda2a2;
+}
+
+.header.color-f6c54b {
+    background: #f6c54b;
+}
+
+.header.color-ef8d72 {
+    background: #ef8d72;
+}
+
+.header.color-f7cc61 {
+    background: #f7cc61;
+}
+
+.header.color-9ad355 {
+    background: #9ad355;
+}
+
+.header.color-66b2ff {
+    background: #66b2ff;
+}
+
+.header.color-a7daf7 {
+    background: #a7daf7;
+}
+
+.header.color-d4a9c9 {
+    background: #d4a9c9;
+}
+
+.header.color-fda2a2 {
+    background: #fda2a2;
+}
+
+.header.color-ef8d72 {
+    background: #ef8d72;
+}
+
+.header.color-f7cc61 {
+    background: #f7cc61;
+}
+
+.header.color-f7cc61 {
+    background: #f7cc61;
+}
+
+.header.color-bg {
+    background: #f07f60;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+.clearfix:before, .clearfix:after {
+    display: table;
+    line-height: 0;
+    content: "";
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.logo {
+    width: 64px;
+    height: 64px;
+    margin: 0 auto;
+    padding-top: 24px;
+}
+
+.logo .logo-img {
+    width: 64px;
+    height: 64px;
+
+}
+
+.description {
+    padding-top: 16px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.description .name {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 30px;
+    color: #fff;
+}
+
+.description .steps {
+    font-size: 14px;
+    line-height: 20px;
+    color: #fff;
+}
+
+.editor {
+    margin: 20px;
+}
+
+.editor .editor-info .editor-img {
+    width: 40px;
+    height: 40px;
+    float: left;
+
+}
+
+.editor .editor-info .editor-img img {
+    border-radius: 40px;
+    width: 100%;
+}
+
+.editor .editor-info .editor-name {
+    padding-left: 16px;
+    font-size: 16px;
+    font-weight: bold;
+    width: 80px;
+    height: 40px;
+    line-height: 20px;
+    color: #f25e5e;
+    float: left;
+    display: -webkit-box;
+    -webkit-box-align: center;
+    -webkit-box-pack: start;
+
+}
+
+.editor .editor-rank {
+    margin-top: 20px;
+    display: block;
+}
+
+.editor .editor-rank span {
+    color: #999;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.editor .editor-rank img {
+    margin-left: 16px;
+    margin-bottom: -5px;
+    margin-right: 6px;
+}
+
+.editor .editor-content {
+    margin-top: 16px;
+    padding-bottom: 10px;
+    border-bottom: 1px dashed #dedfe0;
+}
+
+.editor .editor-content p {
+    font-size: 16px;
+    line-height: 32px;
+    color: #373737;
+}
+
+.content {
+    margin: 8px 20px 24px 20px;
+    padding-bottom: 16px;
+    border-bottom: 1px dashed #dedfe0;
+}
+
+.content .content-title {
+
+}
+
+.content .content-title .icon {
+    float: left;
+}
+
+.content .content-title .icon img {
+    height: 20px;
+}
+
+.content .content-title span {
+    font-size: 16px;
+    margin-left: 8px;
+    line-height: 20px;
+    color: #f25e5e;
+    font-weight: bold;
+    float: left;
+    display: -webkit-box;
+    -webkit-box-align: center;
+    -webkit-box-pack: start;
+}
+
+.content .content-list {
+
+}
+
+.content .content-list ul li {
+    list-style: none;
+    margin-top: 32px;
+}
+
+.content .content-list ul li .step-words {
+    font-size: 16px;
+    line-height: 28px;
+    display: block;
+}
+
+.content .content-list ul li .step-words p:first-letter {
+    font-size: 26px;
+}
+
+.content .content-list ul li .right {
+
+}
+
+.content .content-list ul li .right img {
+    width: 100%;
+    margin-top: 10px;
+    display: block;
+}
+
+.tips {
+    margin: 20px;
+}
+
+.tips .tips-title .title {
+    font-size: 16px;
+    color: #18b4ed;
+    font-weight: bold;
+    line-height: 32px;
+    float: left;
+    display: -webkit-box;
+    -webkit-box-align: center;
+    -webkit-box-pack: start;
+
+}
+
+.tips .tips-title .tips-img {
+    float: left;
+    width: 40px;
+    height: 40px;
+}
+
+.tips .tips-title .tips-img img {
+    width: 32px;
+}
+
+.tips .tips-content {
+    padding: 12px 12px;
+    background-color: #ddf0fe;
+    border-radius: 8px;
+}
+
+.tips .tips-content p {
+    font-size: 14px;
+    color: #677a91;
+    line-height: 24px;
+}

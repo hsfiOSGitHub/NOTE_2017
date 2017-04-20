@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="ZXCarDetailTableViewCell4">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="购买数量" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dkS-3A-V9b">
+                        <rect key="frame" x="10" y="0.0" width="69.5" height="43"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="301-fc-Fzv">
+                        <rect key="frame" x="250" y="10" width="20" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="15" id="FH3-By-yP0"/>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="gOZ-x7-2gl"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="FH3-By-yP0"/>
+                            </mask>
+                        </variation>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rC7-L4-0UC">
+                        <rect key="frame" x="207" y="5" width="33" height="33"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="5Ey-Dq-b9I"/>
+                            <constraint firstAttribute="height" constant="20" id="DMo-uq-x1O"/>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="30" id="Kvo-H4-iVU"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="Ubs-Ox-qbH"/>
+                        </constraints>
+                        <state key="normal" image="减.png">
+                            <color key="titleColor" red="0.42352941179999998" green="0.42352941179999998" blue="0.42352941179999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="5Ey-Dq-b9I"/>
+                                <exclude reference="DMo-uq-x1O"/>
+                            </mask>
+                        </variation>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Nf-Pm-J8T">
+                        <rect key="frame" x="280" y="7" width="30" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="9p7-fc-9rQ"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="IW7-U7-Lie"/>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="30" id="eec-Jj-fbi"/>
+                            <constraint firstAttribute="height" constant="20" id="iX4-vD-em6"/>
+                        </constraints>
+                        <state key="normal" image="加.png">
+                            <color key="titleColor" red="0.42352941179999998" green="0.42352941179999998" blue="0.42352941179999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="9p7-fc-9rQ"/>
+                                <exclude reference="iX4-vD-em6"/>
+                            </mask>
+                        </variation>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="dkS-3A-V9b" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Qbj-bl-oYE"/>
+                    <constraint firstItem="7Nf-Pm-J8T" firstAttribute="leading" secondItem="301-fc-Fzv" secondAttribute="trailing" constant="10" id="RII-wg-V6n"/>
+                    <constraint firstAttribute="trailing" secondItem="7Nf-Pm-J8T" secondAttribute="trailing" constant="10" id="aPW-Dt-kn7"/>
+                    <constraint firstItem="rC7-L4-0UC" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="bZD-Ja-QdV"/>
+                    <constraint firstItem="7Nf-Pm-J8T" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="i68-DD-Ikd"/>
+                    <constraint firstItem="dkS-3A-V9b" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="oWy-LW-Ilf"/>
+                    <constraint firstItem="301-fc-Fzv" firstAttribute="leading" secondItem="rC7-L4-0UC" secondAttribute="trailing" constant="10" id="ps0-3B-Qok"/>
+                    <constraint firstAttribute="bottom" secondItem="dkS-3A-V9b" secondAttribute="bottom" id="rRN-AH-fyr"/>
+                    <constraint firstItem="301-fc-Fzv" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="yTR-zA-8BW"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="addBtn" destination="rC7-L4-0UC" id="ZHs-kc-kjb"/>
+                <outlet property="jianBtn" destination="7Nf-Pm-J8T" id="j3z-zw-3Bc"/>
+                <outlet property="numLabel" destination="301-fc-Fzv" id="12z-GY-LNL"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="减.png" width="33" height="33"/>
+        <image name="加.png" width="25" height="25"/>
+    </resources>
+</document>

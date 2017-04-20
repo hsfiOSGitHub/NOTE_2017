@@ -1,0 +1,247 @@
+//
+//  MyPCH.pch
+//  yuntangyi
+//
+//  Created by yuntangyi on 16/8/26.
+//  Copyright © 2016年 yuntangyi. All rights reserved.
+//
+
+#ifdef __OBJC__
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+
+#define ZXUD [NSUserDefaults standardUserDefaults]
+#define KScreenWidth  [UIScreen mainScreen].bounds.size.width
+#define KScreenHeight [UIScreen mainScreen].bounds.size.height
+#define KScreenSize [UIScreen mainScreen].bounds
+//颜色值 RGB
+#define KRGB(R,G,B,A) [UIColor colorWithRed:R/255.0 green:G/255.0 blue:B/255.0 alpha:A]
+//背景浅灰色
+#define J_BackLightGray [UIColor colorWithRed:238/255.0 green:238/255.0 blue:238/255.0 alpha:1]
+
+#import "AppDelegate.h"
+#define navigationBarColor [UIColor colorWithRed:0/255.0 green:172/255.0 blue:204/255.0 alpha:1]
+
+//网络请求管理类
+#import "SZBNetDataManager.h"
+//工具
+#import "ToolManager.h"
+#import "LoadingView.h"
+#import "LoadingView2.h"
+#import "MJRefresh.h"
+#import "KongPlaceHolderView.h"
+//控制器
+#import "MainTabBarController.h"
+#import "LoginVC.h"
+#import "PatientManageViewController.h"
+#import "PatientVC.h"
+#import "ProjectViewController.h"
+#import "SechedulingVC.h"
+#import "KnowledgeVC.h"
+#import "MineVC.h"
+#import "AddPatientViewController.h"
+#import "PatientDetailViewController.h"
+#import "PA_inviteSetViewController.h"
+
+#import "SystemSetVC.h"
+#import "MyCardViewController.h"
+#import "MyCollectViewController.h"
+#import "MyMeetingListVC.h"
+#import "SchedulingSetTableViewController.h"
+//cell & View
+#import "PatientListTableViewCell.h"
+#import "MineMoreTableViewCell.h"
+#import "MineInformationTableViewCell.h"
+#import "SystemSetTableViewCell.h"
+#import "amAndPmTableViewCell.h"
+#import "PACalendarTableViewCell.h"
+#import "SeCalendarTableViewCell.h"
+#import "OrderPatientTableViewCell.h"
+#import "PersonalHistoryTableViewCell.h"
+//第三方
+#import "Masonry.h"
+#import "UIImageView+WebCache.h"
+//环信
+#import "EMSDK.h"
+//调用二维码
+#import "UIImage+LXDCreateBarcode.h"
+//MD5
+#import "RSA.h"
+#import <CommonCrypto/CommonDigest.h>
+
+/**
+ *  所有的网络接口
+ http://app.yuntangyi.com /api/doctor/index.php
+ http://app.yuntangyi.com /api/doctor/index.php
+ */
+//开屏图adpic
+#define SAdpic_Url @"http://app.yuntangyi.com/api/doctor/index.php?m=adpic"
+//医院科室 hospital_department
+#define SHospital_department_Url @"http://app.yuntangyi.com/api/doctor/index.php?m=hospital_department&rndstring=%@"
+//医生职称列表
+#define SGet_doctor_type_Url @"http://app.yuntangyi.com/api/doctor/index.php?m=get_doctor_type&rndstring=%@"
+/**
+ *  注册登录
+ */
+//注册register
+#define SRegister_Url @"http://app.yuntangyi.com/api/doctor/index.php?m=register&phone=%@&password=%@&code=%@&rndstring=%@&type=ios"
+//密码登录login
+#define SLogin_Url @"http://app.yuntangyi.com/api/doctor/index.php?m=login&phone=%@&password=%@&rndstring=%@&type=ios"
+//免注册登录nrlogin
+#define SNrLogin_Url @"http://app.yuntangyi.com/api/doctor/index.php?m=nrlogin&phone=%@&code=%@&rndstring=%@&type=ios"
+//获取验证码 /api/index.php?m=message
+#define SMessage_Url @"http://app.yuntangyi.com/api/index.php?m=message&phone=%@&type=%@&rndstring=%@"
+//忘记密码(找回密码)forget_password
+#define SForget_password_Url @"http://app.yuntangyi.com/api/doctor/index.php?m=forget_password&phone=%@&password=%@&code=%@&rndstring=%@"
+//修改密码update_password
+
+#define SUpdate_password_Url @"http://app.yuntangyi.com/api/doctor/index.php?m=update_password&ident_code=%@&oldpassword=%@&newpassword=%@&rndstring=%@"
+//意见反馈feedback
+#define SFeedback_Url @"http://app.yuntangyi.com/api/doctor/index.php?m=feedback&rndstring=%@&phone=%@&content=%@&type=4&version=%@"
+//退出登录
+#define SLogout_Url @"http://app.yuntangyi.com/api/doctor/index.php?m=logout&rndstring=%@&ident_code=%@"
+
+/**
+ *  知识 Knowledge
+ */
+//资讯类型 news_type
+#define SNews_type_Url @"http://app.yuntangyi.com/api/doctor/index.php?m=news_list&rndstring=%@&ident_code=%@"
+//资讯列表news_list
+#define SNews_list_Url @"http://app.yuntangyi.com/api/doctor/index.php?m=news_list&rndstring=%@&page=%@&ident_code=%@&pid=%@"
+//资讯news详情
+#define SNews_Url @"http://app.yuntangyi.com/api/doctor/index.php?m=news&rndstring=%@&id=%@"
+
+//会议列表meeting_list
+#define SMeeting_list_Url @"http://app.yuntangyi.com/api/doctor/index.php?m=meeting_list&rndstring=%@&ident_code=%@&page=%@"
+//会议详情meeting_info
+#define SMeeting_info_Url @"http://app.yuntangyi.com/api/doctor/index.php?m=meeting_info&id=%@&rndstring=%@&ident_code=%@"
+//会议报名 meeting_sign_up
+#define SMeeting_sign_up_Url @"http://app.yuntangyi.com/api/doctor/index.php?m=meeting_sign_up&mid=%@&rndstring=%@&ident_code=%@"
+//资讯收藏 news_collect
+#define SNews_collect_Url @"http://app.yuntangyi.com/api/doctor/index.php?m=news_collect&rndstring=%@&ident_code=%@&id=%@"
+//资讯点赞 news_praise
+#define SNews_praise_Url @"http://app.yuntangyi.com/api/doctor/index.php?m=news_praise&rndstring=%@&ident_code=%@&id=%@"
+
+/**
+ *  项目 Project
+ */
+//项目列表 activity_list
+#define SActivity_list_Url @"http://app.yuntangyi.com/api/doctor/index.php?m=activity_list&rndstring=%@&ident_code=%@&page=%@"
+//项目详情 activity
+#define SActivity_Url @"http://app.yuntangyi.com/api/doctor/index.php?m=activity&activity_id=%@"
+//选择患者列表 activity_patient
+#define SActivity_patient_Url @"http://app.yuntangyi.com/api/doctor/index.php?m=activity_patient&activity_id=%@&rndstring=%@&ident_code=%@"
+//项目分享 activity_invite
+#define SActivity_invite_Url @"http://app.yuntangyi.com/api/doctor/index.php?m=activity_invite&activity_id=%@&rndstring=%@&ident_code=%@&patient_id=%@"
+//反馈情况列表 answer_list
+#define SAnswer_list_Url @"http://app.yuntangyi.com/api/doctor/index.php?m=answer_list&activity_id=%@&rndstring=%@&ident_code=%@"
+//反馈详情 answer_info
+#define SAnswer_info_Url @"http://app.yuntangyi.com/api/doctor/index.php?m=answer_info&aid=%@&rndstring=%@&ident_code=%@"
+
+/**
+ *  我的 mine
+ */
+//我报名的会议 my_meeting_list
+#define SMy_meeting_list_Url @"http://app.yuntangyi.com/api/doctor/index.php?m=my_meeting_list&rndstring=%@&ident_code=%@&page=%@"
+//报名详情meeting_sign_up_info
+#define SMeeting_sign_up_info_Url @"http://app.yuntangyi.com/api/doctor/index.php?m=meeting_sign_up_info&rndstring=%@&ident_code=%@&mid=%@"
+//医生基本信息修改 doctor_update
+#define SDoctor_update_Url @"http://app.yuntangyi.com/api/doctor/index.php?m=doctor_update&rndstring=%@&ident_code=%@&hid=%@&did=%@&gender=%@&content=%@&do_at=%@&name=%@&ttid=%@"
+
+//医生排班设置worksheet_set
+#define SWorksheet_set_Url @"http://app.yuntangyi.com/api/doctor/index.php?m=worksheet_set&rndstring=%@&ident_code=%@&start_date=%@&end_date=%@&am_start_time=%@&am_end_time=%@&amnum=%@&pm_start_time=%@&pm_end_time=%@&pmnum=%@&point=%@"
+//医生排班修改worksheet_update
+#define SWorksheet_update_Url @"http://app.yuntangyi.com/api/doctor/index.php?m=worksheet_update&rndstring=%@&ident_code=%@&am_start_time=%@&am_end_time=%@&amnum=%@&pm_start_time=%@&pm_end_time=%@&pmnum=%@&point=%@&id=%@"
+//删除排班worksheet_del
+#define Sworksheet_del_Url @"http://app.yuntangyi.com/api/doctor/index.php?m=worksheet_del&rndstring=%@&ident_code=%@&id=%@"
+//预约日程表worksheet
+#define SWorksheet_Url @"http://app.yuntangyi.com/api/doctor/index.php?m=worksheet&rndstring=%@&ident_code=%@"
+//预约数据列表
+#define SWorksheetList_Url @"http://app.yuntangyi.com/api/doctor/index.php?m=worksheet_list&rndstring=%@&ident_code=%@&date=%@&page=%@"
+//患者管理 patient_list
+#define SPatient_list_Url @"http://app.yuntangyi.com/api/doctor/index.php?m=patient_list&rndstring=%@&ident_code=%@"
+//患者详情patient_content
+#define SPatient_content_Url @"http://app.yuntangyi.com/api/doctor/index.php?m=patient_content&rndstring=%@&ident_code=%@&patient_id=%@"
+//搜索患者patient_search
+#define SPatient_search_Url @"http://app.yuntangyi.com/api/doctor/index.php?m=patient_search&rndstring=%@&ident_code=%@&str=%@"
+//按手机号搜索患者search_phone
+#define SSearch_phone_Url @"http://app.yuntangyi.com/api/doctor/index.php?m=search_phone&rndstring=%@&ident_code=%@&phone=%@"
+//添加患者patient_add
+#define SPatient_add_Url @"http://app.yuntangyi.com/api/doctor/index.php?m=patient_add&rndstring=%@&ident_code=%@&patient_id=%@&activity_id=%@"
+//邀请诊治patient_invite
+#define SPatient_invite_Url @"http://app.yuntangyi.com/api/doctor/index.php?m=patient_invite&patient_id=%@&rndstring=%@&ident_code=%@&date=%@&time_point=%@"
+//头像上传doctor_avatar
+#define SDoctor_avatar_Url @"http://app.yuntangyi.com/api/doctor/index.php?m=doctor_avatar&rndstring=%@&ident_code=%@"
+//我的收藏_项目列表my_collect_news
+#define SMy_collect_news_Url @"http://app.yuntangyi.com/api/doctor/index.php?m=my_collect_news&rndstring=%@&ident_code=%@&page=%ld"
+//我报名的会议my_meeting_list
+//#define SMy_meeting_list_Url @"http://app.yuntangyi.com/api/doctor/index.php?m=my_meeting_list&rndstring=%@&ident_code=%@"
+//医生认证（证件) doctor_auth
+#define SDoctor_auth_Url @"http://app.yuntangyi.com/api/doctor/index.php?m=doctor_auth&rndstring=%@&ident_code=%@&keshi_phone=%@"
+//医生认证（联名认证） doctor_auth2
+#define SDoctor_auth2_Url @"http://app.yuntangyi.com/api/doctor/index.php?m=doctor_auth2&rndstring=%@&ident_code=%@&phone1=%@&phone2=%@"
+
+//资讯详情
+#define S_newsDetail_URL @"http://app.yuntangyi.com/api/index.php?m=news&nid=%@"
+//患者健康资料
+#define SGet_patient_Url @"http://app.yuntangyi.com/api/doctor/index.php?m=get_patient&rndstring=%@&ident_code=%@&patient_id=%@"
+//患者血糖记录
+#define SGet_patient_bloodsugar_Url @"http://app.yuntangyi.com/api/doctor/index.php?m=get_patient_bloodsugar&rndstring=%@&ident_code=%@&patient_id=%@&startdate=%@&enddate=%@"
+//患者血糖图表
+#define SEcharts_Url @"http://app.yuntangyi.com/api/doctor/index.php?m=echarts&rndstring=%@&ident_code=%@&patient_id=%@"
+//患者运动饮食胰岛素口服药统计
+#define SStatistics_Url @"http://app.yuntangyi.com/api/doctor/index.php?m=%@&rndstring=%@&ident_code=%@&patient_id=%@&startdate=%@&enddate=%@"
+//消息数量remind_num
+#define SRemind_num_Url @"http://app.yuntangyi.com/api/doctor/index.php?m=remind_num&rndstring=%@&ident_code=%@"
+//消息列表remind_list
+#define SRemind_list_Url @"http://app.yuntangyi.com/api/doctor/index.php?m=remind_list&ident_code=%@"
+//验证状态 check_status
+#define SCheck_status_Url @"http://app.yuntangyi.com/api/doctor/index.php?m=check_status&rndstring=%@&ident_code=%@"
+
+/**
+ *  SZBAlertViewNoti
+ */
+#define SZBAlertView1Noti_cancel @"SZBAlertView1Noti_cancel"
+#define SZBAlertView1Noti_ok @"SZBAlertView1Noti_ok"
+
+
+
+#define SZBAlertView3Noti_camera @"SZBAlertView2Noti_camera"
+#define SZBAlertView3Noti_photo @"SZBAlertView2Noti_photo"
+#define SZBAlertView3Noti_cancel @"SZBAlertView3Noti_cancel"
+
+
+#define SZBAlertView5Noti_cancel @"SZBAlertView5Noti_cancel"
+#define SZBAlertView5Noti_ok @"SZBAlertView5Noti_ok"
+//姓名
+#define NameView_cancel_noti @"SZBAlertView6Noti_cancel"
+#define NameView_ok_noti @"SZBAlertView6Noti_ok"
+//性别
+#define SexView_ok_noti @"SZBAlertView2Noti_ok"
+//医院
+#define UserInfoHospitalNoti @"UserInfoHospitalNoti"
+//科室
+#define UserInfoDepartmentNoti @"UserInfoDepartmentNoti"
+//职称
+#define JobView_cancel_noti @"SZBAlertView4Noti_cancel"
+#define JobView_ok_noti @"SZBAlertView4Noti_ok"
+//个人经历
+#define UserInfoExperienceNoti @"UserInfoExperienceNoti"
+
+
+
+/**
+ *  MBProgressHUD
+ */
+#import "MBProgressHUD.h"
+#import "MBProgressHUD+MJ.h"
+
+
+//重新加载
+#import "NetworkLoadFailureView.h"
+
+#import "NormalBaseCell.h"
+
+#endif
+

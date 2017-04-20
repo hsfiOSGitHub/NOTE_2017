@@ -1,0 +1,144 @@
+//
+//  CommonPCH.pch
+//  CalendarDemo
+//
+//  Created by monkey2016 on 16/12/20.
+//  Copyright © 2016年 monkey2016. All rights reserved.
+//
+
+#ifndef CommonPCH_pch
+#define CommonPCH_pch
+
+
+//__OBJC__表示宏内引用的文件确保只被使用Objective-C语言的文件所引用，保证引用关系的清晰。
+#ifdef __OBJC__
+#import "AppDelegate.h"
+
+
+#define KMyWindow [UIApplication sharedApplication].keyWindow
+#define KScreenWidth  [UIScreen mainScreen].bounds.size.width
+#define KScreenHeight [UIScreen mainScreen].bounds.size.height
+#define KScreenSize [UIScreen mainScreen].bounds
+#define KRGB(R,G,B,A) [UIColor colorWithRed:R/255.0 green:G/255.0 blue:B/255.0 alpha:A]//颜色值 RGB
+#define kRandomColor [UIColor colorWithRed:arc4random_uniform(256) / 255.0 green:arc4random_uniform(256) / 255.0 blue:arc4random_uniform(256) / 255.0 alpha:1.0]//随机颜色
+//十六进制颜色
+#define kColorRGB(c)    [UIColor colorWithRed:((c>>16)&0xFF)/255.0	\
+green:((c>>8)&0xFF)/255.0	\
+blue:(c&0xFF)/255.0         \
+alpha:1.0]
+
+#define HSF_UD [NSUserDefaults standardUserDefaults]
+//当前设备的版本
+#define kCurrentFloatDevice [[[UIDevice currentDevice]systemVersion]floatValue]
+
+
+//>>>>>>>>>>>>>>>>>>common<<<<<<<<<<<<<<<<<<<<<<<<<<<<//
+//自定义UIView
+#import "DatePicker24HoursView.h"//24小时选择器(34金币)
+#import "CurrentMusicListView.h"//当前音乐播放列表
+#import "LittlePlayerView.h"//播放小空间
+#import "MoreBtnMenuVC.h"//播放页面 的更多按钮 菜单
+
+//类别
+#import "UIColor+RGB.h"//通过已经有的颜色来获取颜色的RGB值
+#import "UIView+flag.h"//flag
+#import "UIImage+color.h"//通过颜色来构造图片
+#import "UIView+Extension.h"//
+#import "UIButton+Layout.h"//更改btn图片和文字的布局
+#import "UINavigationBar+Background.h"//透明导航栏
+#import "NSDate+GFCalendar.h"//日历
+#import "UIImage+cut.h"//裁剪图片
+#import "NSDate+hsfDateFormater.h"//时间格式化
+#import "YBPopupMenu.h"//menu
+#import "GFCalendarMonth.h"
+#import "DateSeletor.h"//日期
+#import "EditScheduleVC.h"//编辑日程
+#import "HSFBaseVC.h"//隐藏tabbar
+
+//....>>>.....
+//编辑界面
+#import "EditEmergencyView.h"//编辑界面－选择重要\紧急程度
+#import "EditAlarmView.h"//编辑界面－选择提醒时间
+#import "EditPicView.h"//编辑界面-添加图片
+#import "EditScheduleTagVC.h"//编辑界面－添加标签
+#import "HSFTagView.h"//标签
+//搜索
+#import "SearchVC.h"
+//统计
+#import "ChartVC.h"
+//添加番茄🍅
+#import "AddTomatoVC.h"
+#import "StartTomatoVC.h"
+//34coin
+#import "Coin34VC.h"
+#import "WeekChartCionVC.h"
+#import "MonthChartCoinVC.h"
+#import "AddCoin34VC.h"
+#import "ColorPickerView.h"//取色器
+//实用工具
+#import "ToolVC.h"
+
+//>>>>>>>>>>>>>>>>>>>>>>musci<<<<<<<<<<<<<<<<<<<<<<<<<
+#import "MyLikeMusicVC.h"
+#import "MyCollectionMusicVC.h"
+#import "MyMusicListVC.h"
+#import "DownloadCenterVC.h"
+#import "ReccentPlayVC.h"
+#import "MusicLibVC.h"
+#import "RedioVC.h"
+#import "MVVC.h"
+
+//>>>>>>>>>>>>>>>>>>>>>>SDK<<<<<<<<<<<<<<<<<<<<<<<<<
+#import "MBProgressHUD.h"
+#import "MBProgressHUD+MJ.h"
+#import "FMDB.h"
+//折线图、饼图、柱状图
+#import "SCChart.h"
+#import "JHChart.h"
+#import "JHChartHeader.h"
+#import "WSStarRatingView.h"//星星评价
+//用于圆形进度条
+#import <math.h>
+#import "CKCircleView.h"
+#import "CKCircleView2.h"
+#import "CKCircleView3.h"
+//Masnory
+#import "Masonry.h"
+//图片模糊效果
+#import "ANBlurredImageView.h"//第一种方法
+#import "UIImageView+LBBlurredImage.h"//第二种方法
+//轮播图
+#import "SDCycleScrollView.h"
+//跑马灯(Wonderful)
+#import "SXColorGradientView.h"
+#import "SXColorLabel.h"
+#import "SXMarquee.h"
+#import "UIColor+Wonderful.h"
+#import "UIColor+Separate.h"
+#import "MarqueeView.h"//跑马灯（用这个）
+#import "TXScrollLabelView.h"//广告位(滚动的label)
+
+//>>>>>>>>>>>>>>>>>>>>>Model<<<<<<<<<<<<<<<<<<<<<<<<<
+#import "ScheduleModel.h"
+#import "TaskModel.h"
+#import "MusicModel.h"
+
+
+//一级页面导航栏
+#define TITLES @[@"添加好友", @"创建讨论组", @"扫一扫",@"搜索"]
+#define ICONS  @[@"addFriend_menu",@"discuss_menu",@"scan_menu",@"search_menu"]
+//侧滑菜单
+#import "DrawerHeader.h"
+#import "DrawerCell.h"
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>helper<<<<<<<<<<<<<<<<<<<<<<<<<<//
+#import "HSFHelper.h"
+#import "HSFFmdbManager+schedule.h"
+#import "HSFFmdbManager+task.h"
+#import "HSFFmdbManager+localMusic.h"
+#import "MusicPlayerHelper.h"//音乐播放器管理类
+
+
+#endif
+
+#endif /* CommonPCH_pch */

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1605" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="UMComSimpleNotificationCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="UMComSimpleNotificationCell" rowHeight="203" id="KGk-i7-Jjw" customClass="UMComSimpleNotificationCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="203"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="202"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Dn-pf-KAc" userLabel="customBgView">
+                        <rect key="frame" x="0.0" y="5" width="320" height="192"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6s9-dH-6Jv" userLabel="avatorImageView">
+                                <rect key="frame" x="15" y="15" width="44" height="44"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="INj-cu-XnQ"/>
+                                    <constraint firstAttribute="width" constant="44" id="x6n-WG-YVM"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="22"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iOx-ga-EHd" userLabel="nameLabel">
+                                <rect key="frame" x="69" y="15" width="236" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.27450980392156865" green="0.61960784313725492" blue="0.97254901960784312" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="UMComSimpleSDKResources.bundle/images/um_time" translatesAutoresizingMaskIntoConstraints="NO" id="1hE-46-pQ6" userLabel="dateIcon">
+                                <rect key="frame" x="69" y="42" width="14" height="14"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="14" id="do4-zg-FvQ"/>
+                                    <constraint firstAttribute="width" constant="14" id="jRr-tp-Sey"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="date" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qgG-SM-x07" userLabel="dateLabel">
+                                <rect key="frame" x="91" y="42" width="216" height="14"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="14" id="Joi-zV-qok"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" text="label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qDO-t7-Roy" userLabel="contentLabel" customClass="UMComLabel">
+                                <rect key="frame" x="15" y="69" width="290" height="113"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="iOx-ga-EHd" firstAttribute="leading" secondItem="6s9-dH-6Jv" secondAttribute="trailing" constant="10" id="1oV-PJ-91w"/>
+                            <constraint firstItem="qDO-t7-Roy" firstAttribute="leading" secondItem="6Dn-pf-KAc" secondAttribute="leading" constant="15" id="2wn-5s-CcV"/>
+                            <constraint firstItem="1hE-46-pQ6" firstAttribute="leading" secondItem="6s9-dH-6Jv" secondAttribute="trailing" constant="10" id="3EJ-At-iEb"/>
+                            <constraint firstAttribute="trailing" secondItem="qgG-SM-x07" secondAttribute="trailing" constant="13" id="6Al-nK-P9a"/>
+                            <constraint firstAttribute="trailing" secondItem="qDO-t7-Roy" secondAttribute="trailing" constant="15" id="9PU-kI-fG1"/>
+                            <constraint firstItem="qDO-t7-Roy" firstAttribute="top" secondItem="6s9-dH-6Jv" secondAttribute="bottom" constant="10" id="B6o-zI-AS0"/>
+                            <constraint firstItem="6s9-dH-6Jv" firstAttribute="top" secondItem="6Dn-pf-KAc" secondAttribute="top" constant="15" id="HWU-NO-5IM"/>
+                            <constraint firstItem="qgG-SM-x07" firstAttribute="centerY" secondItem="1hE-46-pQ6" secondAttribute="centerY" id="Jf4-nr-GHP"/>
+                            <constraint firstItem="6s9-dH-6Jv" firstAttribute="leading" secondItem="6Dn-pf-KAc" secondAttribute="leading" constant="15" id="e5n-ZZ-eww"/>
+                            <constraint firstAttribute="trailing" secondItem="iOx-ga-EHd" secondAttribute="trailing" constant="15" id="foD-Ah-x1g"/>
+                            <constraint firstItem="qgG-SM-x07" firstAttribute="leading" secondItem="1hE-46-pQ6" secondAttribute="trailing" constant="8" id="fvO-6a-Hp8"/>
+                            <constraint firstItem="1hE-46-pQ6" firstAttribute="top" secondItem="iOx-ga-EHd" secondAttribute="bottom" constant="10" id="iCV-XF-Gjt"/>
+                            <constraint firstAttribute="bottom" secondItem="qDO-t7-Roy" secondAttribute="bottom" constant="10" id="uH3-ep-GmO"/>
+                            <constraint firstItem="iOx-ga-EHd" firstAttribute="top" secondItem="6s9-dH-6Jv" secondAttribute="top" id="z9I-Ao-B19"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="6Dn-pf-KAc" secondAttribute="trailing" id="45m-Wd-WZ0"/>
+                    <constraint firstAttribute="bottom" secondItem="6Dn-pf-KAc" secondAttribute="bottom" constant="5" id="auV-uY-rz7"/>
+                    <constraint firstItem="6Dn-pf-KAc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="snr-9X-xId"/>
+                    <constraint firstItem="6Dn-pf-KAc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="zL2-zl-dis"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="avatorImageView" destination="6s9-dH-6Jv" id="uQb-0j-bmS"/>
+                <outlet property="contentLabel" destination="qDO-t7-Roy" id="KfW-eU-y95"/>
+                <outlet property="customBgView" destination="6Dn-pf-KAc" id="gfu-rh-lWL"/>
+                <outlet property="dateIcon" destination="1hE-46-pQ6" id="H8R-Gu-1zw"/>
+                <outlet property="dateLabel" destination="qgG-SM-x07" id="1rv-Lo-HbT"/>
+                <outlet property="nameLabel" destination="iOx-ga-EHd" id="ITd-7h-wwW"/>
+            </connections>
+            <point key="canvasLocation" x="213" y="213.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="UMComSimpleSDKResources.bundle/images/um_time" width="75" height="75"/>
+    </resources>
+</document>

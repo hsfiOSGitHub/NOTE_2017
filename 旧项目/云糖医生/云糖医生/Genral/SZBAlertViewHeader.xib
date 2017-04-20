@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SZBAlertViewHeader">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="138"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SMq-nr-LDq">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="138"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="52W-N3-Z39">
+                            <rect key="frame" x="10" y="58" width="530" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Is-wS-IoR">
+                            <rect key="frame" x="550" y="49" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="24f-KL-cZ1"/>
+                                <constraint firstAttribute="width" constant="40" id="aTs-bj-G7v"/>
+                            </constraints>
+                            <state key="normal" image="show"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="0Is-wS-IoR" secondAttribute="trailing" constant="10" id="TnX-Bu-00q"/>
+                        <constraint firstItem="52W-N3-Z39" firstAttribute="centerY" secondItem="SMq-nr-LDq" secondAttribute="centerY" id="fh5-Zj-1DY"/>
+                        <constraint firstItem="0Is-wS-IoR" firstAttribute="leading" secondItem="52W-N3-Z39" secondAttribute="trailing" constant="10" id="k32-wP-AgE"/>
+                        <constraint firstItem="52W-N3-Z39" firstAttribute="leading" secondItem="SMq-nr-LDq" secondAttribute="leading" constant="10" id="mH7-S9-DBB"/>
+                        <constraint firstItem="0Is-wS-IoR" firstAttribute="centerY" secondItem="SMq-nr-LDq" secondAttribute="centerY" id="wEm-1c-yEq"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="SMq-nr-LDq" secondAttribute="trailing" id="2Kv-Fj-Kn4"/>
+                <constraint firstItem="SMq-nr-LDq" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="AI9-M6-kmi"/>
+                <constraint firstItem="SMq-nr-LDq" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="EAm-Gy-Gem"/>
+                <constraint firstAttribute="bottom" secondItem="SMq-nr-LDq" secondAttribute="bottom" id="jb1-wu-JoA"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="showBtn" destination="0Is-wS-IoR" id="Syw-0k-1dj"/>
+                <outlet property="title" destination="52W-N3-Z39" id="XL3-A5-nws"/>
+            </connections>
+            <point key="canvasLocation" x="490" y="211"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="show" width="16" height="16"/>
+    </resources>
+</document>

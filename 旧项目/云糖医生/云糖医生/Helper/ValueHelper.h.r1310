@@ -1,0 +1,21 @@
+//
+//  ValueHelper.h
+//  SZB_doctor
+//
+//  Created by monkey2016 on 16/9/21.
+//  Copyright © 2016年 monkey2016. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+
+@interface ValueHelper : NSObject
+//姓名
+//性别
+@property (nonatomic,strong) NSString *sexStr;
+
+
+
+//单例的创建
++(instancetype)sharedHelper;
+
+@end

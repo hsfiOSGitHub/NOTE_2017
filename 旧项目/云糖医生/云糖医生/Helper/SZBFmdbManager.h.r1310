@@ -1,0 +1,27 @@
+//
+//  FMDBManager.h
+//  SZB_doctor
+//
+//  Created by monkey2016 on 16/9/21.
+//  Copyright © 2016年 monkey2016. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+
+#import "FMDatabase.h"
+
+@interface SZBFmdbManager : NSObject<NSCopying,NSCoding>
+
+@property (nonatomic,strong) FMDatabase *szbDb;
+// 单例
++(instancetype)sharedManager;
+
+//>>>>>>>>>>>>>>>>>>>>>
+//查询省份
+-(NSArray *)seleteProvince;
+//查询城市
+-(NSArray *)seleteCity;
+//查询医院
+-(NSArray *)seleteHospital;
+
+@end

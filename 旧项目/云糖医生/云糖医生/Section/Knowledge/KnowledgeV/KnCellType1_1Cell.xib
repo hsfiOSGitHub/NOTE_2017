@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="355" id="KGk-i7-Jjw" customClass="KnCellType1_1Cell">
+            <rect key="frame" x="0.0" y="0.0" width="465" height="355"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="465" height="354"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rCX-fa-YZT">
+                        <rect key="frame" x="0.0" y="0.0" width="465" height="349"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="rCX-fa-YZT" secondAttribute="height" multiplier="4:3" id="alk-o6-8NL"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rez-6e-AKd">
+                        <rect key="frame" x="0.0" y="319" width="465" height="30"/>
+                        <color key="backgroundColor" red="0.27945026179999999" green="0.27945026179999999" blue="0.27945026179999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="Sgc-B5-Riq"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="rCX-fa-YZT" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="5fG-Uh-gl0"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="rCX-fa-YZT" secondAttribute="bottom" id="ArM-un-7Zn"/>
+                    <constraint firstAttribute="trailing" secondItem="Rez-6e-AKd" secondAttribute="trailing" id="D0Y-E2-a52"/>
+                    <constraint firstItem="Rez-6e-AKd" firstAttribute="bottom" secondItem="rCX-fa-YZT" secondAttribute="bottom" id="IhJ-zf-KnY"/>
+                    <constraint firstAttribute="trailing" secondItem="rCX-fa-YZT" secondAttribute="trailing" id="cdm-jr-HVA"/>
+                    <constraint firstItem="rCX-fa-YZT" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="oVe-0I-W1L"/>
+                    <constraint firstItem="Rez-6e-AKd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="pUX-n0-LpW"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="icon" destination="rCX-fa-YZT" id="sI2-bg-Z6p"/>
+                <outlet property="signIn" destination="Rez-6e-AKd" id="ltk-hP-HaO"/>
+            </connections>
+            <point key="canvasLocation" x="341.5" y="678.5"/>
+        </tableViewCell>
+    </objects>
+</document>

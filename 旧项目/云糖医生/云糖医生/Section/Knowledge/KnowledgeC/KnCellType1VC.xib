@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KnCellType1VC">
+            <connections>
+                <outlet property="signNameBtn" destination="kwB-wI-AnF" id="mYr-B0-B6F"/>
+                <outlet property="tableView" destination="Gxo-bh-6hP" id="OJq-4P-DV2"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kwB-wI-AnF">
+                    <color key="backgroundColor" red="0.46610569269819091" green="0.86764050857873753" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="n5m-X3-hxW"/>
+                    </constraints>
+                    <state key="normal" title="立即报名"/>
+                    <connections>
+                        <action selector="signNameAction:" destination="-1" eventType="touchUpInside" id="5Tr-t9-1Eo"/>
+                    </connections>
+                </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="none" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="Gxo-bh-6hP">
+                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="kwB-wI-AnF" secondAttribute="trailing" id="Co4-rq-Gdl"/>
+                <constraint firstItem="kwB-wI-AnF" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="J3w-wb-FUN"/>
+                <constraint firstAttribute="bottom" secondItem="kwB-wI-AnF" secondAttribute="bottom" id="i0g-mh-QEG"/>
+                <constraint firstItem="Gxo-bh-6hP" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="jpC-RQ-dzb"/>
+                <constraint firstItem="kwB-wI-AnF" firstAttribute="top" secondItem="Gxo-bh-6hP" secondAttribute="bottom" id="uHy-5d-RDr"/>
+                <constraint firstItem="Gxo-bh-6hP" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="w0l-a1-cFd"/>
+                <constraint firstAttribute="trailing" secondItem="Gxo-bh-6hP" secondAttribute="trailing" id="xwX-bN-rgX"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

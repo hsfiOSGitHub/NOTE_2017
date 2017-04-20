@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="101" id="KGk-i7-Jjw" customClass="PersonalHistoryTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="355" height="101"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="355" height="100"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2H4-4v-fLu">
+                        <color key="backgroundColor" red="0.92549019607843142" green="0.92549019607843142" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="zog-pq-3Sf"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="个人经历" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M3X-Gz-06q">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="sXh-79-SWH"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SLc-nX-1hW">
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.49120582460732987" green="0.49120582460732987" blue="0.49120582460732987" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="2H4-4v-fLu" secondAttribute="bottom" id="3sK-ci-9q3"/>
+                    <constraint firstItem="SLc-nX-1hW" firstAttribute="top" secondItem="M3X-Gz-06q" secondAttribute="bottom" constant="10" id="8YU-2A-vbi"/>
+                    <constraint firstAttribute="trailing" secondItem="SLc-nX-1hW" secondAttribute="trailing" constant="20" id="HqF-GN-eJP"/>
+                    <constraint firstAttribute="trailing" secondItem="2H4-4v-fLu" secondAttribute="trailing" constant="20" id="Lsc-3J-aHS"/>
+                    <constraint firstItem="M3X-Gz-06q" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="Nue-dI-Vkk"/>
+                    <constraint firstItem="M3X-Gz-06q" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="URo-Dh-ndq"/>
+                    <constraint firstAttribute="trailing" secondItem="M3X-Gz-06q" secondAttribute="trailing" constant="10" id="X5Y-ug-6tY"/>
+                    <constraint firstItem="2H4-4v-fLu" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="dbN-gM-yfX"/>
+                    <constraint firstItem="2H4-4v-fLu" firstAttribute="top" secondItem="SLc-nX-1hW" secondAttribute="bottom" constant="10" id="mXP-Lq-mPm"/>
+                    <constraint firstItem="SLc-nX-1hW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="thq-7S-sBa"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="DetailLable" destination="SLc-nX-1hW" id="FPS-MT-BbX"/>
+                <outlet property="PersonalType" destination="M3X-Gz-06q" id="Kn3-0H-WFO"/>
+            </connections>
+            <point key="canvasLocation" x="334.5" y="436.5"/>
+        </tableViewCell>
+    </objects>
+</document>

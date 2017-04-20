@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ZXGuanYuViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="about_logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="1lm-A2-OV5">
+                    <rect key="frame" x="69" y="85" width="236" height="169"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="236" id="EQn-Yp-ogs"/>
+                        <constraint firstAttribute="height" constant="169" id="xrc-ys-Ivw"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="洛阳智行信息技术有限公司" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lhh-Hf-q8A">
+                    <rect key="frame" x="69" y="331" width="236" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="236" id="SMK-7H-RxG"/>
+                        <constraint firstAttribute="height" constant="21" id="cLN-w3-ZTa"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="电话：0379-80887067" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DDk-sa-iKR">
+                    <rect key="frame" x="69" y="374" width="236" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="网址:www.youzhaola.com" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Go-ip-kkN">
+                    <rect key="frame" x="69" y="417" width="236" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="互联网学车新体验" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ENh-R3-Zfd">
+                    <rect key="frame" x="69" y="257" width="236" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="236" id="9mb-Ub-unP"/>
+                        <constraint firstAttribute="height" constant="36" id="suA-cu-chq"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="邮箱：lyzhixingkeji@126.com" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LPs-Yb-SU3">
+                    <rect key="frame" x="69" y="460" width="236" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="2Go-ip-kkN" firstAttribute="height" secondItem="lhh-Hf-q8A" secondAttribute="height" id="4Je-KS-YtD"/>
+                <constraint firstItem="lhh-Hf-q8A" firstAttribute="centerX" secondItem="1lm-A2-OV5" secondAttribute="centerX" id="5p4-qs-C1C"/>
+                <constraint firstItem="LPs-Yb-SU3" firstAttribute="top" secondItem="2Go-ip-kkN" secondAttribute="bottom" constant="22" id="EP6-ox-cMa"/>
+                <constraint firstItem="DDk-sa-iKR" firstAttribute="top" secondItem="lhh-Hf-q8A" secondAttribute="bottom" constant="22" id="Gbs-Q7-l7d"/>
+                <constraint firstItem="1lm-A2-OV5" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="85" id="Ia4-UH-GVA"/>
+                <constraint firstItem="DDk-sa-iKR" firstAttribute="centerX" secondItem="1lm-A2-OV5" secondAttribute="centerX" id="JOv-VP-Txs"/>
+                <constraint firstItem="2Go-ip-kkN" firstAttribute="top" secondItem="DDk-sa-iKR" secondAttribute="bottom" constant="22" id="cNK-yE-7Hh"/>
+                <constraint firstItem="LPs-Yb-SU3" firstAttribute="height" secondItem="lhh-Hf-q8A" secondAttribute="height" id="e5m-H1-vw2"/>
+                <constraint firstItem="LPs-Yb-SU3" firstAttribute="width" secondItem="lhh-Hf-q8A" secondAttribute="width" id="eSE-dn-qJk"/>
+                <constraint firstItem="lhh-Hf-q8A" firstAttribute="top" secondItem="ENh-R3-Zfd" secondAttribute="bottom" constant="38" id="n2L-c3-vrW"/>
+                <constraint firstItem="DDk-sa-iKR" firstAttribute="width" secondItem="lhh-Hf-q8A" secondAttribute="width" id="orv-n9-yCS"/>
+                <constraint firstItem="2Go-ip-kkN" firstAttribute="width" secondItem="lhh-Hf-q8A" secondAttribute="width" id="pR8-cs-gy7"/>
+                <constraint firstItem="DDk-sa-iKR" firstAttribute="height" secondItem="lhh-Hf-q8A" secondAttribute="height" id="u0O-dR-ifN"/>
+                <constraint firstItem="2Go-ip-kkN" firstAttribute="centerX" secondItem="1lm-A2-OV5" secondAttribute="centerX" id="uRf-Em-FQS"/>
+                <constraint firstItem="LPs-Yb-SU3" firstAttribute="centerX" secondItem="1lm-A2-OV5" secondAttribute="centerX" id="uYN-ec-DdZ"/>
+                <constraint firstItem="ENh-R3-Zfd" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ubm-52-S1t"/>
+                <constraint firstItem="ENh-R3-Zfd" firstAttribute="top" secondItem="1lm-A2-OV5" secondAttribute="bottom" constant="3" id="yS1-O7-C4V"/>
+                <constraint firstItem="1lm-A2-OV5" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ydL-Q4-4LB"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="about_logo.png" width="3000" height="2000"/>
+    </resources>
+</document>

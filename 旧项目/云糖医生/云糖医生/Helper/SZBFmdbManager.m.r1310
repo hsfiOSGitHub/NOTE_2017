@@ -1,0 +1,149 @@
+//
+//  FMDBManager.m
+//  SZB_doctor
+//
+//  Created by monkey2016 on 16/9/21.
+//  Copyright © 2016年 monkey2016. All rights reserved.
+//
+
+#import "SZBFmdbManager.h"
+
+#import "FMDB.h"
+#define DBName @"szb.db"
+
+static SZBFmdbManager *manager;
+@implementation SZBFmdbManager
+//单例的创建
++(instancetype)sharedManager{
+    if (!manager) {
+        static dispatch_once_t onceToken;
+        dispatch_once(&onceToken, ^{
+            manager = [[SZBFmdbManager alloc]init];
+        });
+    }
+    return manager;
+}
+//返回数据库的路径
++ (NSString *)getDataBasePath {
+//    NSString *path = [NSHomeDirectory() stringByAppendingPathComponent:@"Documents"];
+////    NSLog(@"home:%@",path);
+//    return [path stringByAppendingPathComponent:DBName];
+    
+    //取得数据库保存路径，通常保存沙盒Documents目录
+    NSString *directory=[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject];
+    NSLog(@"%@",directory);
+    NSString *dbFilePath=[directory stringByAppendingPathComponent:DBName];
+    
+    NSFileManager *fm = [NSFileManager defaultManager];
+    BOOL isExist = [fm fileExistsAtPath:dbFilePath];
+    if (!isExist) {
+        //拷贝数据库
+        //NSString *backupDbPath =[[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"hospital.db"];
+        NSString *backupDbPath = [[NSBundle mainBundle] pathForResource:@"hospital" ofType:@"db"];
+        NSError *error;
+        BOOL cp = [fm copyItemAtPath:backupDbPath toPath:dbFilePath error:&error];
+        if (cp) {
+            NSLog(@"数据库拷贝成功");
+        }else{
+            NSLog(@"数据库拷贝失败：%@",[error localizedDescription]);
+        }
+    }
+    return dbFilePath;
+}
+//初始化方法
+-(instancetype)init{
+    if (self = [super init]) {
+        //打开数据库
+        _szbDb = [FMDatabase databaseWithPath:[SZBFmdbManager getDataBasePath]];
+    }
+    if (![_szbDb open]) {
+        NSLog(@"数据库打开失败");
+    }
+    return self;
+}
+
+//执行更新sql语句，用于插入、修改、删除
+-(void)executeQuery:(NSString *)sql{
+    if (![_szbDb open]) {
+        NSLog(@"数据库打开失败");
+    }
+    FMDatabaseQueue *queue = [FMDatabaseQueue databaseQueueWithPath:[SZBFmdbManager getDataBasePath]];
+    [queue inDatabase:^(FMDatabase *db) {
+        [db executeQuery:sql];
+    }];
+    //关闭数据库
+    [_szbDb close];
+}
+//执行查询sql语句
+-(NSArray *)executeQuerySearch:(NSString *)sql{
+    return nil;
+}
+
+//>>>>>>>>>>>>>>>>>>>>>
+//查询省份
+-(NSArray *)seleteProvince{
+    if (![_szbDb open]) {
+        NSLog(@"数据库打开失败");
+    }
+    NSString *sql = [NSString stringWithFormat:@"SELETE * FROM province"];
+    NSMutableArray *array=[NSMutableArray array];
+    FMDatabaseQueue *queue = [FMDatabaseQueue databaseQueueWithPath:[SZBFmdbManager getDataBasePath]];
+    [queue inDatabase:^(FMDatabase *db) {
+        FMResultSet *result= [db executeQuery:sql];
+        while (result.next) {
+            NSDictionary *resultDic = result.resultDictionary;
+            NSMutableDictionary *mtDic=[NSMutableDictionary dictionary];
+            [resultDic enumerateKeysAndObjectsUsingBlock:^(id  _Nonnull key, id  _Nonnull obj, BOOL * _Nonnull stop) {
+                //将二进制数据还原
+                if ([obj isKindOfClass:[NSData class]]) {
+                    NSDictionary *value = [NSKeyedUnarchiver unarchiveObjectWithData:obj];
+                    [mtDic setValue:value forKey:key];
+                }
+                //为null
+                if ([obj isKindOfClass:[NSNull class]]) {
+                    [mtDic removeObjectForKey:key];
+                }
+            }];
+            [array addObject:mtDic];
+        }
+    }];
+    //关闭数据库
+    [_szbDb close];
+    return array;
+}
+//查询城市
+-(NSArray *)seleteCity{
+    NSString *sql = [NSString stringWithFormat:@"SELETE * FROM city"];
+    NSArray *tempArr = [self executeQuerySearch:sql];
+    NSDictionary *dict = tempArr[0];
+    NSArray *nameArr = [NSArray array];
+    for (NSString *column in dict.allKeys) {
+        if ([column isEqualToString:@"name"]) {
+            nameArr = dict[column];
+        }
+    }
+    return nameArr;
+}
+//查询医院
+-(NSArray *)seleteHospital{
+    NSString *sql = [NSString stringWithFormat:@"SELETE * FROM hospital"];
+    NSArray *tempArr = [self executeQuerySearch:sql];
+    NSDictionary *dict = tempArr[0];
+    NSArray *nameArr = [NSArray array];
+    for (NSString *column in dict.allKeys) {
+        if ([column isEqualToString:@"name"]) {
+            nameArr = dict[column];
+        }
+    }
+    return nameArr;
+}
+
+
+
+
+
+
+
+
+
+@end

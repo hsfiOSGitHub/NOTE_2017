@@ -1,0 +1,6 @@
+framework module UMCommunitySDK {
+  umbrella header "UMCommunitySDK.h"
+
+  export *
+  module * { export * }
+}

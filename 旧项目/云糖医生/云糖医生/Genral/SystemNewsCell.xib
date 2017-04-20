@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="202" id="KGk-i7-Jjw" customClass="SystemNewsCell">
+            <rect key="frame" x="0.0" y="0.0" width="486" height="202"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="486" height="201"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="胰岛素名称" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t0O-8R-idC">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="gcv-jc-OXB"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                        <color key="textColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="sdfsfsa发生的发发的沙发啊十分的舒服过阿斯顿发过的更大发公司的分公司地方 电饭锅的舒服撒发" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Idn-bn-nzK">
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KTE-3J-pcT">
+                        <color key="backgroundColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="8kR-fh-Xdo"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="16-09-02" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V5N-g6-fVs">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="mWr-1u-FRV"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JPp-AA-cYL">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="Bks-F7-On6"/>
+                            <constraint firstAttribute="height" constant="30" id="eAw-Kx-tk9"/>
+                        </constraints>
+                        <state key="normal" title="查看详情">
+                            <color key="titleColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                    </button>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="go.png" translatesAutoresizingMaskIntoConstraints="NO" id="UL2-bx-xw2">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="5nM-3T-eAe"/>
+                            <constraint firstAttribute="width" constant="30" id="gqG-mW-3J8"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="KTE-3J-pcT" firstAttribute="top" secondItem="Idn-bn-nzK" secondAttribute="bottom" constant="10" id="1OJ-oF-39X"/>
+                    <constraint firstAttribute="bottom" secondItem="V5N-g6-fVs" secondAttribute="bottom" constant="10" id="5Fx-qB-g7U"/>
+                    <constraint firstAttribute="trailing" secondItem="UL2-bx-xw2" secondAttribute="trailing" constant="10" id="L5u-Jq-zfq"/>
+                    <constraint firstItem="UL2-bx-xw2" firstAttribute="centerY" secondItem="JPp-AA-cYL" secondAttribute="centerY" id="N7V-Q2-uK8"/>
+                    <constraint firstItem="V5N-g6-fVs" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="VJn-Xw-rnO"/>
+                    <constraint firstItem="Idn-bn-nzK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="agR-xA-MYo"/>
+                    <constraint firstItem="Idn-bn-nzK" firstAttribute="top" secondItem="t0O-8R-idC" secondAttribute="bottom" id="cOH-ij-WuY"/>
+                    <constraint firstAttribute="trailing" secondItem="t0O-8R-idC" secondAttribute="trailing" constant="10" id="eea-KT-nwx"/>
+                    <constraint firstItem="JPp-AA-cYL" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="V5N-g6-fVs" secondAttribute="trailing" constant="10" id="fgP-3v-OeC"/>
+                    <constraint firstItem="V5N-g6-fVs" firstAttribute="top" secondItem="KTE-3J-pcT" secondAttribute="bottom" constant="10" id="hEZ-sY-Y8o"/>
+                    <constraint firstItem="JPp-AA-cYL" firstAttribute="centerY" secondItem="V5N-g6-fVs" secondAttribute="centerY" id="kSH-bx-gEs"/>
+                    <constraint firstAttribute="trailing" secondItem="KTE-3J-pcT" secondAttribute="trailing" constant="10" id="qHi-bx-e9K"/>
+                    <constraint firstItem="UL2-bx-xw2" firstAttribute="leading" secondItem="JPp-AA-cYL" secondAttribute="trailing" id="rAT-pP-qm0"/>
+                    <constraint firstAttribute="trailing" secondItem="Idn-bn-nzK" secondAttribute="trailing" constant="10" id="rHI-4O-KRQ"/>
+                    <constraint firstItem="t0O-8R-idC" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="ukW-SL-L7F"/>
+                    <constraint firstItem="t0O-8R-idC" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="vgH-1f-ayC"/>
+                    <constraint firstItem="KTE-3J-pcT" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="yjt-mh-xti"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="medicineInfo" destination="Idn-bn-nzK" id="1u0-p3-mGP"/>
+                <outlet property="medicineName" destination="t0O-8R-idC" id="yHo-jS-CpA"/>
+                <outlet property="showDetail" destination="JPp-AA-cYL" id="f16-PC-BfF"/>
+                <outlet property="time" destination="V5N-g6-fVs" id="zCj-hW-cPt"/>
+            </connections>
+            <point key="canvasLocation" x="277" y="518"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="go.png" width="32" height="32"/>
+    </resources>
+</document>

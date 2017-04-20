@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="LoadingView2">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dxV-AN-im2">
+                    <color key="backgroundColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FA6-t2-UID">
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CRU-4T-XvF">
+                            <subviews>
+                                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="eWP-Xq-kzh">
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="30" id="AQ8-Ff-8LT"/>
+                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="30" id="H13-I1-po7"/>
+                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="ckh-A6-iuD"/>
+                                        <constraint firstAttribute="height" constant="30" id="dJb-h6-25q"/>
+                                    </constraints>
+                                </activityIndicatorView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="登录中" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VhV-07-siF">
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstItem="VhV-07-siF" firstAttribute="top" secondItem="CRU-4T-XvF" secondAttribute="top" id="Ann-xk-Cwh"/>
+                                <constraint firstItem="eWP-Xq-kzh" firstAttribute="top" secondItem="CRU-4T-XvF" secondAttribute="top" id="CEy-tJ-vko"/>
+                                <constraint firstAttribute="bottom" secondItem="eWP-Xq-kzh" secondAttribute="bottom" id="Grg-ev-dGc"/>
+                                <constraint firstAttribute="trailing" secondItem="VhV-07-siF" secondAttribute="trailing" id="IiI-zP-Dei"/>
+                                <constraint firstItem="eWP-Xq-kzh" firstAttribute="leading" secondItem="CRU-4T-XvF" secondAttribute="leading" id="RQu-8a-pk2"/>
+                                <constraint firstItem="VhV-07-siF" firstAttribute="leading" secondItem="eWP-Xq-kzh" secondAttribute="trailing" constant="10" id="iR6-Xo-3Bu"/>
+                                <constraint firstAttribute="bottom" secondItem="VhV-07-siF" secondAttribute="bottom" id="vDq-3y-Iap"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="Ac0-cH-FIn"/>
+                        <constraint firstItem="CRU-4T-XvF" firstAttribute="centerY" secondItem="FA6-t2-UID" secondAttribute="centerY" id="efd-fZ-E1r"/>
+                        <constraint firstItem="CRU-4T-XvF" firstAttribute="centerX" secondItem="FA6-t2-UID" secondAttribute="centerX" id="hTM-DP-Tuu"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="dxV-AN-im2" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="PP4-Xl-g42"/>
+                <constraint firstItem="FA6-t2-UID" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="VvK-ml-AXj"/>
+                <constraint firstItem="dxV-AN-im2" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Ybp-38-wQE"/>
+                <constraint firstAttribute="trailing" secondItem="FA6-t2-UID" secondAttribute="trailing" constant="30" id="e0C-v2-tBi"/>
+                <constraint firstAttribute="trailing" secondItem="dxV-AN-im2" secondAttribute="trailing" id="jUM-9m-kNC"/>
+                <constraint firstItem="FA6-t2-UID" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="ofD-3C-4Sn"/>
+                <constraint firstItem="FA6-t2-UID" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="30" id="smI-PD-Yje"/>
+                <constraint firstAttribute="bottom" secondItem="dxV-AN-im2" secondAttribute="bottom" id="w1i-N8-w98"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <connections>
+                <outlet property="bgView" destination="FA6-t2-UID" id="XlQ-j6-7jf"/>
+                <outlet property="lable" destination="VhV-07-siF" id="BKs-Wk-frt"/>
+            </connections>
+            <point key="canvasLocation" x="478.5" y="441.5"/>
+        </view>
+    </objects>
+</document>

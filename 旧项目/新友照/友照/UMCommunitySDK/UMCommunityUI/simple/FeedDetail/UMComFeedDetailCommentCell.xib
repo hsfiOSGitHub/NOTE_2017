@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="UMComFeedDetailCommentCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="UMComFeedDetailCommentCell" rowHeight="85" id="KGk-i7-Jjw" customClass="UMComFeedDetailCommentCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="83"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="82.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="ptj-pS-bHS" userLabel="customBgView">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="84"/>
+                        <subviews>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kaR-IV-ldu" userLabel="avatorImageView">
+                                <rect key="frame" x="10" y="15" width="44" height="44"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="bXJ-rd-AzH"/>
+                                    <constraint firstAttribute="height" constant="44" id="z1F-2H-qL6"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="weA-H2-8VI" userLabel="nameLabel">
+                                <rect key="frame" x="64" y="15" width="162" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="UMComSimpleSDKResources.bundle/images/um_time" translatesAutoresizingMaskIntoConstraints="NO" id="dZg-j4-hJ9" userLabel="dateIcon">
+                                <rect key="frame" x="64" y="39" width="14" height="14"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="14" id="j0w-By-qK1"/>
+                                    <constraint firstAttribute="height" constant="14" id="rEf-a2-xiG"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xBk-BT-B41" userLabel="dateLabel">
+                                <rect key="frame" x="86" y="39" width="224" height="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q4h-vv-Anm" userLabel="contentView" customClass="UMComMutiStyleTextView">
+                                <rect key="frame" x="15" y="69" width="290" height="14"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" priority="750" constant="15" id="beX-8F-Luo"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9mz-PJ-kKH" userLabel="replyButton">
+                                <rect key="frame" x="236" y="15" width="32" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="32" id="SEm-US-h5k"/>
+                                    <constraint firstAttribute="height" constant="32" id="bSG-Ae-9vC"/>
+                                </constraints>
+                                <state key="normal" image="UMComSimpleSDKResources.bundle/images/um_comment_small_nomal"/>
+                                <connections>
+                                    <action selector="clickOnReplyButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="WSY-xi-X0u"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wzh-qY-1ab" userLabel="moreButton">
+                                <rect key="frame" x="278" y="15" width="32" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="0ua-JU-qwc"/>
+                                    <constraint firstAttribute="width" constant="32" id="zLe-sj-5VF"/>
+                                </constraints>
+                                <state key="normal" image="UMComSimpleSDKResources.bundle/images/um_more"/>
+                                <connections>
+                                    <action selector="clickOnMoreButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="2cn-Bu-MMo"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V0i-Pm-ynN" userLabel="bottom_line">
+                                <rect key="frame" x="0.0" y="83" width="320" height="1"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="Iim-tg-zr6"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Wzh-qY-1ab" secondAttribute="trailing" constant="10" id="0G8-dN-Qig"/>
+                            <constraint firstItem="kaR-IV-ldu" firstAttribute="top" secondItem="ptj-pS-bHS" secondAttribute="top" constant="15" id="4IJ-eZ-o3u"/>
+                            <constraint firstItem="dZg-j4-hJ9" firstAttribute="leading" secondItem="kaR-IV-ldu" secondAttribute="trailing" constant="10" id="4iI-uQ-a5z"/>
+                            <constraint firstItem="xBk-BT-B41" firstAttribute="leading" secondItem="dZg-j4-hJ9" secondAttribute="trailing" constant="8" symbolic="YES" id="BV7-Pg-zzb"/>
+                            <constraint firstAttribute="trailing" secondItem="V0i-Pm-ynN" secondAttribute="trailing" id="BZK-rj-zPC"/>
+                            <constraint firstItem="dZg-j4-hJ9" firstAttribute="top" secondItem="weA-H2-8VI" secondAttribute="bottom" constant="7" id="DtY-Vo-qIQ"/>
+                            <constraint firstItem="weA-H2-8VI" firstAttribute="top" secondItem="kaR-IV-ldu" secondAttribute="top" id="N73-CE-1rq"/>
+                            <constraint firstItem="q4h-vv-Anm" firstAttribute="top" secondItem="kaR-IV-ldu" secondAttribute="bottom" constant="10" id="OoU-uO-ONp"/>
+                            <constraint firstItem="Wzh-qY-1ab" firstAttribute="leading" secondItem="9mz-PJ-kKH" secondAttribute="trailing" constant="10" id="Pux-Sa-TSU"/>
+                            <constraint firstItem="V0i-Pm-ynN" firstAttribute="leading" secondItem="ptj-pS-bHS" secondAttribute="leading" id="Sen-Mp-6J3"/>
+                            <constraint firstItem="xBk-BT-B41" firstAttribute="top" secondItem="dZg-j4-hJ9" secondAttribute="top" id="XbM-2q-mVS"/>
+                            <constraint firstAttribute="bottom" secondItem="V0i-Pm-ynN" secondAttribute="bottom" id="aVW-nm-xfL"/>
+                            <constraint firstAttribute="trailing" secondItem="q4h-vv-Anm" secondAttribute="trailing" constant="15" id="ezj-Sl-N5n"/>
+                            <constraint firstItem="q4h-vv-Anm" firstAttribute="leading" secondItem="ptj-pS-bHS" secondAttribute="leading" constant="15" id="f3A-pR-Bl9"/>
+                            <constraint firstItem="weA-H2-8VI" firstAttribute="leading" secondItem="kaR-IV-ldu" secondAttribute="trailing" constant="10" id="fE1-ZC-9cG"/>
+                            <constraint firstItem="kaR-IV-ldu" firstAttribute="leading" secondItem="ptj-pS-bHS" secondAttribute="leading" constant="10" id="hdG-jE-2dx"/>
+                            <constraint firstItem="9mz-PJ-kKH" firstAttribute="leading" secondItem="weA-H2-8VI" secondAttribute="trailing" constant="10" id="jXf-wp-1ql"/>
+                            <constraint firstAttribute="trailing" secondItem="xBk-BT-B41" secondAttribute="trailing" constant="10" id="nM6-OW-Kno"/>
+                            <constraint firstItem="xBk-BT-B41" firstAttribute="bottom" secondItem="dZg-j4-hJ9" secondAttribute="bottom" id="psW-6e-d8n"/>
+                            <constraint firstItem="Wzh-qY-1ab" firstAttribute="top" secondItem="kaR-IV-ldu" secondAttribute="top" id="ruy-eK-xHu"/>
+                            <constraint firstAttribute="bottom" secondItem="q4h-vv-Anm" secondAttribute="bottom" constant="1" id="vxQ-cr-2h0"/>
+                            <constraint firstItem="9mz-PJ-kKH" firstAttribute="top" secondItem="kaR-IV-ldu" secondAttribute="top" id="ztE-ER-LYb"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="ptj-pS-bHS" secondAttribute="trailing" id="Uvh-FQ-YJ0"/>
+                    <constraint firstItem="ptj-pS-bHS" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="ugf-qJ-bbW"/>
+                    <constraint firstAttribute="bottom" secondItem="ptj-pS-bHS" secondAttribute="bottom" constant="-2" id="uhk-3e-fZs"/>
+                    <constraint firstItem="ptj-pS-bHS" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="zHZ-Lc-9af"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <connections>
+                <outlet property="avatorImageView" destination="kaR-IV-ldu" id="abw-yI-hwc"/>
+                <outlet property="commentContentConstraint" destination="beX-8F-Luo" id="Qw1-2f-Aeo"/>
+                <outlet property="commentContentView" destination="q4h-vv-Anm" id="HeN-cv-h9u"/>
+                <outlet property="customBgView" destination="ptj-pS-bHS" id="g6v-bB-Ym0"/>
+                <outlet property="dateIcon" destination="dZg-j4-hJ9" id="Jcs-Jm-c9h"/>
+                <outlet property="dateLabel" destination="xBk-BT-B41" id="F3z-lO-xC9"/>
+                <outlet property="nameLabel" destination="weA-H2-8VI" id="EHd-8J-7E7"/>
+            </connections>
+            <point key="canvasLocation" x="407" y="-52.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="UMComSimpleSDKResources.bundle/images/um_comment_small_nomal" width="75" height="75"/>
+        <image name="UMComSimpleSDKResources.bundle/images/um_more" width="75" height="75"/>
+        <image name="UMComSimpleSDKResources.bundle/images/um_time" width="75" height="75"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>

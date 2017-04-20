@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="Ke_er_pai_dui_xiang_qing_shu_ju">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fji-FZ-j8A">
+                        <rect key="frame" x="8" y="0.0" width="305" height="43"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eH8-71-pPZ">
+                        <rect key="frame" x="18" y="11" width="42" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="42" id="okM-r7-OxF"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NAv-mX-3V8">
+                        <rect key="frame" x="80" y="11" width="92" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hqn-P6-BCx">
+                        <rect key="frame" x="192" y="11" width="110" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="110" id="wox-FW-GVr"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bmt-9l-CZI">
+                        <rect key="frame" x="10" y="42" width="300" height="1"/>
+                        <color key="backgroundColor" red="0.82393830130000001" green="0.82393830130000001" blue="0.82393830130000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="3g5-Yy-3AH"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="Bmt-9l-CZI" secondAttribute="bottom" id="1KE-44-oZp"/>
+                    <constraint firstItem="Bmt-9l-CZI" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.94" id="1lT-gV-EP6"/>
+                    <constraint firstItem="Fji-FZ-j8A" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="7dQ-AQ-nVp"/>
+                    <constraint firstItem="hqn-P6-BCx" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="DLe-ok-jMf"/>
+                    <constraint firstItem="eH8-71-pPZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="18" id="HCk-Fz-3Ka"/>
+                    <constraint firstItem="NAv-mX-3V8" firstAttribute="leading" secondItem="eH8-71-pPZ" secondAttribute="trailing" constant="20" id="HHV-gR-gRE"/>
+                    <constraint firstItem="eH8-71-pPZ" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Pwn-Wx-b7w"/>
+                    <constraint firstItem="Fji-FZ-j8A" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" id="dhW-Bp-CKB"/>
+                    <constraint firstItem="Fji-FZ-j8A" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="eXn-DQ-xPA"/>
+                    <constraint firstItem="Bmt-9l-CZI" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="kaW-WD-e8C"/>
+                    <constraint firstItem="Fji-FZ-j8A" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.95" constant="1" id="omr-Am-kIe"/>
+                    <constraint firstItem="hqn-P6-BCx" firstAttribute="leading" secondItem="NAv-mX-3V8" secondAttribute="trailing" constant="20" id="pbS-r1-9Ct"/>
+                    <constraint firstItem="NAv-mX-3V8" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="wqK-Qy-k7f"/>
+                    <constraint firstAttribute="trailing" secondItem="hqn-P6-BCx" secondAttribute="trailing" constant="18" id="ykn-Wi-rSv"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.94509803920000002" green="0.94509803920000002" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <connections>
+                <outlet property="btn" destination="Fji-FZ-j8A" id="4E4-C9-5GB"/>
+                <outlet property="one" destination="eH8-71-pPZ" id="9uw-j4-vFB"/>
+                <outlet property="three" destination="hqn-P6-BCx" id="xRb-gS-D9c"/>
+                <outlet property="two" destination="NAv-mX-3V8" id="Vc8-Yq-tDs"/>
+            </connections>
+            <point key="canvasLocation" x="412" y="421"/>
+        </tableViewCell>
+    </objects>
+</document>

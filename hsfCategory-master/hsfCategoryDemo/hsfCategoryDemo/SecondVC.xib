@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SecondVC">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SecondVC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SHF-WN-1Fk">
+                    <rect key="frame" x="146.5" y="323" width="81" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sLM-1r-f0y">
+                    <rect key="frame" x="10" y="607" width="355" height="50"/>
+                    <color key="backgroundColor" red="0.25490196079999999" green="0.68235294120000001" blue="0.59607843140000005" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="L3b-ZI-VX3"/>
+                    </constraints>
+                    <state key="normal" title="Push"/>
+                    <connections>
+                        <action selector="pushToThirdVC:" destination="-1" eventType="touchUpInside" id="cf1-4G-1T6"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.34959124409999998" green="0.68948276019999999" blue="0.86430288460000004" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="SHF-WN-1Fk" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="1eF-KD-0vl"/>
+                <constraint firstAttribute="bottom" secondItem="sLM-1r-f0y" secondAttribute="bottom" constant="10" id="ICv-VX-2pL"/>
+                <constraint firstAttribute="trailing" secondItem="sLM-1r-f0y" secondAttribute="trailing" constant="10" id="fBr-Jb-v0J"/>
+                <constraint firstItem="sLM-1r-f0y" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="mtI-gE-CGL"/>
+                <constraint firstItem="SHF-WN-1Fk" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="uar-rh-CgJ"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ScreenShotVC">
+            <connections>
+                <outlet property="imgView" destination="aD4-tI-5nl" id="GH5-Ge-GXY"/>
+                <outlet property="screenshotBtn" destination="L6Y-DB-uBF" id="5uZ-z3-YuC"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pic001" translatesAutoresizingMaskIntoConstraints="NO" id="aD4-tI-5nl">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L6Y-DB-uBF">
+                    <rect key="frame" x="20" y="597" width="335" height="50"/>
+                    <color key="backgroundColor" red="0.25490196079999999" green="0.68235294120000001" blue="0.59607843140000005" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="AXH-sz-8eo"/>
+                    </constraints>
+                    <state key="normal" title="截屏"/>
+                    <connections>
+                        <action selector="screenshotBtnACTION:" destination="-1" eventType="touchUpInside" id="VPS-9M-UdW"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="L6Y-DB-uBF" secondAttribute="trailing" constant="20" id="0YO-qB-746"/>
+                <constraint firstAttribute="trailing" secondItem="aD4-tI-5nl" secondAttribute="trailing" id="1PZ-sj-Weu"/>
+                <constraint firstItem="L6Y-DB-uBF" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="AVd-AC-UhC"/>
+                <constraint firstItem="aD4-tI-5nl" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="KZo-gr-Jbw"/>
+                <constraint firstItem="aD4-tI-5nl" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="dhZ-d5-GyV"/>
+                <constraint firstAttribute="bottom" secondItem="aD4-tI-5nl" secondAttribute="bottom" id="eyb-rI-Oy6"/>
+                <constraint firstAttribute="bottom" secondItem="L6Y-DB-uBF" secondAttribute="bottom" constant="20" id="opa-Ej-dPs"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="pic001" width="533" height="800"/>
+    </resources>
+</document>

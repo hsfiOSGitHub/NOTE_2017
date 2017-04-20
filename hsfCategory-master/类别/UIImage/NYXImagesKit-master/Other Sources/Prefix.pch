@@ -1,0 +1,19 @@
+//
+//  Prefix.pch
+//  NYXImagesKit
+//
+//  Created by Nyx0uf on 5/2/11.
+//  Copyright 2011 Nyx0uf. All rights reserved.
+//  www.cocoaintheshell.com
+//
+
+
+#ifdef __OBJC__
+	#import <UIKit/UIKit.h>
+	#import <Foundation/Foundation.h>
+	#import <QuartzCore/QuartzCore.h>
+#endif
+
+#if !__has_feature(objc_arc)
+	#error This file must be compiled with ARC.
+#endif

@@ -1,0 +1,359 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		311C77671E270EC400AC88CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311C77661E270EC400AC88CB /* AppDelegate.swift */; };
+		311C77691E270EC400AC88CB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311C77681E270EC400AC88CB /* ViewController.swift */; };
+		311C776C1E270EC400AC88CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 311C776A1E270EC400AC88CB /* Main.storyboard */; };
+		311C776E1E270EC400AC88CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 311C776D1E270EC400AC88CB /* Assets.xcassets */; };
+		311C77711E270EC400AC88CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 311C776F1E270EC400AC88CB /* LaunchScreen.storyboard */; };
+		311C77821E270F8900AC88CB /* YSNavigationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311C777F1E270F8900AC88CB /* YSNavigationVC.swift */; };
+		311C77831E270F8900AC88CB /* YSTabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311C77811E270F8900AC88CB /* YSTabBarVC.swift */; };
+		311C77851E270FAF00AC88CB /* YSTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311C77841E270FAF00AC88CB /* YSTabBar.swift */; };
+		311C77891E27190C00AC88CB /* YSHomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311C77881E27190C00AC88CB /* YSHomeVC.swift */; };
+		311C778B1E27191900AC88CB /* YSMessageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311C778A1E27191900AC88CB /* YSMessageVC.swift */; };
+		311C778D1E27192600AC88CB /* YSDiscoverVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311C778C1E27192600AC88CB /* YSDiscoverVC.swift */; };
+		311C778F1E27193200AC88CB /* YSProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311C778E1E27193200AC88CB /* YSProfileVC.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		311C77631E270EC400AC88CB /* YSTabBarOutSide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YSTabBarOutSide.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		311C77661E270EC400AC88CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		311C77681E270EC400AC88CB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		311C776B1E270EC400AC88CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		311C776D1E270EC400AC88CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		311C77701E270EC400AC88CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		311C77721E270EC400AC88CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		311C777F1E270F8900AC88CB /* YSNavigationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSNavigationVC.swift; sourceTree = "<group>"; };
+		311C77811E270F8900AC88CB /* YSTabBarVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSTabBarVC.swift; sourceTree = "<group>"; };
+		311C77841E270FAF00AC88CB /* YSTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSTabBar.swift; sourceTree = "<group>"; };
+		311C77881E27190C00AC88CB /* YSHomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSHomeVC.swift; sourceTree = "<group>"; };
+		311C778A1E27191900AC88CB /* YSMessageVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSMessageVC.swift; sourceTree = "<group>"; };
+		311C778C1E27192600AC88CB /* YSDiscoverVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSDiscoverVC.swift; sourceTree = "<group>"; };
+		311C778E1E27193200AC88CB /* YSProfileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSProfileVC.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		311C77601E270EC400AC88CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		311C775A1E270EC400AC88CB = {
+			isa = PBXGroup;
+			children = (
+				311C77651E270EC400AC88CB /* YSTabBarOutSide */,
+				311C77641E270EC400AC88CB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		311C77641E270EC400AC88CB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				311C77631E270EC400AC88CB /* YSTabBarOutSide.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		311C77651E270EC400AC88CB /* YSTabBarOutSide */ = {
+			isa = PBXGroup;
+			children = (
+				311C777E1E270F8900AC88CB /* YSTabBarOutSide */,
+				311C77661E270EC400AC88CB /* AppDelegate.swift */,
+				311C77681E270EC400AC88CB /* ViewController.swift */,
+				311C776A1E270EC400AC88CB /* Main.storyboard */,
+				311C776D1E270EC400AC88CB /* Assets.xcassets */,
+				311C776F1E270EC400AC88CB /* LaunchScreen.storyboard */,
+				311C77721E270EC400AC88CB /* Info.plist */,
+			);
+			path = YSTabBarOutSide;
+			sourceTree = "<group>";
+		};
+		311C777E1E270F8900AC88CB /* YSTabBarOutSide */ = {
+			isa = PBXGroup;
+			children = (
+				311C77871E2718FC00AC88CB /* TabBarItemVCs */,
+				311C777F1E270F8900AC88CB /* YSNavigationVC.swift */,
+				311C77811E270F8900AC88CB /* YSTabBarVC.swift */,
+				311C77801E270F8900AC88CB /* YSTabBar */,
+			);
+			path = YSTabBarOutSide;
+			sourceTree = "<group>";
+		};
+		311C77801E270F8900AC88CB /* YSTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				311C77841E270FAF00AC88CB /* YSTabBar.swift */,
+			);
+			path = YSTabBar;
+			sourceTree = "<group>";
+		};
+		311C77871E2718FC00AC88CB /* TabBarItemVCs */ = {
+			isa = PBXGroup;
+			children = (
+				311C77881E27190C00AC88CB /* YSHomeVC.swift */,
+				311C778A1E27191900AC88CB /* YSMessageVC.swift */,
+				311C778C1E27192600AC88CB /* YSDiscoverVC.swift */,
+				311C778E1E27193200AC88CB /* YSProfileVC.swift */,
+			);
+			path = TabBarItemVCs;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		311C77621E270EC400AC88CB /* YSTabBarOutSide */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 311C77751E270EC400AC88CB /* Build configuration list for PBXNativeTarget "YSTabBarOutSide" */;
+			buildPhases = (
+				311C775F1E270EC400AC88CB /* Sources */,
+				311C77601E270EC400AC88CB /* Frameworks */,
+				311C77611E270EC400AC88CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YSTabBarOutSide;
+			productName = YSTabBarOutSide;
+			productReference = 311C77631E270EC400AC88CB /* YSTabBarOutSide.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		311C775B1E270EC400AC88CB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = ys;
+				TargetAttributes = {
+					311C77621E270EC400AC88CB = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = VCPZ2HFR86;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 311C775E1E270EC400AC88CB /* Build configuration list for PBXProject "YSTabBarOutSide" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 311C775A1E270EC400AC88CB;
+			productRefGroup = 311C77641E270EC400AC88CB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				311C77621E270EC400AC88CB /* YSTabBarOutSide */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		311C77611E270EC400AC88CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				311C77711E270EC400AC88CB /* LaunchScreen.storyboard in Resources */,
+				311C776E1E270EC400AC88CB /* Assets.xcassets in Resources */,
+				311C776C1E270EC400AC88CB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		311C775F1E270EC400AC88CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				311C778F1E27193200AC88CB /* YSProfileVC.swift in Sources */,
+				311C77831E270F8900AC88CB /* YSTabBarVC.swift in Sources */,
+				311C778D1E27192600AC88CB /* YSDiscoverVC.swift in Sources */,
+				311C77851E270FAF00AC88CB /* YSTabBar.swift in Sources */,
+				311C778B1E27191900AC88CB /* YSMessageVC.swift in Sources */,
+				311C77691E270EC400AC88CB /* ViewController.swift in Sources */,
+				311C77671E270EC400AC88CB /* AppDelegate.swift in Sources */,
+				311C77821E270F8900AC88CB /* YSNavigationVC.swift in Sources */,
+				311C77891E27190C00AC88CB /* YSHomeVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		311C776A1E270EC400AC88CB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				311C776B1E270EC400AC88CB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		311C776F1E270EC400AC88CB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				311C77701E270EC400AC88CB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		311C77731E270EC400AC88CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		311C77741E270EC400AC88CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		311C77761E270EC400AC88CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = VCPZ2HFR86;
+				INFOPLIST_FILE = YSTabBarOutSide/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.ysiOS.YSTabBarOutSide;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		311C77771E270EC400AC88CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = VCPZ2HFR86;
+				INFOPLIST_FILE = YSTabBarOutSide/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.ysiOS.YSTabBarOutSide;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		311C775E1E270EC400AC88CB /* Build configuration list for PBXProject "YSTabBarOutSide" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				311C77731E270EC400AC88CB /* Debug */,
+				311C77741E270EC400AC88CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		311C77751E270EC400AC88CB /* Build configuration list for PBXNativeTarget "YSTabBarOutSide" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				311C77761E270EC400AC88CB /* Debug */,
+				311C77771E270EC400AC88CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 311C775B1E270EC400AC88CB /* Project object */;
+}

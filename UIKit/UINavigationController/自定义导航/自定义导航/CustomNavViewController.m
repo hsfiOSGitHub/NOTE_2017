@@ -47,7 +47,6 @@
 
 
 #pragma mark - 实现代理方法
-
 - (void)navigationController:(UINavigationController *)navigationController didShowViewController:(UIViewController *)viewController animated:(BOOL)animated
 {
     NSLog(@"代理方法的实现");

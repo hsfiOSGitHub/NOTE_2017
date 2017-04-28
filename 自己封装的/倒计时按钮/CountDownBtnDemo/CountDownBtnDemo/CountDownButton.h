@@ -39,6 +39,6 @@
 -(void)setUp;
 
 //销毁计时器
--(void)dealloc;
+-(void)deallocTimer;
 
 @end

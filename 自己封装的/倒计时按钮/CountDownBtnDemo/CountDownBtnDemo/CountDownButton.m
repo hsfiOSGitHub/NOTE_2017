@@ -162,7 +162,7 @@ static const NSInteger DefaultCount = 60;
     }
 }
 //销毁计时器
--(void)dealloc{
+-(void)deallocTimer{
     if (_timer) {
         [_timer invalidate];
         _timer = nil;

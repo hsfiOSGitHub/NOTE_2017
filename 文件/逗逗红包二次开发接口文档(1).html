@@ -1,0 +1,53 @@
+<!DOCTYPE html><html><head><title>逗逗红包二次开发接口文档</title><meta charset='utf-8'><link href='https://dn-maxiang.qbox.me/res-min/themes/marxico.css' rel='stylesheet'><style>
+.note-content  {font-family: 'Helvetica Neue', Arial, 'Hiragino Sans GB', STHeiti, 'Microsoft YaHei', 'WenQuanYi Micro Hei', SimSun, Song, sans-serif;}
+
+</style></head><body><div id='preview-contents' class='note-content'>
+                        
+                    
+
+
+
+<h1 id="逗逗红包二次开发接口文档">逗逗红包二次开发接口文档</h1>
+
+<p>[toc] <br>
+         接口域名 <a href="http://redbag2.jzbwlkj.com/index.php?s=/" target="_blank">http://redbag2.jzbwlkj.com/index.php?s=/</a></p>
+
+
+
+<h4 id="1注册接口添加推荐码">1.注册接口添加推荐码</h4>
+
+<pre class="prettyprint hljs-dark"><code class="hljs awk"> url  user<span class="hljs-regexp">/api/</span>regist<br> 添加参数<br> rec_code  推荐码<br></code></pre>
+
+
+
+<h4 id="2-签到">2. 签到</h4>
+
+<pre class="prettyprint hljs-dark"><code class="hljs xquery">url user/api/sign<br>参数  uid  用户id<br>返回<br>签到成功<br>{<span class="hljs-string">"data"</span>:{<span class="hljs-string">"sign"</span>:<span class="hljs-number">1</span>},<span class="hljs-string">"state"</span>:{<span class="hljs-string">"code"</span>:<span class="hljs-number">0</span>,<span class="hljs-string">"msg"</span>:<span class="hljs-string">"\u5df2\u7b7e\u5230"</span>,<span class="hljs-string">"debugMsg"</span>:<span class="hljs-string">""</span>,<span class="hljs-string">"url"</span>:<span class="hljs-string">"User\/Api\/sign"</span>}}<br>已签到<br>{<span class="hljs-string">"data"</span>:{<span class="hljs-string">"sign"</span>:<span class="hljs-number">2</span>},<span class="hljs-string">"state"</span>:{<span class="hljs-string">"code"</span>:<span class="hljs-number">0</span>,<span class="hljs-string">"msg"</span>:<span class="hljs-string">"\u5df2\u7b7e\u5230"</span>,<span class="hljs-string">"debugMsg"</span>:<span class="hljs-string">""</span>,<span class="hljs-string">"url"</span>:<span class="hljs-string">"User\/Api\/sign"</span>}}<br></code></pre>
+
+
+
+<h5 id="3抽奖机会">3.抽奖机会</h5>
+
+<pre class="prettyprint hljs-dark"><code class="hljs xquery">url  /User/api/chance<br>参数  uid  用户id<br>返回<br>{<br><span class="hljs-string">"data"</span>:{<br>    <span class="hljs-string">"chance"</span>:<span class="hljs-string">"2"</span><br>},<br><span class="hljs-string">"state"</span>:{<br>    <span class="hljs-string">"code"</span>:<span class="hljs-number">1</span>,<br>    <span class="hljs-string">"msg"</span>:<span class="hljs-string">"操作成功"</span>,<br>    <span class="hljs-string">"debugMsg"</span>:<span class="hljs-string">""</span>,<br>    <span class="hljs-string">"url"</span>:<span class="hljs-string">"User/Api/chance"</span><br>}<br>    }<br></code></pre>
+
+
+
+<h4 id="4抽奖">4.抽奖</h4>
+
+<pre class="prettyprint hljs-dark"><code class="hljs xquery">  url  /Luckdraw/api/jackpot<br>  参数  uid  用户id<br>  返回<br>  {<span class="hljs-string">"data"</span>:{<span class="hljs-string">"money"</span>:<span class="hljs-number">15</span>},<span class="hljs-string">"state"</span>:{<span class="hljs-string">"code"</span>:<span class="hljs-number">1</span>,<span class="hljs-string">"msg"</span>:<span class="hljs-string">"\u64cd\u4f5c\u6210\u529f"</span>,<span class="hljs-string">"debugMsg"</span>:<span class="hljs-string">""</span>,<span class="hljs-string">"url"</span>:<span class="hljs-string">"Luckdraw\/Api\/jackpot"</span>}}<br><br>  {<span class="hljs-string">"data"</span>:{<span class="hljs-string">"money"</span>:<span class="hljs-number">0</span>},<span class="hljs-string">"state"</span>:{<span class="hljs-string">"code"</span>:<span class="hljs-number">2</span>,<span class="hljs-string">"msg"</span>:<span class="hljs-string">"\u5956\u6c60\u5df2\u7a7a"</span>,<span class="hljs-string">"debugMsg"</span>:<span class="hljs-string">""</span>,<span class="hljs-string">"url"</span>:<span class="hljs-string">"Luckdraw\/Api\/jackpot"</span>}}<br></code></pre>
+
+
+
+<h4 id="5显示抽奖明细暂时不用">5.显示抽奖明细(暂时不用)</h4>
+
+<pre class="prettyprint hljs-dark"><code class="hljs xquery"> url   /Luckdraw/api/drawrRecord<br> 参数  uid  用户id<br> 返回<br> {<span class="hljs-string">"data"</span>:[{<span class="hljs-string">"id"</span>:<span class="hljs-string">"234"</span>,<span class="hljs-string">"draw_id"</span>:<span class="hljs-string">"18"</span>,<span class="hljs-string">"money"</span>:<span class="hljs-string">"30"</span>,<span class="hljs-string">"uid"</span>:<span class="hljs-string">"10000"</span>,<span class="hljs-string">"createtime"</span>:<span class="hljs-string">"2017-04-25"</span>,<span class="hljs-string">"nickname"</span>:<span class="hljs-string">"\u5ba2\u670d"</span>,<span class="hljs-string">"headsmall"</span>:<span class="hljs-string">"http:\/\/redbag.jzbwlkj.com\/Uploads\/Picture\/avatar\/10015\/s_3d31fb74123ecf977c34512fd32a6774.jpg"</span>},{<span class="hljs-string">"id"</span>:<span class="hljs-string">"233"</span>,<span class="hljs-string">"draw_id"</span>:<span class="hljs-string">"18"</span>,<span class="hljs-string">"money"</span>:<span class="hljs-string">"20"</span>,<span class="hljs-string">"uid"</span>:<span class="hljs-string">"10000"</span>,<span class="hljs-string">"createtime"</span>:<span class="hljs-string">"2017-04-25"</span>,<span class="hljs-string">"nickname"</span>:<span class="hljs-string">"\u5ba2\u670d"</span>,<span class="hljs-string">"headsmall"</span>:<span class="hljs-string">"http:\/\/redbag.jzbwlkj.com\/Uploads\/Picture\/avatar\/10015\/s_3d31fb74123ecf977c34512fd32a6774.jpg"</span>}],<span class="hljs-string">"state"</span>:{<span class="hljs-string">"code"</span>:<span class="hljs-number">1</span>,<span class="hljs-string">"msg"</span>:<span class="hljs-string">"\u64cd\u4f5c\u6210\u529f"</span>,<span class="hljs-string">"debugMsg"</span>:<span class="hljs-string">""</span>,<span class="hljs-string">"url"</span>:<span class="hljs-string">"Luckdraw\/Api\/drawrRecord"</span>}}<br></code></pre>
+
+
+
+<h4 id="6群聊天显示抽奖公告">6.群聊天显示抽奖公告</h4>
+
+<pre class="prettyprint hljs-dark"><code class="hljs taggerscript"> url /Luckdraw/api/drawNotice<br> 参数  uid<br> 返回<br> {"data":[{"message":"<span class="hljs-symbol">\u</span>5ba2<span class="hljs-symbol">\u</span>670d<span class="hljs-symbol">\u</span>5728<span class="hljs-symbol">\u</span>62bd<span class="hljs-symbol">\u</span>5956<span class="hljs-symbol">\u</span>6d3b<span class="hljs-symbol">\u</span>52a8<span class="hljs-symbol">\u</span>4e2d<span class="hljs-symbol">\u</span>83b7<span class="hljs-symbol">\u</span>5f9730<span class="hljs-symbol">\u</span>5143<span class="hljs-symbol">\u</span>73b0<span class="hljs-symbol">\u</span>91d1"},{"message":"<span class="hljs-symbol">\u</span>5ba2<span class="hljs-symbol">\u</span>670d<span class="hljs-symbol">\u</span>5728<span class="hljs-symbol">\u</span>62bd<span class="hljs-symbol">\u</span>5956<span class="hljs-symbol">\u</span>6d3b<span class="hljs-symbol">\u</span>52a8<span class="hljs-symbol">\u</span>4e2d<span class="hljs-symbol">\u</span>83b7<span class="hljs-symbol">\u</span>5f9720<span class="hljs-symbol">\u</span>5143<span class="hljs-symbol">\u</span>73b0<span class="hljs-symbol">\u</span>91d1"}],"state":{"code":0,"msg":"<span class="hljs-symbol">\u</span>64cd<span class="hljs-symbol">\u</span>4f5c<span class="hljs-symbol">\u</span>6210<span class="hljs-symbol">\u</span>529f","debugMsg":"","url":"Luckdraw<span class="hljs-symbol">\/</span>Api<span class="hljs-symbol">\/</span>drawNotice"}}<br></code></pre>
+
+
+
+<h4 id="7">7.</h4></div></body></html>

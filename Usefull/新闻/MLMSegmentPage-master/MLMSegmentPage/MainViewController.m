@@ -66,9 +66,7 @@
 - (void)segmentStyle1 {
     list = @[@"推荐",
              @"视频",
-             @"科技",
-             @"美容瘦身",
-             @"互联网"
+             @"科技"
              ];
     _segHead = [[MLMSegmentHead alloc] initWithFrame:CGRectMake(0, 64, SCREEN_WIDTH, 40) titles:list headStyle:_style layoutStyle:_layout];
     _segHead.fontScale = .85;

@@ -112,6 +112,91 @@ static char base64EncodingTable[64] = {
     
     return res;
 }
+- (BOOL) isOnlyMoneyNumber
+{
+    BOOL res = YES;
+    NSCharacterSet* tmpSet = [NSCharacterSet characterSetWithCharactersInString:@".0123456789"];
+    int i = 0;
+    while (i < self.length) {
+        NSString * string = [self substringWithRange:NSMakeRange(i, 1)];
+        NSRange range = [string rangeOfCharacterFromSet:tmpSet];
+        if (range.length == 0) {
+            res = NO;
+            break;
+        }
+        i++;
+    }
+    if ([self hasSuffix:@"."]) {
+        res = NO;
+    }
+    if ([self hasPrefix:@"0"]) {
+        if ([self containsString:@"."]) {
+            res = YES;
+        }else{
+            res = NO;
+        }
+    }
+    //只保留两位小数
+    
+    return res;
+}
+//身份证号
++ (BOOL) IsIdentityCard:(NSString *)IDCardNumber
+{
+    if (IDCardNumber.length <= 0) {
+        return NO;
+    }
+    NSString *regex2 = @"^(\\d{14}|\\d{17})(\\d|[xX])$";
+    NSPredicate *identityCardPredicate = [NSPredicate predicateWithFormat:@"SELF MATCHES %@",regex2];
+    return [identityCardPredicate evaluateWithObject:IDCardNumber];
+}
+//手机号
++ (BOOL) IsPhoneNumber:(NSString *)number
+{
+    NSString *phoneRegex1=@"1[34578]([0-9]){9}";
+    NSPredicate *phoneTest1 = [NSPredicate predicateWithFormat:@"SELF MATCHES %@",phoneRegex1];
+    return  [phoneTest1 evaluateWithObject:number];
+}
+//银行卡号
++ (BOOL) IsBankCard:(NSString *)cardNumber
+{
+    if(cardNumber.length==0)
+    {
+        return NO;
+    }
+    NSString *digitsOnly = @"";
+    char c;
+    for (int i = 0; i < cardNumber.length; i++)
+    {
+        c = [cardNumber characterAtIndex:i];
+        if (isdigit(c))
+        {
+            digitsOnly =[digitsOnly stringByAppendingFormat:@"%c",c];
+        }
+    }
+    int sum = 0;
+    int digit = 0;
+    int addend = 0;
+    BOOL timesTwo = false;
+    for (NSInteger i = digitsOnly.length - 1; i >= 0; i--)
+    {
+        digit = [digitsOnly characterAtIndex:i] - '0';
+        if (timesTwo)
+        {
+            addend = digit * 2;
+            if (addend > 9) {
+                addend -= 9;
+            }
+        }
+        else {
+            addend = digit;
+        }
+        sum += addend;
+        timesTwo = !timesTwo;
+    }
+    int modulus = sum % 10;
+    return modulus == 0;
+}
 
 + (NSString*) getSecrectStringWithPhoneNumber:(NSString*)phoneNum
 {

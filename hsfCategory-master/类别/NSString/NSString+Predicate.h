@@ -41,6 +41,18 @@
 //限制只能输入数字
 - (BOOL) isOnlyNumber;
 
+//只能输入数字和小数点
+- (BOOL) isOnlyMoneyNumber;
+
+//身份证号
++ (BOOL) IsIdentityCard:(NSString *)IDCardNumber;
+
+//银行卡号
++ (BOOL) IsBankCard:(NSString *)cardNumber;
+
+//手机号
++ (BOOL) IsPhoneNumber:(NSString *)number;
+
 //电话号码中间4位****显示
 + (NSString*) getSecrectStringWithPhoneNumber:(NSString*)phoneNum;
 

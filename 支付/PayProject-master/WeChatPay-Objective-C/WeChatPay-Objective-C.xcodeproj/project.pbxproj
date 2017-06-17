@@ -271,6 +271,7 @@
 				TargetAttributes = {
 					A4B4A28C1D85591300B97529 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 2K2XTQPEQM;
 					};
 					A4B4A2A51D85591300B97529 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -481,7 +482,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2K2XTQPEQM;
 				INFOPLIST_FILE = "WeChatPay-Objective-C/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -496,7 +499,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2K2XTQPEQM;
 				INFOPLIST_FILE = "WeChatPay-Objective-C/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -572,6 +577,7 @@
 				A4B4A2BC1D85591300B97529 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A4B4A2BD1D85591300B97529 /* Build configuration list for PBXNativeTarget "WeChatPay-Objective-CTests" */ = {
 			isa = XCConfigurationList;
@@ -580,6 +586,7 @@
 				A4B4A2BF1D85591300B97529 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A4B4A2C01D85591300B97529 /* Build configuration list for PBXNativeTarget "WeChatPay-Objective-CUITests" */ = {
 			isa = XCConfigurationList;
@@ -588,6 +595,7 @@
 				A4B4A2C21D85591300B97529 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

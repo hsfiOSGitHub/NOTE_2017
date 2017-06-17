@@ -52,8 +52,8 @@
     [self.view addSubview:_swipeTableView];
     
     // nav bar
-    UIBarButtonItem * rightBarItem = [[UIBarButtonItem alloc]initWithTitle:@"- Header" style:UIBarButtonItemStylePlain target:self action:@selector(setSwipeTableHeader:)];
-    UIBarButtonItem * leftBarItem = [[UIBarButtonItem alloc]initWithTitle:@"- Bar" style:UIBarButtonItemStylePlain target:self action:@selector(setSwipeTableBar:)];
+    UIBarButtonItem *rightBarItem = [[UIBarButtonItem alloc]initWithTitle:@"- Header" style:UIBarButtonItemStylePlain target:self action:@selector(setSwipeTableHeader:)];
+    UIBarButtonItem *leftBarItem = [[UIBarButtonItem alloc]initWithTitle:@"- Bar" style:UIBarButtonItemStylePlain target:self action:@selector(setSwipeTableBar:)];
     self.navigationItem.leftBarButtonItem = disableBarScroll?nil:leftBarItem;
     self.navigationItem.rightBarButtonItem = disableBarScroll?nil:rightBarItem;
     

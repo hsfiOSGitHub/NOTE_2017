@@ -1,0 +1,545 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		68697FFC1EE9165800A9A915 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 68697FFB1EE9165800A9A915 /* main.m */; };
+		68697FFF1EE9165800A9A915 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 68697FFE1EE9165800A9A915 /* AppDelegate.m */; };
+		686980021EE9165800A9A915 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 686980011EE9165800A9A915 /* ViewController.m */; };
+		686980051EE9165800A9A915 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 686980031EE9165800A9A915 /* Main.storyboard */; };
+		686980071EE9165800A9A915 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 686980061EE9165800A9A915 /* Assets.xcassets */; };
+		6869800A1EE9165800A9A915 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 686980081EE9165800A9A915 /* LaunchScreen.storyboard */; };
+		686980151EE9165800A9A915 /* ZQAnimationTabBarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 686980141EE9165800A9A915 /* ZQAnimationTabBarTests.m */; };
+		686980201EE9165900A9A915 /* ZQAnimationTabBarUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6869801F1EE9165900A9A915 /* ZQAnimationTabBarUITests.m */; };
+		6869802F1EE916B800A9A915 /* ZQCustomTabBarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6869802E1EE916B800A9A915 /* ZQCustomTabBarVC.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		686980111EE9165800A9A915 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 68697FEF1EE9165800A9A915 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 68697FF61EE9165800A9A915;
+			remoteInfo = ZQAnimationTabBar;
+		};
+		6869801C1EE9165900A9A915 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 68697FEF1EE9165800A9A915 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 68697FF61EE9165800A9A915;
+			remoteInfo = ZQAnimationTabBar;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		68697FF71EE9165800A9A915 /* ZQAnimationTabBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZQAnimationTabBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		68697FFB1EE9165800A9A915 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		68697FFD1EE9165800A9A915 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		68697FFE1EE9165800A9A915 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		686980001EE9165800A9A915 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		686980011EE9165800A9A915 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		686980041EE9165800A9A915 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		686980061EE9165800A9A915 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		686980091EE9165800A9A915 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6869800B1EE9165800A9A915 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		686980101EE9165800A9A915 /* ZQAnimationTabBarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZQAnimationTabBarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		686980141EE9165800A9A915 /* ZQAnimationTabBarTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZQAnimationTabBarTests.m; sourceTree = "<group>"; };
+		686980161EE9165900A9A915 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6869801B1EE9165900A9A915 /* ZQAnimationTabBarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZQAnimationTabBarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6869801F1EE9165900A9A915 /* ZQAnimationTabBarUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZQAnimationTabBarUITests.m; sourceTree = "<group>"; };
+		686980211EE9165900A9A915 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6869802D1EE916B800A9A915 /* ZQCustomTabBarVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZQCustomTabBarVC.h; sourceTree = "<group>"; };
+		6869802E1EE916B800A9A915 /* ZQCustomTabBarVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZQCustomTabBarVC.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		68697FF41EE9165800A9A915 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6869800D1EE9165800A9A915 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		686980181EE9165900A9A915 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		68697FEE1EE9165800A9A915 = {
+			isa = PBXGroup;
+			children = (
+				68697FF91EE9165800A9A915 /* ZQAnimationTabBar */,
+				686980131EE9165800A9A915 /* ZQAnimationTabBarTests */,
+				6869801E1EE9165900A9A915 /* ZQAnimationTabBarUITests */,
+				68697FF81EE9165800A9A915 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		68697FF81EE9165800A9A915 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				68697FF71EE9165800A9A915 /* ZQAnimationTabBar.app */,
+				686980101EE9165800A9A915 /* ZQAnimationTabBarTests.xctest */,
+				6869801B1EE9165900A9A915 /* ZQAnimationTabBarUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		68697FF91EE9165800A9A915 /* ZQAnimationTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				68697FFD1EE9165800A9A915 /* AppDelegate.h */,
+				68697FFE1EE9165800A9A915 /* AppDelegate.m */,
+				686980001EE9165800A9A915 /* ViewController.h */,
+				686980011EE9165800A9A915 /* ViewController.m */,
+				6869802D1EE916B800A9A915 /* ZQCustomTabBarVC.h */,
+				6869802E1EE916B800A9A915 /* ZQCustomTabBarVC.m */,
+				686980031EE9165800A9A915 /* Main.storyboard */,
+				686980061EE9165800A9A915 /* Assets.xcassets */,
+				686980081EE9165800A9A915 /* LaunchScreen.storyboard */,
+				6869800B1EE9165800A9A915 /* Info.plist */,
+				68697FFA1EE9165800A9A915 /* Supporting Files */,
+			);
+			path = ZQAnimationTabBar;
+			sourceTree = "<group>";
+		};
+		68697FFA1EE9165800A9A915 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				68697FFB1EE9165800A9A915 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		686980131EE9165800A9A915 /* ZQAnimationTabBarTests */ = {
+			isa = PBXGroup;
+			children = (
+				686980141EE9165800A9A915 /* ZQAnimationTabBarTests.m */,
+				686980161EE9165900A9A915 /* Info.plist */,
+			);
+			path = ZQAnimationTabBarTests;
+			sourceTree = "<group>";
+		};
+		6869801E1EE9165900A9A915 /* ZQAnimationTabBarUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6869801F1EE9165900A9A915 /* ZQAnimationTabBarUITests.m */,
+				686980211EE9165900A9A915 /* Info.plist */,
+			);
+			path = ZQAnimationTabBarUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		68697FF61EE9165800A9A915 /* ZQAnimationTabBar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 686980241EE9165900A9A915 /* Build configuration list for PBXNativeTarget "ZQAnimationTabBar" */;
+			buildPhases = (
+				68697FF31EE9165800A9A915 /* Sources */,
+				68697FF41EE9165800A9A915 /* Frameworks */,
+				68697FF51EE9165800A9A915 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZQAnimationTabBar;
+			productName = ZQAnimationTabBar;
+			productReference = 68697FF71EE9165800A9A915 /* ZQAnimationTabBar.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6869800F1EE9165800A9A915 /* ZQAnimationTabBarTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 686980271EE9165900A9A915 /* Build configuration list for PBXNativeTarget "ZQAnimationTabBarTests" */;
+			buildPhases = (
+				6869800C1EE9165800A9A915 /* Sources */,
+				6869800D1EE9165800A9A915 /* Frameworks */,
+				6869800E1EE9165800A9A915 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				686980121EE9165800A9A915 /* PBXTargetDependency */,
+			);
+			name = ZQAnimationTabBarTests;
+			productName = ZQAnimationTabBarTests;
+			productReference = 686980101EE9165800A9A915 /* ZQAnimationTabBarTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6869801A1EE9165900A9A915 /* ZQAnimationTabBarUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6869802A1EE9165900A9A915 /* Build configuration list for PBXNativeTarget "ZQAnimationTabBarUITests" */;
+			buildPhases = (
+				686980171EE9165900A9A915 /* Sources */,
+				686980181EE9165900A9A915 /* Frameworks */,
+				686980191EE9165900A9A915 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6869801D1EE9165900A9A915 /* PBXTargetDependency */,
+			);
+			name = ZQAnimationTabBarUITests;
+			productName = ZQAnimationTabBarUITests;
+			productReference = 6869801B1EE9165900A9A915 /* ZQAnimationTabBarUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		68697FEF1EE9165800A9A915 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = lzq;
+				TargetAttributes = {
+					68697FF61EE9165800A9A915 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = ACXM2NN8VA;
+						ProvisioningStyle = Automatic;
+					};
+					6869800F1EE9165800A9A915 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = ACXM2NN8VA;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 68697FF61EE9165800A9A915;
+					};
+					6869801A1EE9165900A9A915 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = ACXM2NN8VA;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 68697FF61EE9165800A9A915;
+					};
+				};
+			};
+			buildConfigurationList = 68697FF21EE9165800A9A915 /* Build configuration list for PBXProject "ZQAnimationTabBar" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 68697FEE1EE9165800A9A915;
+			productRefGroup = 68697FF81EE9165800A9A915 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				68697FF61EE9165800A9A915 /* ZQAnimationTabBar */,
+				6869800F1EE9165800A9A915 /* ZQAnimationTabBarTests */,
+				6869801A1EE9165900A9A915 /* ZQAnimationTabBarUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		68697FF51EE9165800A9A915 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6869800A1EE9165800A9A915 /* LaunchScreen.storyboard in Resources */,
+				686980071EE9165800A9A915 /* Assets.xcassets in Resources */,
+				686980051EE9165800A9A915 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6869800E1EE9165800A9A915 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		686980191EE9165900A9A915 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		68697FF31EE9165800A9A915 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6869802F1EE916B800A9A915 /* ZQCustomTabBarVC.m in Sources */,
+				686980021EE9165800A9A915 /* ViewController.m in Sources */,
+				68697FFF1EE9165800A9A915 /* AppDelegate.m in Sources */,
+				68697FFC1EE9165800A9A915 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6869800C1EE9165800A9A915 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				686980151EE9165800A9A915 /* ZQAnimationTabBarTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		686980171EE9165900A9A915 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				686980201EE9165900A9A915 /* ZQAnimationTabBarUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		686980121EE9165800A9A915 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 68697FF61EE9165800A9A915 /* ZQAnimationTabBar */;
+			targetProxy = 686980111EE9165800A9A915 /* PBXContainerItemProxy */;
+		};
+		6869801D1EE9165900A9A915 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 68697FF61EE9165800A9A915 /* ZQAnimationTabBar */;
+			targetProxy = 6869801C1EE9165900A9A915 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		686980031EE9165800A9A915 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				686980041EE9165800A9A915 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		686980081EE9165800A9A915 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				686980091EE9165800A9A915 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		686980221EE9165900A9A915 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		686980231EE9165900A9A915 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		686980251EE9165900A9A915 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ACXM2NN8VA;
+				INFOPLIST_FILE = ZQAnimationTabBar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = lzq.ZQAnimationTabBar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		686980261EE9165900A9A915 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ACXM2NN8VA;
+				INFOPLIST_FILE = ZQAnimationTabBar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = lzq.ZQAnimationTabBar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		686980281EE9165900A9A915 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = ACXM2NN8VA;
+				INFOPLIST_FILE = ZQAnimationTabBarTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = lzq.ZQAnimationTabBarTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZQAnimationTabBar.app/ZQAnimationTabBar";
+			};
+			name = Debug;
+		};
+		686980291EE9165900A9A915 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = ACXM2NN8VA;
+				INFOPLIST_FILE = ZQAnimationTabBarTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = lzq.ZQAnimationTabBarTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZQAnimationTabBar.app/ZQAnimationTabBar";
+			};
+			name = Release;
+		};
+		6869802B1EE9165900A9A915 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = ACXM2NN8VA;
+				INFOPLIST_FILE = ZQAnimationTabBarUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = lzq.ZQAnimationTabBarUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ZQAnimationTabBar;
+			};
+			name = Debug;
+		};
+		6869802C1EE9165900A9A915 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = ACXM2NN8VA;
+				INFOPLIST_FILE = ZQAnimationTabBarUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = lzq.ZQAnimationTabBarUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ZQAnimationTabBar;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		68697FF21EE9165800A9A915 /* Build configuration list for PBXProject "ZQAnimationTabBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				686980221EE9165900A9A915 /* Debug */,
+				686980231EE9165900A9A915 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		686980241EE9165900A9A915 /* Build configuration list for PBXNativeTarget "ZQAnimationTabBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				686980251EE9165900A9A915 /* Debug */,
+				686980261EE9165900A9A915 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		686980271EE9165900A9A915 /* Build configuration list for PBXNativeTarget "ZQAnimationTabBarTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				686980281EE9165900A9A915 /* Debug */,
+				686980291EE9165900A9A915 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		6869802A1EE9165900A9A915 /* Build configuration list for PBXNativeTarget "ZQAnimationTabBarUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6869802B1EE9165900A9A915 /* Debug */,
+				6869802C1EE9165900A9A915 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 68697FEF1EE9165800A9A915 /* Project object */;
+}

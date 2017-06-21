@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gft-H2-5oV">
+                                <rect key="frame" x="100" y="30" width="175" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="qXa-HY-aa1"/>
+                                </constraints>
+                                <state key="normal" title="show">
+                                    <color key="titleColor" red="0.98407756979695427" green="0.51120361061908026" blue="0.23349586324546512" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="show:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5cO-3R-5Tr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E94-Ps-9Vo">
+                                <rect key="frame" x="100" y="100" width="175" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="j85-d9-wwH"/>
+                                </constraints>
+                                <state key="normal" title="dismiss">
+                                    <color key="titleColor" red="0.98407756980000005" green="0.51120361059999997" blue="0.23349586319999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="dismiss:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cxi-fb-05I"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D5R-Yj-Sfk">
+                                <rect key="frame" x="100" y="170" width="175" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="45Y-VT-HDX"/>
+                                </constraints>
+                                <state key="normal" title="showPwd">
+                                    <color key="titleColor" red="0.2947062363364007" green="0.79321140050000005" blue="0.1762666068534938" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="showPwd:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5UU-Jy-Xhn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EmQ-uv-SMx">
+                                <rect key="frame" x="100" y="240" width="175" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="GBt-sj-bg7"/>
+                                </constraints>
+                                <state key="normal" title="hidePwd">
+                                    <color key="titleColor" red="0.2947062363364007" green="0.79321140050000005" blue="0.1762666068534938" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="hidePwd:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NCk-IB-ryi"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.66408715442989164" green="0.96772694443955998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="EmQ-uv-SMx" firstAttribute="top" secondItem="D5R-Yj-Sfk" secondAttribute="bottom" constant="20" id="10e-vI-xEV"/>
+                            <constraint firstItem="Gft-H2-5oV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="100" id="1Me-oZ-oIZ"/>
+                            <constraint firstItem="E94-Ps-9Vo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="100" id="2aG-hd-dzq"/>
+                            <constraint firstItem="D5R-Yj-Sfk" firstAttribute="top" secondItem="E94-Ps-9Vo" secondAttribute="bottom" constant="20" id="3fE-Rv-heY"/>
+                            <constraint firstAttribute="trailing" secondItem="EmQ-uv-SMx" secondAttribute="trailing" constant="100" id="4hs-1m-PNJ"/>
+                            <constraint firstItem="Gft-H2-5oV" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="5Ah-gz-Y7l"/>
+                            <constraint firstItem="E94-Ps-9Vo" firstAttribute="top" secondItem="Gft-H2-5oV" secondAttribute="bottom" constant="20" id="IKy-CO-Qd7"/>
+                            <constraint firstItem="D5R-Yj-Sfk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="100" id="Ur3-tQ-RTv"/>
+                            <constraint firstAttribute="trailing" secondItem="D5R-Yj-Sfk" secondAttribute="trailing" constant="100" id="Vfi-1W-oHW"/>
+                            <constraint firstAttribute="trailing" secondItem="E94-Ps-9Vo" secondAttribute="trailing" constant="100" id="Wtd-gj-vXc"/>
+                            <constraint firstItem="EmQ-uv-SMx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="100" id="aqA-5a-QFX"/>
+                            <constraint firstAttribute="trailing" secondItem="Gft-H2-5oV" secondAttribute="trailing" constant="100" id="bHO-ab-vmv"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

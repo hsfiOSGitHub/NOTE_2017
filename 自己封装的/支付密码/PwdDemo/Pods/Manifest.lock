@@ -1,0 +1,15 @@
+PODS:
+  - Masonry (1.0.2)
+  - TYAlertController (1.1.8)
+
+DEPENDENCIES:
+  - Masonry (~> 1.0.2)
+  - TYAlertController
+
+SPEC CHECKSUMS:
+  Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
+  TYAlertController: 502d3dbc5d007e68559400b509c736f60ebc2cc1
+
+PODFILE CHECKSUM: 600a2954d81c0175c5220be86e00f234317c5c74
+
+COCOAPODS: 1.2.0

@@ -1,0 +1,860 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00F0E86CD7E930C3544E39B2BF204BCC /* LPDQuoteImagesView.h in Headers */ = {isa = PBXBuildFile; fileRef = 6828CED6A49D753D731D57BCB810B085 /* LPDQuoteImagesView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0313A6FDB095840BC197EF37340E799C /* LPDPhotoPickerController.h in Headers */ = {isa = PBXBuildFile; fileRef = 5BA1D3136E9605FB8E8421830F1299FF /* LPDPhotoPickerController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0520FC2D2383C0CE4728169C5D8B3EBE /* LPDQuoteImagesView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B64EF43AD03E47077E0547277104378 /* LPDQuoteImagesView-dummy.m */; };
+		054C33C0970ECAB83E285B4A229B4435 /* LPDVideoPlayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93A182CC19D9E2B4FA4615535EAE0178 /* LPDVideoPlayerController.m */; };
+		078B577923260136C42F149FEABE29A3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		080EEA2137F2CD79EE8EAA19CBD07055 /* LPDPhotoArrangeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F207707038C68EF0A208DDDD2DA3018 /* LPDPhotoArrangeCell.m */; };
+		0BBB51D51E6F46393EDE9F6BEC952A7F /* LPDPhotoPreviewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B0048F99B8CB347934A15F1514E7BD32 /* LPDPhotoPreviewCell.m */; };
+		17001C0E1216EF4E213A272B7BDFE834 /* LPDPhotoPreviewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E5C5EFDB80ABEDA838D2AE00E291C23 /* LPDPhotoPreviewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		17A3C738C27D8C86F359CB7A1841F105 /* LPDImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C26F517D4E38565CB083311610C6896 /* LPDImageManager.m */; };
+		1C5C3F5C983DE2918253147C6B580242 /* LPDAssetCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 39477E958F0FEF7652327646C1724B81 /* LPDAssetCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		26ED371D19FACE7CD3C6F642313BF73D /* LPDImageManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 32D3853035EF8F522D403819A1C0887A /* LPDImageManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2BF58AEE115229528AABE4FB445C18F6 /* LPDQuoteImagesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ADAFD553B39E13F9AEA0CD5D8E8AA61 /* LPDQuoteImagesView.m */; };
+		2EF5CF2EE5F35BC6689DFF0B3FAF1A78 /* LPDPhotoPickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CEE8FDDFE3AD300AC4273DB0463D182 /* LPDPhotoPickerController.m */; };
+		357F42DC534C42C75B8CDDDAE21B82C1 /* Pods-LPDQuoteImagesView_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C38982AE86D98D7119F4FAB7E30AE04 /* Pods-LPDQuoteImagesView_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		36D932303782F382E554B20D3AC7AA92 /* LPDQuoteImagesView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 63375527D43DF03B5B2B708E9DA83F08 /* LPDQuoteImagesView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		58132BED6B41F2BAF068B2D3A676E7A6 /* LPDPhotoArrangeCVlLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCF88E857A4660D980109FC53E4D93C /* LPDPhotoArrangeCVlLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5B9512D5ECF7C694AFD617D15DBD7E8C /* LPDPhotoPreviewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C63D57C22C1CCE01FE8EBA91887AC31 /* LPDPhotoPreviewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5E95C609E5B3462B8094D2DB4930D028 /* LPDImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 479F2C2DDE30B79635FA75F594ECD7B4 /* LPDImagePickerController.m */; };
+		637754ADCBFEDA0389824B84B5E834EE /* LPDProgressView.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D5640488F22C1E21605F857A54797C0 /* LPDProgressView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		781A8E8A869C9BA41AE61A8A53825297 /* NSBundle+LPDImagePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 97F5D606D013833BF9A546A3ABB2BF67 /* NSBundle+LPDImagePicker.m */; };
+		78A5818D4E563984EDF2533F9B43F354 /* LPDProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = ACF8C1AD5D1AB69A3ECB7AD284A51302 /* LPDProgressView.m */; };
+		8ACAB64686EAF54C44339815D7EF992E /* LPDVideoPlayerController.h in Headers */ = {isa = PBXBuildFile; fileRef = 84DEAD58947C4DC18D3255CCE21A6C75 /* LPDVideoPlayerController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8EC2F8EFD1F09C382BEEA13B1CF04A9F /* UIImage+MyBundle.h in Headers */ = {isa = PBXBuildFile; fileRef = 958080432648A0609BD230E69828F63B /* UIImage+MyBundle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		921C1D6DC32C9919348024784AA1955D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		9F95865EC3987CA069F8C44901CECEF4 /* LPDAssetModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 846A65788D764160D2C6DFA04431C435 /* LPDAssetModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A5DE006F0856D7A8F7B17B5A0696A18A /* LPDAssetModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 154A3627E9E0DFE941426DCD1FA1393E /* LPDAssetModel.m */; };
+		A87DDD6E142461D05D454FB020B2A225 /* NSBundle+LPDImagePicker.h in Headers */ = {isa = PBXBuildFile; fileRef = 0EF5A9CA7DEBF446033A89D5FF85E89D /* NSBundle+LPDImagePicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AACB2B7C9897EF5CCCEC1B21D52EABC0 /* LPDPhotoArrangeCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 8AB84ED1CE652E26BBF3537EB8B47C88 /* LPDPhotoArrangeCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BB78736BA222E2CF9384336DF40C05DC /* UIImage+MyBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = 69F731972BA45D9AEED44EB7A545705D /* UIImage+MyBundle.m */; };
+		BC5EA81DE8ABDD1B8D3B9C0898F5FF5E /* LPDImagePickerController.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8002BF867EF7CCBE0ABEF2A4C62CC870 /* LPDImagePickerController.bundle */; };
+		D73E4FD55B743452FEEB8E49A4F21648 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		DEB9D2E66445599C20B033D741AE51A5 /* Pods-LPDQuoteImagesView_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C009D117B87B37466C7F9E0E872483D /* Pods-LPDQuoteImagesView_Example-dummy.m */; };
+		E217B3ED1101DEBCED0D1DCFBF9329A3 /* UIView+HandyValue.m in Sources */ = {isa = PBXBuildFile; fileRef = D85DFAA0E73AB39C6FE30C30BE36AB5E /* UIView+HandyValue.m */; };
+		EE6BE6675DB9CE49D240CA692B1C3A04 /* LPDPhotoPreviewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA19FA10AA08344B3FCA2376444DA80C /* LPDPhotoPreviewController.m */; };
+		EFB965CF7FC1B304592F8584AC5B1A48 /* LPDImagePickerController.h in Headers */ = {isa = PBXBuildFile; fileRef = 566CA12776E60102007DC0871B031503 /* LPDImagePickerController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F29D2085CBE7CAFE53DD85CA993BE5C2 /* LPDPhotoArrangeCVlLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = A025A74BB397568ECA330A34B4A1426A /* LPDPhotoArrangeCVlLayout.m */; };
+		F569465FF0A030025BC7822803320778 /* Pods-LPDQuoteImagesView_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A22DCE8140BCD70038C702871B82F91 /* Pods-LPDQuoteImagesView_Tests-dummy.m */; };
+		FC2082BC415C00C65C7C14976FD4468F /* Pods-LPDQuoteImagesView_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7617E30E987EAC2F1D018203889C601D /* Pods-LPDQuoteImagesView_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FCAA732359A6F773005FA049DE5A5152 /* LPDAssetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 19F881D2D1C93D88937F785ADF992972 /* LPDAssetCell.m */; };
+		FD5A0356848CEF4F24A0CEF2987A98D7 /* UIView+HandyValue.h in Headers */ = {isa = PBXBuildFile; fileRef = E67D4302A7B9212D8FC31137F6E84DC9 /* UIView+HandyValue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E60188BD5E8B03F6C8EBE74F6A35DA3A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D16FF1708A261A6539A8BCBFD42EAB98;
+			remoteInfo = LPDQuoteImagesView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0237688D5DD3A4C0F8323A1F65E80072 /* Pods-LPDQuoteImagesView_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LPDQuoteImagesView_Tests-resources.sh"; sourceTree = "<group>"; };
+		0B7B186902F1A97430258F1F1A75BBF6 /* Pods-LPDQuoteImagesView_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LPDQuoteImagesView_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		0C26F517D4E38565CB083311610C6896 /* LPDImageManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LPDImageManager.m; sourceTree = "<group>"; };
+		0EF5A9CA7DEBF446033A89D5FF85E89D /* NSBundle+LPDImagePicker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSBundle+LPDImagePicker.h"; sourceTree = "<group>"; };
+		11260F748E8B4996A489CFE260B899D5 /* Pods-LPDQuoteImagesView_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-LPDQuoteImagesView_Tests.modulemap"; sourceTree = "<group>"; };
+		154A3627E9E0DFE941426DCD1FA1393E /* LPDAssetModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LPDAssetModel.m; sourceTree = "<group>"; };
+		1823047C326C818CC87041410BDBDBA7 /* Pods-LPDQuoteImagesView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LPDQuoteImagesView_Example.release.xcconfig"; sourceTree = "<group>"; };
+		19F881D2D1C93D88937F785ADF992972 /* LPDAssetCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LPDAssetCell.m; sourceTree = "<group>"; };
+		1C009D117B87B37466C7F9E0E872483D /* Pods-LPDQuoteImagesView_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LPDQuoteImagesView_Example-dummy.m"; sourceTree = "<group>"; };
+		1E2CEADD90739E27F149240D2220DC3B /* Pods-LPDQuoteImagesView_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LPDQuoteImagesView_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		2B64EF43AD03E47077E0547277104378 /* LPDQuoteImagesView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LPDQuoteImagesView-dummy.m"; sourceTree = "<group>"; };
+		2B761DF3C37992C9A388486549BC61F6 /* LPDQuoteImagesView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LPDQuoteImagesView.xcconfig; sourceTree = "<group>"; };
+		2D5640488F22C1E21605F857A54797C0 /* LPDProgressView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LPDProgressView.h; sourceTree = "<group>"; };
+		2F207707038C68EF0A208DDDD2DA3018 /* LPDPhotoArrangeCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LPDPhotoArrangeCell.m; sourceTree = "<group>"; };
+		2F765ED0DFF06C46964FDED16D872171 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2FCF88E857A4660D980109FC53E4D93C /* LPDPhotoArrangeCVlLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LPDPhotoArrangeCVlLayout.h; sourceTree = "<group>"; };
+		32D3853035EF8F522D403819A1C0887A /* LPDImageManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LPDImageManager.h; sourceTree = "<group>"; };
+		39477E958F0FEF7652327646C1724B81 /* LPDAssetCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LPDAssetCell.h; sourceTree = "<group>"; };
+		3CEE8FDDFE3AD300AC4273DB0463D182 /* LPDPhotoPickerController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LPDPhotoPickerController.m; sourceTree = "<group>"; };
+		479F2C2DDE30B79635FA75F594ECD7B4 /* LPDImagePickerController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LPDImagePickerController.m; sourceTree = "<group>"; };
+		4A2BEA17C21C89283E5571FAA1ADBE0C /* Pods-LPDQuoteImagesView_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LPDQuoteImagesView_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		4D4E99C679CF71B95827DFC0BF431FFE /* Pods_LPDQuoteImagesView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LPDQuoteImagesView_Tests.framework; path = "Pods-LPDQuoteImagesView_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4EC7359CAD193EDC1F44AA6074A9474E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		566CA12776E60102007DC0871B031503 /* LPDImagePickerController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LPDImagePickerController.h; sourceTree = "<group>"; };
+		5A22DCE8140BCD70038C702871B82F91 /* Pods-LPDQuoteImagesView_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LPDQuoteImagesView_Tests-dummy.m"; sourceTree = "<group>"; };
+		5BA1D3136E9605FB8E8421830F1299FF /* LPDPhotoPickerController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LPDPhotoPickerController.h; sourceTree = "<group>"; };
+		5E5C5EFDB80ABEDA838D2AE00E291C23 /* LPDPhotoPreviewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LPDPhotoPreviewCell.h; sourceTree = "<group>"; };
+		63375527D43DF03B5B2B708E9DA83F08 /* LPDQuoteImagesView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LPDQuoteImagesView-umbrella.h"; sourceTree = "<group>"; };
+		6828CED6A49D753D731D57BCB810B085 /* LPDQuoteImagesView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LPDQuoteImagesView.h; sourceTree = "<group>"; };
+		69F731972BA45D9AEED44EB7A545705D /* UIImage+MyBundle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIImage+MyBundle.m"; sourceTree = "<group>"; };
+		6EADA0268629280CB651CAE7CF80A1AF /* LPDQuoteImagesView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = LPDQuoteImagesView.framework; path = LPDQuoteImagesView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		729EECBC1A196F09D6CE89ED947F84BB /* Pods-LPDQuoteImagesView_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LPDQuoteImagesView_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		7617E30E987EAC2F1D018203889C601D /* Pods-LPDQuoteImagesView_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LPDQuoteImagesView_Example-umbrella.h"; sourceTree = "<group>"; };
+		7ADAFD553B39E13F9AEA0CD5D8E8AA61 /* LPDQuoteImagesView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LPDQuoteImagesView.m; sourceTree = "<group>"; };
+		8002BF867EF7CCBE0ABEF2A4C62CC870 /* LPDImagePickerController.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; path = LPDImagePickerController.bundle; sourceTree = "<group>"; };
+		846A65788D764160D2C6DFA04431C435 /* LPDAssetModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LPDAssetModel.h; sourceTree = "<group>"; };
+		84DEAD58947C4DC18D3255CCE21A6C75 /* LPDVideoPlayerController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LPDVideoPlayerController.h; sourceTree = "<group>"; };
+		89B1937EE1984595B35DA9911AFE2180 /* Pods-LPDQuoteImagesView_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LPDQuoteImagesView_Example-frameworks.sh"; sourceTree = "<group>"; };
+		8AB84ED1CE652E26BBF3537EB8B47C88 /* LPDPhotoArrangeCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LPDPhotoArrangeCell.h; sourceTree = "<group>"; };
+		8C63D57C22C1CCE01FE8EBA91887AC31 /* LPDPhotoPreviewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LPDPhotoPreviewController.h; sourceTree = "<group>"; };
+		93A182CC19D9E2B4FA4615535EAE0178 /* LPDVideoPlayerController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LPDVideoPlayerController.m; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		958080432648A0609BD230E69828F63B /* UIImage+MyBundle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIImage+MyBundle.h"; sourceTree = "<group>"; };
+		97F5D606D013833BF9A546A3ABB2BF67 /* NSBundle+LPDImagePicker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+LPDImagePicker.m"; sourceTree = "<group>"; };
+		9C38982AE86D98D7119F4FAB7E30AE04 /* Pods-LPDQuoteImagesView_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LPDQuoteImagesView_Tests-umbrella.h"; sourceTree = "<group>"; };
+		A025A74BB397568ECA330A34B4A1426A /* LPDPhotoArrangeCVlLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LPDPhotoArrangeCVlLayout.m; sourceTree = "<group>"; };
+		A3384A3D1748A4A71B3D95775A582133 /* LPDQuoteImagesView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LPDQuoteImagesView-prefix.pch"; sourceTree = "<group>"; };
+		A393DFFB13C491967275A05042B3C205 /* Pods-LPDQuoteImagesView_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-LPDQuoteImagesView_Example.modulemap"; sourceTree = "<group>"; };
+		ABE06652FFD1D973C7CE8FCE6F7EBABD /* LPDQuoteImagesView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = LPDQuoteImagesView.modulemap; sourceTree = "<group>"; };
+		ACF8C1AD5D1AB69A3ECB7AD284A51302 /* LPDProgressView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LPDProgressView.m; sourceTree = "<group>"; };
+		B0048F99B8CB347934A15F1514E7BD32 /* LPDPhotoPreviewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LPDPhotoPreviewCell.m; sourceTree = "<group>"; };
+		BB67785623943EBE57BE99950951440D /* Pods-LPDQuoteImagesView_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LPDQuoteImagesView_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		CA19FA10AA08344B3FCA2376444DA80C /* LPDPhotoPreviewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LPDPhotoPreviewController.m; sourceTree = "<group>"; };
+		CB7913B12388AE1BA08928B4C0997DA5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		CEE87A812BBBC062763B636201C8FC5D /* Pods-LPDQuoteImagesView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LPDQuoteImagesView_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		D2BBD107560AAB3D55DAF71CE6FE85D1 /* Pods_LPDQuoteImagesView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LPDQuoteImagesView_Example.framework; path = "Pods-LPDQuoteImagesView_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D85DFAA0E73AB39C6FE30C30BE36AB5E /* UIView+HandyValue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIView+HandyValue.m"; sourceTree = "<group>"; };
+		E02EE81F269881C1A14AABBB4CBF4641 /* Pods-LPDQuoteImagesView_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LPDQuoteImagesView_Example-resources.sh"; sourceTree = "<group>"; };
+		E67D4302A7B9212D8FC31137F6E84DC9 /* UIView+HandyValue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIView+HandyValue.h"; sourceTree = "<group>"; };
+		F5CB4476250F6D1E5C1DDE0E421B909B /* Pods-LPDQuoteImagesView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LPDQuoteImagesView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		FD3221C180E1ED7D6A45F8FAEEBF2D1A /* Pods-LPDQuoteImagesView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LPDQuoteImagesView_Tests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1F2E58F8077A31CBCA43996AEE91033D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				921C1D6DC32C9919348024784AA1955D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E02F1B49FA1158B12649C05A8B07A08 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				078B577923260136C42F149FEABE29A3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2568F34C140EACE7BA85591DC656764 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D73E4FD55B743452FEEB8E49A4F21648 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		144819639DCF39C28E3BF695EC93B999 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				759C1802157EA5A6B8B8D46CFF355A77 /* LPDQuoteImagesView */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		18AA72FEFE3610522020991FABA98398 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2E2AA8842601433F2DF259B6AE8BFE59 /* LPDQuoteImagesView */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		2E2AA8842601433F2DF259B6AE8BFE59 /* LPDQuoteImagesView */ = {
+			isa = PBXGroup;
+			children = (
+				865D7C1AAFA928862383F3210539B8C8 /* LPDQuoteImagesView */,
+				144819639DCF39C28E3BF695EC93B999 /* Resources */,
+				3DF05F28C5B5C464E08580C1B6D43FFE /* Support Files */,
+			);
+			name = LPDQuoteImagesView;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		3DF05F28C5B5C464E08580C1B6D43FFE /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2F765ED0DFF06C46964FDED16D872171 /* Info.plist */,
+				ABE06652FFD1D973C7CE8FCE6F7EBABD /* LPDQuoteImagesView.modulemap */,
+				2B761DF3C37992C9A388486549BC61F6 /* LPDQuoteImagesView.xcconfig */,
+				2B64EF43AD03E47077E0547277104378 /* LPDQuoteImagesView-dummy.m */,
+				A3384A3D1748A4A71B3D95775A582133 /* LPDQuoteImagesView-prefix.pch */,
+				63375527D43DF03B5B2B708E9DA83F08 /* LPDQuoteImagesView-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/LPDQuoteImagesView";
+			sourceTree = "<group>";
+		};
+		419E1E3A7690D3CA546D27D868DF568C /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				39477E958F0FEF7652327646C1724B81 /* LPDAssetCell.h */,
+				19F881D2D1C93D88937F785ADF992972 /* LPDAssetCell.m */,
+				846A65788D764160D2C6DFA04431C435 /* LPDAssetModel.h */,
+				154A3627E9E0DFE941426DCD1FA1393E /* LPDAssetModel.m */,
+				32D3853035EF8F522D403819A1C0887A /* LPDImageManager.h */,
+				0C26F517D4E38565CB083311610C6896 /* LPDImageManager.m */,
+				566CA12776E60102007DC0871B031503 /* LPDImagePickerController.h */,
+				479F2C2DDE30B79635FA75F594ECD7B4 /* LPDImagePickerController.m */,
+				8AB84ED1CE652E26BBF3537EB8B47C88 /* LPDPhotoArrangeCell.h */,
+				2F207707038C68EF0A208DDDD2DA3018 /* LPDPhotoArrangeCell.m */,
+				2FCF88E857A4660D980109FC53E4D93C /* LPDPhotoArrangeCVlLayout.h */,
+				A025A74BB397568ECA330A34B4A1426A /* LPDPhotoArrangeCVlLayout.m */,
+				5BA1D3136E9605FB8E8421830F1299FF /* LPDPhotoPickerController.h */,
+				3CEE8FDDFE3AD300AC4273DB0463D182 /* LPDPhotoPickerController.m */,
+				5E5C5EFDB80ABEDA838D2AE00E291C23 /* LPDPhotoPreviewCell.h */,
+				B0048F99B8CB347934A15F1514E7BD32 /* LPDPhotoPreviewCell.m */,
+				8C63D57C22C1CCE01FE8EBA91887AC31 /* LPDPhotoPreviewController.h */,
+				CA19FA10AA08344B3FCA2376444DA80C /* LPDPhotoPreviewController.m */,
+				2D5640488F22C1E21605F857A54797C0 /* LPDProgressView.h */,
+				ACF8C1AD5D1AB69A3ECB7AD284A51302 /* LPDProgressView.m */,
+				6828CED6A49D753D731D57BCB810B085 /* LPDQuoteImagesView.h */,
+				7ADAFD553B39E13F9AEA0CD5D8E8AA61 /* LPDQuoteImagesView.m */,
+				84DEAD58947C4DC18D3255CCE21A6C75 /* LPDVideoPlayerController.h */,
+				93A182CC19D9E2B4FA4615535EAE0178 /* LPDVideoPlayerController.m */,
+				0EF5A9CA7DEBF446033A89D5FF85E89D /* NSBundle+LPDImagePicker.h */,
+				97F5D606D013833BF9A546A3ABB2BF67 /* NSBundle+LPDImagePicker.m */,
+				958080432648A0609BD230E69828F63B /* UIImage+MyBundle.h */,
+				69F731972BA45D9AEED44EB7A545705D /* UIImage+MyBundle.m */,
+				E67D4302A7B9212D8FC31137F6E84DC9 /* UIView+HandyValue.h */,
+				D85DFAA0E73AB39C6FE30C30BE36AB5E /* UIView+HandyValue.m */,
+			);
+			name = Classes;
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		4A177C2D62D2C8C6EFC1E2CBFA502739 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				8002BF867EF7CCBE0ABEF2A4C62CC870 /* LPDImagePickerController.bundle */,
+			);
+			name = Assets;
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		72C6B543329F6A01BB832F8D2BD31F48 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6EADA0268629280CB651CAE7CF80A1AF /* LPDQuoteImagesView.framework */,
+				D2BBD107560AAB3D55DAF71CE6FE85D1 /* Pods_LPDQuoteImagesView_Example.framework */,
+				4D4E99C679CF71B95827DFC0BF431FFE /* Pods_LPDQuoteImagesView_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		759C1802157EA5A6B8B8D46CFF355A77 /* LPDQuoteImagesView */ = {
+			isa = PBXGroup;
+			children = (
+				4A177C2D62D2C8C6EFC1E2CBFA502739 /* Assets */,
+			);
+			name = LPDQuoteImagesView;
+			path = LPDQuoteImagesView;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				18AA72FEFE3610522020991FABA98398 /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				72C6B543329F6A01BB832F8D2BD31F48 /* Products */,
+				924695BF8A1B7CAFC81C10C089010AE0 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		865D7C1AAFA928862383F3210539B8C8 /* LPDQuoteImagesView */ = {
+			isa = PBXGroup;
+			children = (
+				419E1E3A7690D3CA546D27D868DF568C /* Classes */,
+			);
+			name = LPDQuoteImagesView;
+			path = LPDQuoteImagesView;
+			sourceTree = "<group>";
+		};
+		8F7B0871BDEA93E81917BC869347EBE5 /* Pods-LPDQuoteImagesView_Example */ = {
+			isa = PBXGroup;
+			children = (
+				CB7913B12388AE1BA08928B4C0997DA5 /* Info.plist */,
+				A393DFFB13C491967275A05042B3C205 /* Pods-LPDQuoteImagesView_Example.modulemap */,
+				0B7B186902F1A97430258F1F1A75BBF6 /* Pods-LPDQuoteImagesView_Example-acknowledgements.markdown */,
+				4A2BEA17C21C89283E5571FAA1ADBE0C /* Pods-LPDQuoteImagesView_Example-acknowledgements.plist */,
+				1C009D117B87B37466C7F9E0E872483D /* Pods-LPDQuoteImagesView_Example-dummy.m */,
+				89B1937EE1984595B35DA9911AFE2180 /* Pods-LPDQuoteImagesView_Example-frameworks.sh */,
+				E02EE81F269881C1A14AABBB4CBF4641 /* Pods-LPDQuoteImagesView_Example-resources.sh */,
+				7617E30E987EAC2F1D018203889C601D /* Pods-LPDQuoteImagesView_Example-umbrella.h */,
+				CEE87A812BBBC062763B636201C8FC5D /* Pods-LPDQuoteImagesView_Example.debug.xcconfig */,
+				1823047C326C818CC87041410BDBDBA7 /* Pods-LPDQuoteImagesView_Example.release.xcconfig */,
+			);
+			name = "Pods-LPDQuoteImagesView_Example";
+			path = "Target Support Files/Pods-LPDQuoteImagesView_Example";
+			sourceTree = "<group>";
+		};
+		924695BF8A1B7CAFC81C10C089010AE0 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8F7B0871BDEA93E81917BC869347EBE5 /* Pods-LPDQuoteImagesView_Example */,
+				B1CB9F1D1C0304ACD8C30638421AD7E5 /* Pods-LPDQuoteImagesView_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		B1CB9F1D1C0304ACD8C30638421AD7E5 /* Pods-LPDQuoteImagesView_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				4EC7359CAD193EDC1F44AA6074A9474E /* Info.plist */,
+				11260F748E8B4996A489CFE260B899D5 /* Pods-LPDQuoteImagesView_Tests.modulemap */,
+				1E2CEADD90739E27F149240D2220DC3B /* Pods-LPDQuoteImagesView_Tests-acknowledgements.markdown */,
+				BB67785623943EBE57BE99950951440D /* Pods-LPDQuoteImagesView_Tests-acknowledgements.plist */,
+				5A22DCE8140BCD70038C702871B82F91 /* Pods-LPDQuoteImagesView_Tests-dummy.m */,
+				729EECBC1A196F09D6CE89ED947F84BB /* Pods-LPDQuoteImagesView_Tests-frameworks.sh */,
+				0237688D5DD3A4C0F8323A1F65E80072 /* Pods-LPDQuoteImagesView_Tests-resources.sh */,
+				9C38982AE86D98D7119F4FAB7E30AE04 /* Pods-LPDQuoteImagesView_Tests-umbrella.h */,
+				F5CB4476250F6D1E5C1DDE0E421B909B /* Pods-LPDQuoteImagesView_Tests.debug.xcconfig */,
+				FD3221C180E1ED7D6A45F8FAEEBF2D1A /* Pods-LPDQuoteImagesView_Tests.release.xcconfig */,
+			);
+			name = "Pods-LPDQuoteImagesView_Tests";
+			path = "Target Support Files/Pods-LPDQuoteImagesView_Tests";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		77EC2D80E088DBFBC22FA47F1B35BE6D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				357F42DC534C42C75B8CDDDAE21B82C1 /* Pods-LPDQuoteImagesView_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBAE13A31BE5B2CA81A3AD58A467A54B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC2082BC415C00C65C7C14976FD4468F /* Pods-LPDQuoteImagesView_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6F92804BBA7878FA9D713124CAFEF80 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C5C3F5C983DE2918253147C6B580242 /* LPDAssetCell.h in Headers */,
+				9F95865EC3987CA069F8C44901CECEF4 /* LPDAssetModel.h in Headers */,
+				26ED371D19FACE7CD3C6F642313BF73D /* LPDImageManager.h in Headers */,
+				EFB965CF7FC1B304592F8584AC5B1A48 /* LPDImagePickerController.h in Headers */,
+				AACB2B7C9897EF5CCCEC1B21D52EABC0 /* LPDPhotoArrangeCell.h in Headers */,
+				58132BED6B41F2BAF068B2D3A676E7A6 /* LPDPhotoArrangeCVlLayout.h in Headers */,
+				0313A6FDB095840BC197EF37340E799C /* LPDPhotoPickerController.h in Headers */,
+				17001C0E1216EF4E213A272B7BDFE834 /* LPDPhotoPreviewCell.h in Headers */,
+				5B9512D5ECF7C694AFD617D15DBD7E8C /* LPDPhotoPreviewController.h in Headers */,
+				637754ADCBFEDA0389824B84B5E834EE /* LPDProgressView.h in Headers */,
+				36D932303782F382E554B20D3AC7AA92 /* LPDQuoteImagesView-umbrella.h in Headers */,
+				00F0E86CD7E930C3544E39B2BF204BCC /* LPDQuoteImagesView.h in Headers */,
+				8ACAB64686EAF54C44339815D7EF992E /* LPDVideoPlayerController.h in Headers */,
+				A87DDD6E142461D05D454FB020B2A225 /* NSBundle+LPDImagePicker.h in Headers */,
+				8EC2F8EFD1F09C382BEEA13B1CF04A9F /* UIImage+MyBundle.h in Headers */,
+				FD5A0356848CEF4F24A0CEF2987A98D7 /* UIView+HandyValue.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		BFFE309078F2D9B54179B0D5C1F7CA02 /* Pods-LPDQuoteImagesView_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACD013C124299E5610BD953C5FCA605D /* Build configuration list for PBXNativeTarget "Pods-LPDQuoteImagesView_Example" */;
+			buildPhases = (
+				75E3AEFAC7FBAFA5E5913A15C82E3951 /* Sources */,
+				1F2E58F8077A31CBCA43996AEE91033D /* Frameworks */,
+				BBAE13A31BE5B2CA81A3AD58A467A54B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				40661D166560730382874B51084B13E7 /* PBXTargetDependency */,
+			);
+			name = "Pods-LPDQuoteImagesView_Example";
+			productName = "Pods-LPDQuoteImagesView_Example";
+			productReference = D2BBD107560AAB3D55DAF71CE6FE85D1 /* Pods_LPDQuoteImagesView_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D16FF1708A261A6539A8BCBFD42EAB98 /* LPDQuoteImagesView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EAEDEB72B4A5FC4F17D628125B663EF8 /* Build configuration list for PBXNativeTarget "LPDQuoteImagesView" */;
+			buildPhases = (
+				1F48485BA451A34D080A6A4C5DA00990 /* Sources */,
+				F2568F34C140EACE7BA85591DC656764 /* Frameworks */,
+				D6F92804BBA7878FA9D713124CAFEF80 /* Headers */,
+				22D52CD7F342ECAD7E8E626CBE5AE2FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LPDQuoteImagesView;
+			productName = LPDQuoteImagesView;
+			productReference = 6EADA0268629280CB651CAE7CF80A1AF /* LPDQuoteImagesView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E049439AE44D6B53536BF03E96ADE0C0 /* Pods-LPDQuoteImagesView_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A30F459AF2254765A8A6DB60B2B8000E /* Build configuration list for PBXNativeTarget "Pods-LPDQuoteImagesView_Tests" */;
+			buildPhases = (
+				E671503D87F7CD54F98418870466F419 /* Sources */,
+				3E02F1B49FA1158B12649C05A8B07A08 /* Frameworks */,
+				77EC2D80E088DBFBC22FA47F1B35BE6D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-LPDQuoteImagesView_Tests";
+			productName = "Pods-LPDQuoteImagesView_Tests";
+			productReference = 4D4E99C679CF71B95827DFC0BF431FFE /* Pods_LPDQuoteImagesView_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 72C6B543329F6A01BB832F8D2BD31F48 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D16FF1708A261A6539A8BCBFD42EAB98 /* LPDQuoteImagesView */,
+				BFFE309078F2D9B54179B0D5C1F7CA02 /* Pods-LPDQuoteImagesView_Example */,
+				E049439AE44D6B53536BF03E96ADE0C0 /* Pods-LPDQuoteImagesView_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		22D52CD7F342ECAD7E8E626CBE5AE2FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC5EA81DE8ABDD1B8D3B9C0898F5FF5E /* LPDImagePickerController.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1F48485BA451A34D080A6A4C5DA00990 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCAA732359A6F773005FA049DE5A5152 /* LPDAssetCell.m in Sources */,
+				A5DE006F0856D7A8F7B17B5A0696A18A /* LPDAssetModel.m in Sources */,
+				17A3C738C27D8C86F359CB7A1841F105 /* LPDImageManager.m in Sources */,
+				5E95C609E5B3462B8094D2DB4930D028 /* LPDImagePickerController.m in Sources */,
+				080EEA2137F2CD79EE8EAA19CBD07055 /* LPDPhotoArrangeCell.m in Sources */,
+				F29D2085CBE7CAFE53DD85CA993BE5C2 /* LPDPhotoArrangeCVlLayout.m in Sources */,
+				2EF5CF2EE5F35BC6689DFF0B3FAF1A78 /* LPDPhotoPickerController.m in Sources */,
+				0BBB51D51E6F46393EDE9F6BEC952A7F /* LPDPhotoPreviewCell.m in Sources */,
+				EE6BE6675DB9CE49D240CA692B1C3A04 /* LPDPhotoPreviewController.m in Sources */,
+				78A5818D4E563984EDF2533F9B43F354 /* LPDProgressView.m in Sources */,
+				0520FC2D2383C0CE4728169C5D8B3EBE /* LPDQuoteImagesView-dummy.m in Sources */,
+				2BF58AEE115229528AABE4FB445C18F6 /* LPDQuoteImagesView.m in Sources */,
+				054C33C0970ECAB83E285B4A229B4435 /* LPDVideoPlayerController.m in Sources */,
+				781A8E8A869C9BA41AE61A8A53825297 /* NSBundle+LPDImagePicker.m in Sources */,
+				BB78736BA222E2CF9384336DF40C05DC /* UIImage+MyBundle.m in Sources */,
+				E217B3ED1101DEBCED0D1DCFBF9329A3 /* UIView+HandyValue.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75E3AEFAC7FBAFA5E5913A15C82E3951 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEB9D2E66445599C20B033D741AE51A5 /* Pods-LPDQuoteImagesView_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E671503D87F7CD54F98418870466F419 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F569465FF0A030025BC7822803320778 /* Pods-LPDQuoteImagesView_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		40661D166560730382874B51084B13E7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LPDQuoteImagesView;
+			target = D16FF1708A261A6539A8BCBFD42EAB98 /* LPDQuoteImagesView */;
+			targetProxy = E60188BD5E8B03F6C8EBE74F6A35DA3A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0B2C0644903FC94752711837B05466DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CEE87A812BBBC062763B636201C8FC5D /* Pods-LPDQuoteImagesView_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-LPDQuoteImagesView_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LPDQuoteImagesView_Example/Pods-LPDQuoteImagesView_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_LPDQuoteImagesView_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		19003365C6B15EFD064883B6D324D8DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1823047C326C818CC87041410BDBDBA7 /* Pods-LPDQuoteImagesView_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-LPDQuoteImagesView_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LPDQuoteImagesView_Example/Pods-LPDQuoteImagesView_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_LPDQuoteImagesView_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		54A3948BB1CE122CF82D449D8FB2ADBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5CB4476250F6D1E5C1DDE0E421B909B /* Pods-LPDQuoteImagesView_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-LPDQuoteImagesView_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LPDQuoteImagesView_Tests/Pods-LPDQuoteImagesView_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_LPDQuoteImagesView_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8DED8AD26D381A6ACFF202E5217EC498 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9E1E4E48AF2EAB23169E611BF694090A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		D821BEC08B0B9FC13D4DE41118780C16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B761DF3C37992C9A388486549BC61F6 /* LPDQuoteImagesView.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/LPDQuoteImagesView/LPDQuoteImagesView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LPDQuoteImagesView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LPDQuoteImagesView/LPDQuoteImagesView.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = LPDQuoteImagesView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F56A231FA80BEFB82C0A23610715352E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B761DF3C37992C9A388486549BC61F6 /* LPDQuoteImagesView.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/LPDQuoteImagesView/LPDQuoteImagesView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LPDQuoteImagesView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LPDQuoteImagesView/LPDQuoteImagesView.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = LPDQuoteImagesView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FB3EABA2A9DB0AE0AA01F37D336957E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD3221C180E1ED7D6A45F8FAEEBF2D1A /* Pods-LPDQuoteImagesView_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-LPDQuoteImagesView_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LPDQuoteImagesView_Tests/Pods-LPDQuoteImagesView_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_LPDQuoteImagesView_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E1E4E48AF2EAB23169E611BF694090A /* Debug */,
+				8DED8AD26D381A6ACFF202E5217EC498 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A30F459AF2254765A8A6DB60B2B8000E /* Build configuration list for PBXNativeTarget "Pods-LPDQuoteImagesView_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54A3948BB1CE122CF82D449D8FB2ADBC /* Debug */,
+				FB3EABA2A9DB0AE0AA01F37D336957E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ACD013C124299E5610BD953C5FCA605D /* Build configuration list for PBXNativeTarget "Pods-LPDQuoteImagesView_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B2C0644903FC94752711837B05466DE /* Debug */,
+				19003365C6B15EFD064883B6D324D8DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EAEDEB72B4A5FC4F17D628125B663EF8 /* Build configuration list for PBXNativeTarget "LPDQuoteImagesView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F56A231FA80BEFB82C0A23610715352E /* Debug */,
+				D821BEC08B0B9FC13D4DE41118780C16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

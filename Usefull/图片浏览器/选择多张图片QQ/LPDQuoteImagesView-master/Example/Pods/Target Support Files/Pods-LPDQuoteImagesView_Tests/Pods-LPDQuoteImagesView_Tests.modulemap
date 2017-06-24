@@ -1,0 +1,6 @@
+framework module Pods_LPDQuoteImagesView_Tests {
+  umbrella header "Pods-LPDQuoteImagesView_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

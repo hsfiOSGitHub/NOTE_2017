@@ -1,0 +1,6 @@
+framework module LPDQuoteImagesView {
+  umbrella header "LPDQuoteImagesView-umbrella.h"
+
+  export *
+  module * { export * }
+}

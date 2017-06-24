@@ -1,0 +1,16 @@
+PODS:
+  - LPDQuoteImagesView (0.1.0)
+
+DEPENDENCIES:
+  - LPDQuoteImagesView (from `../`)
+
+EXTERNAL SOURCES:
+  LPDQuoteImagesView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  LPDQuoteImagesView: 68d1c1b8c5bb5e5d404f22cd7bc49d3f63e571ea
+
+PODFILE CHECKSUM: 7a850bfde0084f7d970fad2d3ef9a7ac5af2d111
+
+COCOAPODS: 1.1.1

@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'LPDQuoteImagesView_Example' do
+  pod 'LPDQuoteImagesView', :path => '../'
+
+  target 'LPDQuoteImagesView_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

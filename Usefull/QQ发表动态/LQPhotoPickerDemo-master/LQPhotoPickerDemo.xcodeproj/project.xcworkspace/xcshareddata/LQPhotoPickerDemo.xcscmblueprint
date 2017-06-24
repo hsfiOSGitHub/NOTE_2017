@@ -1,0 +1,32 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "ECD83C0F7CD35B3D9BC059206C7AD8B518FBAEBF",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "95a10958-01da-c14d-aa6b-cbdc71b1c3f3++6651" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "95a10958-01da-c14d-aa6b-cbdc71b1c3f3++6651" : 0,
+    "ECD83C0F7CD35B3D9BC059206C7AD8B518FBAEBF" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "BF051150-0C50-40DD-A573-068C7849C134",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "95a10958-01da-c14d-aa6b-cbdc71b1c3f3++6651" : "LQPhotoPickerDemo\/LQPhotoPickerDemo\/SDWebImage\/",
+    "ECD83C0F7CD35B3D9BC059206C7AD8B518FBAEBF" : "LQPhotoPickerDemo\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "LQPhotoPickerDemo",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "LQPhotoPickerDemo.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "svn:\/\/192.168.15.218\/lawChatIOS",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "95a10958-01da-c14d-aa6b-cbdc71b1c3f3++6651"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/xztl\/LQPhotoPickerDemo.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "ECD83C0F7CD35B3D9BC059206C7AD8B518FBAEBF"
+    }
+  ]
+}

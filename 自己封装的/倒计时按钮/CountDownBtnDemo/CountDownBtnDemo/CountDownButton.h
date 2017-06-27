@@ -38,7 +38,12 @@
 //初始化配置
 -(void)setUp;
 
+//点击事件（手动点击倒计时按钮）
+-(void)start;
+//倒计时时间到
+-(void)stop;
+
 //销毁计时器
--(void)deallocTimer;
+-(void)dealloc;
 
 @end

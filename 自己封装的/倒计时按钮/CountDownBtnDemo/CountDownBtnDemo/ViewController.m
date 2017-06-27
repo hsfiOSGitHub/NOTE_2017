@@ -20,9 +20,10 @@
     [super viewDidLoad];
     CountDownButton *btn = [CountDownButton buttonWithType:UIButtonTypeCustom];
     btn.frame = CGRectMake(100, 100, 150, 50);
+
     //配置倒计时按钮
     /**可选 -> 自定义
-     btn.count = 10;//默认：60秒
+     btn.count = 10;默认：60秒
      btn.title_normal = @"点击获取验证码"; //默认标题：获取验证码
      btn.title_countDown = @"%02ld秒后重试";//默认倒计时标题格式：%02ld 秒
      btn.title_finished = @"try again";//默认完成标题：重新获取
@@ -51,7 +52,6 @@
     [btn setCompleteBlock:^{
         NSLog(@"完成倒计时");
     }];
-    
 }
 
 

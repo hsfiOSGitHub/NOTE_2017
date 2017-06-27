@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E85DE4F1F01E22000543414 /* CountDownButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E85DE4E1F01E22000543414 /* CountDownButton.m */; };
 		2EA8DD001EAA01570044D631 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EA8DCFF1EAA01570044D631 /* main.m */; };
 		2EA8DD031EAA01570044D631 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EA8DD021EAA01570044D631 /* AppDelegate.m */; };
 		2EA8DD061EAA01570044D631 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EA8DD051EAA01570044D631 /* ViewController.m */; };
@@ -15,7 +16,6 @@
 		2EA8DD0E1EAA01570044D631 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EA8DD0C1EAA01570044D631 /* LaunchScreen.storyboard */; };
 		2EA8DD191EAA01580044D631 /* CountDownBtnDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EA8DD181EAA01580044D631 /* CountDownBtnDemoTests.m */; };
 		2EA8DD241EAA01580044D631 /* CountDownBtnDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EA8DD231EAA01580044D631 /* CountDownBtnDemoUITests.m */; };
-		2EA8DD331EAA01690044D631 /* CountDownButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EA8DD321EAA01690044D631 /* CountDownButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2E85DE4D1F01E22000543414 /* CountDownButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CountDownButton.h; sourceTree = "<group>"; };
+		2E85DE4E1F01E22000543414 /* CountDownButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountDownButton.m; sourceTree = "<group>"; };
 		2EA8DCFB1EAA01570044D631 /* CountDownBtnDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CountDownBtnDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EA8DCFF1EAA01570044D631 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2EA8DD011EAA01570044D631 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -52,8 +54,6 @@
 		2EA8DD1F1EAA01580044D631 /* CountDownBtnDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CountDownBtnDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EA8DD231EAA01580044D631 /* CountDownBtnDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CountDownBtnDemoUITests.m; sourceTree = "<group>"; };
 		2EA8DD251EAA01580044D631 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2EA8DD311EAA01690044D631 /* CountDownButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CountDownButton.h; sourceTree = "<group>"; };
-		2EA8DD321EAA01690044D631 /* CountDownButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountDownButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,8 +104,8 @@
 		2EA8DCFD1EAA01570044D631 /* CountDownBtnDemo */ = {
 			isa = PBXGroup;
 			children = (
-				2EA8DD311EAA01690044D631 /* CountDownButton.h */,
-				2EA8DD321EAA01690044D631 /* CountDownButton.m */,
+				2E85DE4D1F01E22000543414 /* CountDownButton.h */,
+				2E85DE4E1F01E22000543414 /* CountDownButton.m */,
 				2EA8DD011EAA01570044D631 /* AppDelegate.h */,
 				2EA8DD021EAA01570044D631 /* AppDelegate.m */,
 				2EA8DD041EAA01570044D631 /* ViewController.h */,
@@ -282,7 +282,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2EA8DD061EAA01570044D631 /* ViewController.m in Sources */,
-				2EA8DD331EAA01690044D631 /* CountDownButton.m in Sources */,
+				2E85DE4F1F01E22000543414 /* CountDownButton.m in Sources */,
 				2EA8DD031EAA01570044D631 /* AppDelegate.m in Sources */,
 				2EA8DD001EAA01570044D631 /* main.m in Sources */,
 			);
@@ -520,6 +520,7 @@
 				2EA8DD2A1EAA01580044D631 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2EA8DD2B1EAA01580044D631 /* Build configuration list for PBXNativeTarget "CountDownBtnDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +529,7 @@
 				2EA8DD2D1EAA01580044D631 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2EA8DD2E1EAA01580044D631 /* Build configuration list for PBXNativeTarget "CountDownBtnDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -536,6 +538,7 @@
 				2EA8DD301EAA01580044D631 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -77,6 +77,28 @@ static const NSInteger DefaultCount = 60;
         self.layer.borderColor = CountDownBonderColor.CGColor;
     }
 }
+#pragma mark -定时器
+//设置倒计时 时间
+-(void)setCount:(NSInteger)count{
+    _count = count;
+    _remainCount = count;
+}
+//定时器循环事件
+-(void)timerStart:(NSTimer *)timer{
+    if (_remainCount == 0) {
+        _remainCount = _count;
+        [self stop];
+    }else{
+        _remainCount --;
+        if (self.title_countDown) {
+            [self setTitle:[NSString stringWithFormat:self.title_countDown,_remainCount] forState:0];
+        }else{
+            [self setTitle:[NSString stringWithFormat:CountDownTitle,_remainCount] forState:0];
+        }
+    }
+}
+
+#pragma mark -对外接口
 //初始化配置
 -(void)setUp{
     if (self.count) {
@@ -86,7 +108,7 @@ static const NSInteger DefaultCount = 60;
         _count = DefaultCount;
         _remainCount = DefaultCount;
     }
-    [self addTarget:self action:@selector(click) forControlEvents:UIControlEventTouchUpInside];
+    [self addTarget:self action:@selector(start) forControlEvents:UIControlEventTouchUpInside];
     //配置默认时的按钮样式
     [self setUpBtn_normal];
     if (self.isAutoCountDown) {
@@ -106,8 +128,9 @@ static const NSInteger DefaultCount = 60;
         }
     }
 }
+
 //点击事件（手动点击倒计时按钮）
--(void)click{
+-(void)start{
     //配置倒计时时的颜色
     [self setUpBtn_countDown];
     self.userInteractionEnabled = NO;
@@ -121,26 +144,6 @@ static const NSInteger DefaultCount = 60;
     }
     if (_ClickButtonBlock) {
         self.ClickButtonBlock();
-    }
-}
-#pragma mark -定时器
-//设置倒计时 时间
--(void)setCount:(NSInteger)count{
-    _count = count;
-    _remainCount = count;
-}
-//定时器循环事件
--(void)timerStart:(NSTimer *)timer{
-    if (_remainCount == 0) {
-        _remainCount = _count;
-        [self stop];
-    }else{
-        _remainCount --;
-        if (self.title_countDown) {
-            [self setTitle:[NSString stringWithFormat:self.title_countDown,_remainCount] forState:0];
-        }else{
-            [self setTitle:[NSString stringWithFormat:CountDownTitle,_remainCount] forState:0];
-        }
     }
 }
 //倒计时时间到
@@ -162,7 +165,7 @@ static const NSInteger DefaultCount = 60;
     }
 }
 //销毁计时器
--(void)deallocTimer{
+-(void)dealloc{
     if (_timer) {
         [_timer invalidate];
         _timer = nil;

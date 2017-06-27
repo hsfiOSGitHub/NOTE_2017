@@ -102,7 +102,6 @@
 		2E357BA91F00F7860073BC28 /* HSFSwitchCell_IT.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E357BA71F00F7860073BC28 /* HSFSwitchCell_IT.xib */; };
 		2E357BAD1F00F9220073BC28 /* HSFSwitchCell_ITS.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E357BAB1F00F9220073BC28 /* HSFSwitchCell_ITS.m */; };
 		2E357BAE1F00F9220073BC28 /* HSFSwitchCell_ITS.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E357BAC1F00F9220073BC28 /* HSFSwitchCell_ITS.xib */; };
-		2E357BB21F01045E0073BC28 /* HSFSwitch_text.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E357BB11F01045E0073BC28 /* HSFSwitch_text.m */; };
 		F83E0929359376E78703FBC1 /* libPods-HSFBase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4929AF0C5685BBE31D53949D /* libPods-HSFBase.a */; };
 /* End PBXBuildFile section */
 
@@ -287,8 +286,6 @@
 		2E357BAA1F00F9220073BC28 /* HSFSwitchCell_ITS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSFSwitchCell_ITS.h; sourceTree = "<group>"; };
 		2E357BAB1F00F9220073BC28 /* HSFSwitchCell_ITS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSFSwitchCell_ITS.m; sourceTree = "<group>"; };
 		2E357BAC1F00F9220073BC28 /* HSFSwitchCell_ITS.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HSFSwitchCell_ITS.xib; sourceTree = "<group>"; };
-		2E357BB01F01045E0073BC28 /* HSFSwitch_text.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSFSwitch_text.h; sourceTree = "<group>"; };
-		2E357BB11F01045E0073BC28 /* HSFSwitch_text.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSFSwitch_text.m; sourceTree = "<group>"; };
 		4929AF0C5685BBE31D53949D /* libPods-HSFBase.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HSFBase.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F4BC595427995274DDB610C /* Pods-HSFBase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HSFBase.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HSFBase/Pods-HSFBase.debug.xcconfig"; sourceTree = "<group>"; };
 		915A3C9E19BFBB0486D62532 /* Pods-HSFBase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HSFBase.release.xcconfig"; path = "Pods/Target Support Files/Pods-HSFBase/Pods-HSFBase.release.xcconfig"; sourceTree = "<group>"; };
@@ -851,8 +848,6 @@
 		2E357BAF1F0104120073BC28 /* HSFKit */ = {
 			isa = PBXGroup;
 			children = (
-				2E357BB01F01045E0073BC28 /* HSFSwitch_text.h */,
-				2E357BB11F01045E0073BC28 /* HSFSwitch_text.m */,
 			);
 			path = HSFKit;
 			sourceTree = "<group>";
@@ -1058,7 +1053,6 @@
 				2E247C4A1EF4B25F00E255A2 /* AppDelegate.m in Sources */,
 				2E247CC11EF4B2E000E255A2 /* UIView+DCAnimationKit.m in Sources */,
 				2E247CBD1EF4B2E000E255A2 /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
-				2E357BB21F01045E0073BC28 /* HSFSwitch_text.m in Sources */,
 				2E247D161EF4B5E900E255A2 /* DDNetworkManager.m in Sources */,
 				2E247DDD1EF4C30A00E255A2 /* HSFTableHeader.m in Sources */,
 				2E247CB81EF4B2E000E255A2 /* UIButton+Layout.m in Sources */,

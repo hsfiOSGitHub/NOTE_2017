@@ -102,6 +102,8 @@ static NSString *identifierCell = @"identifierCell";
     });
     
 }
+
+/*  关键  */
 -(void)addClickEffectForView:(UIView *)view withClickPointInSuperView:(CGPoint)point withEffectColor:(UIColor *)color removeWhenFinished:(BOOL)isRemove {
     view.layer.masksToBounds = YES;
     //创建layer

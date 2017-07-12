@@ -27,7 +27,7 @@
     LPDQuoteImagesView *view2 = [[LPDQuoteImagesView alloc] initWithFrame:CGRectMake(0, 100, RELATIVE_VALUE(220), RELATIVE_VALUE(70)) withCountPerRowInView:3 cellMargin:12];
     view2.collectionView.scrollEnabled = NO;
     view2.navcDelegate = self;
-    view2.maxSelectedCount = 3;
+    view2.maxSelectedCount = 10;
     [self.view addSubview:view2];
     
     LPDQuoteImagesView *view3 = [[LPDQuoteImagesView alloc] initWithFrame:CGRectMake(0, 250, SCREEN_WIDTH, 600) withCountPerRowInView:5 cellMargin:15];

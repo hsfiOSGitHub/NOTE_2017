@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="134" id="KGk-i7-Jjw" customClass="HSFInfoCell_RightImg">
+            <rect key="frame" x="0.0" y="0.0" width="546" height="134"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="546" height="134"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kLe-P3-4NN">
+                        <rect key="frame" x="0.0" y="132.5" width="546" height="1"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="N0G-Up-kxo"/>
+                        </constraints>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="header02" translatesAutoresizingMaskIntoConstraints="NO" id="EOP-rv-f1A">
+                        <rect key="frame" x="436" y="10" width="100" height="100"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="100" id="SeG-NL-wea"/>
+                            <constraint firstAttribute="width" constant="100" id="iNb-nP-JGN"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="efp-bS-64O">
+                        <rect key="frame" x="10" y="10" width="416" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.055341846450000003" green="0.055341846450000003" blue="0.055341846450000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KEp-ob-TLj">
+                        <rect key="frame" x="10" y="41" width="416" height="72"/>
+                        <string key="text">subTitlesubTitlesubTitlesubTitlesubTitlesubTitlesubTitlesubTitlesubTitlesubTitlesubTitlesubTitlesubTitlesubTitlesubTitlesubTitlesubTitlesubTitlesubTitlesubTitlesubTitlesubTitlesubTitlesubTitle</string>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.36046557740000001" green="0.36046557740000001" blue="0.36046557740000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="EOP-rv-f1A" firstAttribute="leading" secondItem="efp-bS-64O" secondAttribute="trailing" constant="10" id="1rM-wf-SDL"/>
+                    <constraint firstItem="KEp-ob-TLj" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="2V5-6e-FaU"/>
+                    <constraint firstItem="EOP-rv-f1A" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="8Wx-ya-0Hl"/>
+                    <constraint firstItem="KEp-ob-TLj" firstAttribute="top" secondItem="efp-bS-64O" secondAttribute="bottom" constant="10" id="BOV-p3-ieJ"/>
+                    <constraint firstAttribute="trailing" secondItem="EOP-rv-f1A" secondAttribute="trailing" constant="10" id="DJn-hr-j07"/>
+                    <constraint firstItem="kLe-P3-4NN" firstAttribute="top" relation="greaterThanOrEqual" secondItem="KEp-ob-TLj" secondAttribute="bottom" constant="10" id="KrN-jD-0cT"/>
+                    <constraint firstAttribute="bottom" secondItem="kLe-P3-4NN" secondAttribute="bottom" id="RxP-ch-Wzj"/>
+                    <constraint firstItem="efp-bS-64O" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="SyM-vN-h2y"/>
+                    <constraint firstItem="efp-bS-64O" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="cN5-kw-gOo"/>
+                    <constraint firstItem="kLe-P3-4NN" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="fNv-fv-Xt8"/>
+                    <constraint firstItem="kLe-P3-4NN" firstAttribute="top" relation="greaterThanOrEqual" secondItem="EOP-rv-f1A" secondAttribute="bottom" constant="10" id="hLo-ac-Zac"/>
+                    <constraint firstAttribute="trailing" secondItem="kLe-P3-4NN" secondAttribute="trailing" id="hhO-ib-PLO"/>
+                    <constraint firstItem="EOP-rv-f1A" firstAttribute="leading" secondItem="KEp-ob-TLj" secondAttribute="trailing" constant="10" id="jXh-J8-0Ka"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="147" y="164"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="header02" width="224" height="224"/>
+    </resources>
+</document>

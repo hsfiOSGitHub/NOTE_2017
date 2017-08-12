@@ -10,6 +10,7 @@
 
 @interface NSString (Distance)
 
+//米 公里
 +(NSString *)distanceStringWithString:(NSString *)string;
 
 @end

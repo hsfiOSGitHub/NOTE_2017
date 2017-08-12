@@ -52,8 +52,7 @@
 
 //手机号
 + (BOOL) IsPhoneNumber:(NSString *)number;
-//手机号（2017新版）
-+ (BOOL)isMobileNumber:(NSString *)mobileNum;
+
 
 //电话号码中间4位****显示
 + (NSString*) getSecrectStringWithPhoneNumber:(NSString*)phoneNum;

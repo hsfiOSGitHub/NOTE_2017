@@ -88,10 +88,16 @@
 //>>>     Tool     >>>
 //>>>>>>>>>>>>>>>>>>>>
 #import "ToolManager.h"//工具
+#import "CMAlertView.h"//alert提示框
 #import "DDNetworkManager.h"//网络请求
 #import "DDNetworkObjSingle.h"
+/* 选择添加 */
 #import "CountDownButton.h"//倒计时按钮
 #import "MenuHeader.h"//TableView2级3级目录
+#import "CMNewFeaturesController.h"//新手引导页
+#import "CMCropPictureSampleController.h"//裁剪图片
+#import "CMCityListSampleController.h"//城市选择
+#import "CMPictureBrowseSampleController.h"//图片浏览器
 
 
 

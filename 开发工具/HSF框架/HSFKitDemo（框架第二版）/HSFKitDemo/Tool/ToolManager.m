@@ -9,6 +9,7 @@
 #import "ToolManager.h"
 
 #import <sys/utsname.h>
+#import<CommonCrypto/CommonDigest.h>
 
 @implementation ToolManager
 
@@ -32,21 +33,25 @@ static ToolManager *manager;
     return [NSString stringWithFormat:@"%d",(int)timeStamp + arc4random() % 1000];
     
 }
-/*
- //加密
- + (NSString *)secureMD5WithString:(NSString *)string {
- const char *cStr = [string UTF8String];
- unsigned long length = strlen(cStr);
- unsigned char result[16];
- CC_MD5(cStr, (CC_LONG)length, result);
- 
- NSMutableString *secureString = [NSMutableString string];
- for(int i = 0; i < CC_MD5_DIGEST_LENGTH; i++){
- [secureString appendFormat:@"%02X", result[i]];
- }
- return secureString;
- }
- */
+//加密
++ (NSString *)secureMD5WithString:(NSString *)string {
+    //加盐
+    NSString *salt = @"&^*sbsbsbsbsbs(^&^%*";
+    NSMutableString *str = [NSMutableString stringWithFormat:@"%@",string];
+    [str appendString:salt];
+    
+    const char *cStr = [str UTF8String];
+    unsigned long length = strlen(cStr);
+    unsigned char result[16];
+    CC_MD5(cStr, (CC_LONG)length, result);
+    
+    NSMutableString *secureString = [NSMutableString string];
+    for(int i = 0; i < CC_MD5_DIGEST_LENGTH; i++){
+        [secureString appendFormat:@"%02X", result[i]];
+    }
+    
+    return secureString;
+}
 
 //获得版本号
 + (NSString *)getVersion {

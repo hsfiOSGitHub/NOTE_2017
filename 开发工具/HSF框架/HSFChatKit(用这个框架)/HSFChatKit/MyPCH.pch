@@ -1,0 +1,58 @@
+//
+//  MyPCH.pch
+//  HSFChatKit
+//
+//  Created by JuZhenBaoiMac on 2017/8/18.
+//  Copyright © 2017年 JuZhenBaoiMac. All rights reserved.
+//
+
+#ifndef MyPCH_pch
+#define MyPCH_pch
+
+
+//>>>>>>>>>>>>>>>>>>>>
+//>>>      Pod     >>>
+//>>>>>>>>>>>>>>>>>>>>
+#import "HSFPod_Header.h"
+
+
+//>>>>>>>>>>>>>>>>>>>>
+//>>>     SDK      >>>
+//>>>>>>>>>>>>>>>>>>>>
+#import "HSFSDK_Header.h"
+
+
+//>>>>>>>>>>>>>>>>>>>>
+//>>>    Config    >>>
+//>>>>>>>>>>>>>>>>>>>>
+#import "HSFGlobal_Config.h"
+#import "HSFTool_Config.h"
+
+
+//>>>>>>>>>>>>>>>>>>>>
+//>>>    Category  >>>
+//>>>>>>>>>>>>>>>>>>>>
+#import "HSFCategory_Header.h"
+
+
+//>>>>>>>>>>>>>>>>>>>>
+//>>>   Common     >>>
+//>>>>>>>>>>>>>>>>>>>>
+#import "HSFCommon_Header.h"
+
+
+
+//>>>>>>>>>>>>>>>>>>>>
+//>>>     Tool     >>>
+//>>>>>>>>>>>>>>>>>>>>
+#import "HSFTool_Header.h"
+
+
+//>>>>>>>>>>>>>>>>>>>>
+//>>>     VC       >>>
+//>>>>>>>>>>>>>>>>>>>>
+#import "HSFVC_Header.h"
+
+
+
+#endif /* MyPCH_pch */

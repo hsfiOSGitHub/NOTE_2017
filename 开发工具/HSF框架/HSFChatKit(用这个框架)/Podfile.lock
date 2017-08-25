@@ -1,0 +1,114 @@
+PODS:
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
+  - DOPDropDownMenu-Enhanced (1.0.0)
+  - FMDB (2.6.2):
+    - FMDB/standard (= 2.6.2)
+  - FMDB/standard (2.6.2)
+  - FSCalendar (2.7.7)
+  - HMSegmentedControl (1.5.3)
+  - IQKeyboardManager (4.0.9)
+  - KSPhotoBrowser (0.0.5):
+    - YYWebImage (~> 1.0.5)
+  - LPDQuoteImagesView (0.3.1)
+  - Masonry (1.0.2)
+  - MBProgressHUD (1.0.0)
+  - MJRefresh (3.1.12)
+  - PNChart (0.8.9):
+    - UICountingLabel (~> 1.2.0)
+  - PPNumberButton (0.6.0)
+  - SDCycleScrollView (1.66):
+    - SDWebImage (~> 4.0.0)
+  - SDWebImage (4.0.0):
+    - SDWebImage/Core (= 4.0.0)
+  - SDWebImage/Core (4.0.0)
+  - SKTagView (0.9.2)
+  - SVProgressHUD (2.0.4)
+  - TYAlertController (1.1.8)
+  - UICountingLabel (1.2.0)
+  - UzysAssetsPickerController (0.9.9)
+  - XHToast (1.3.0)
+  - YBPopupMenu (1.0.0)
+  - YYCache (1.0.4)
+  - YYCategories (1.0.4):
+    - YYCategories/no-arc (= 1.0.4)
+  - YYCategories/no-arc (1.0.4)
+  - YYImage (1.0.4):
+    - YYImage/Core (= 1.0.4)
+  - YYImage/Core (1.0.4)
+  - YYModel (1.0.4)
+  - YYWebImage (1.0.5):
+    - YYCache
+    - YYImage
+
+DEPENDENCIES:
+  - AFNetworking
+  - DOPDropDownMenu-Enhanced (~> 1.0.0)
+  - FMDB
+  - FSCalendar
+  - HMSegmentedControl
+  - IQKeyboardManager
+  - KSPhotoBrowser
+  - LPDQuoteImagesView
+  - Masonry (~> 1.0.2)
+  - MBProgressHUD
+  - MJRefresh
+  - PNChart
+  - PPNumberButton
+  - SDCycleScrollView (~> 1.64)
+  - SDWebImage
+  - SKTagView
+  - SVProgressHUD (~> 2.0.3)
+  - TYAlertController
+  - UzysAssetsPickerController
+  - XHToast
+  - YBPopupMenu
+  - YYCache (~> 1.0.3)
+  - YYCategories
+  - YYModel
+
+SPEC CHECKSUMS:
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  DOPDropDownMenu-Enhanced: 9ec473b16351b5b0b2d6ef87e7f666fe5ff54ad5
+  FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
+  FSCalendar: 8bda3534e8590b87124af9a236887314e0359a27
+  HMSegmentedControl: 7c6145afb50f26cec5f3243082f6f12b9f41318f
+  IQKeyboardManager: 322c7405df3eb5f7e50dede32ea937bf3d4364e0
+  KSPhotoBrowser: 9fe1b572f7b3e003de36c32dde9beaddce1cd206
+  LPDQuoteImagesView: 5e60a06696df6fef7546d038371cbf17b7830d52
+  Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
+  MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
+  MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
+  PNChart: 84774d225c2126ded6c93d4dbe6ae98c3a73c2d2
+  PPNumberButton: 619c6b7d15b0c270ab701af5bf13254248443a29
+  SDCycleScrollView: e3ade90e9b3159bec04330b208fbfd81c3f3b671
+  SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
+  SKTagView: 59cdadcd16e4a09300746ad1811a72371e1327f7
+  SVProgressHUD: bfde85ed6c573ea802b9cb37894ed9b629034f1b
+  TYAlertController: 502d3dbc5d007e68559400b509c736f60ebc2cc1
+  UICountingLabel: 1db4e7d023e1762171eb226d6dff47a7a84f27aa
+  UzysAssetsPickerController: 47c27bd96955467925f3d4d80b1e2e8aaeff766d
+  XHToast: 0918bc1a000b45132d0e94cd627507a5aae1d17d
+  YBPopupMenu: b466cf9daa0d341ea15c5ad709247546051c4d86
+  YYCache: 8105b6638f5e849296c71f331ff83891a4942952
+  YYCategories: 6bcd4314c6661a561410dce4a793379ebd306abd
+  YYImage: 1e1b62a9997399593e4b9c4ecfbbabbf1d3f3b54
+  YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
+  YYWebImage: 5f7f36aee2ae293f016d418c7d6ba05c4863e928
+
+PODFILE CHECKSUM: 39b25bd61aeca2763451d68fe5d156f6d21ea501
+
+COCOAPODS: 1.2.0

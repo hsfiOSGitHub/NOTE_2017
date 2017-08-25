@@ -1,0 +1,15 @@
+//
+//  HSFQRCodeScanningVC.h
+//  HSFKitDemo
+//
+//  Created by JuZhenBaoiMac on 2017/8/10.
+//  Copyright © 2017年 JuZhenBaoiMac. All rights reserved.
+//
+
+#import "SGQRCodeScanningVC.h"
+#import <UIKit/UIKit.h>
+#import "SGQRCode.h"
+
+@interface HSFQRCodeScanningVC : SGQRCodeScanningVC
+
+@end

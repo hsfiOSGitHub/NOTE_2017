@@ -1,0 +1,33 @@
+platform :ios, '8.0'
+
+target 'HSFChatKit' do
+  
+  #一般项目都要用到的
+  pod 'AFNetworking'#网络请求
+  pod 'FMDB'#数据库
+  pod 'MJRefresh'#刷新
+  pod 'SDWebImage'#图片加载
+  pod 'MBProgressHUD'#HUD
+  pod 'SVProgressHUD', '~> 2.0.3'#HUD
+  pod 'XHToast'#文本小提示HUD
+  pod 'YYCategories'#类别
+  pod 'YYCache', '~> 1.0.3'#缓存
+  pod 'YYModel'#模型
+  pod 'Masonry', '~> 1.0.2'#布局
+  pod 'IQKeyboardManager'#键盘
+  pod 'SDCycleScrollView','~> 1.64'#轮播图
+  
+  #选择添加
+  pod 'YBPopupMenu'#菜单
+  pod 'TYAlertController'#提示框
+  pod 'UzysAssetsPickerController'#选择多张图片
+  pod 'KSPhotoBrowser'#图片浏览器
+  pod 'DOPDropDownMenu-Enhanced', '~> 1.0.0'#选择菜单（1级2级3级）
+  pod 'LPDQuoteImagesView' #多选图片
+  pod 'PPNumberButton'#商品计数按钮
+  pod 'HMSegmentedControl'#分段控制器
+  pod 'SKTagView'#标签
+  pod 'FSCalendar'#日历
+  pod 'PNChart'#图表
+
+end

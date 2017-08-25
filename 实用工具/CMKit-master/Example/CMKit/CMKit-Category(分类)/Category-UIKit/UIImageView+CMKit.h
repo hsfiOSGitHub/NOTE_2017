@@ -83,7 +83,7 @@
 
 /**
  设置图片在父视图的中心
-
+ 
  @param size 子视图尺寸
  */
 - (void)setFrameInSuperViewCenterWithSize:(CGSize)size;

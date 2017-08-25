@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E07731E1F4BD7C00089FA6A /* UILabel+FontChange.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E07731D1F4BD7C00089FA6A /* UILabel+FontChange.m */; };
+		2E0773221F4BD7FF0089FA6A /* UITextView+FontChange.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E0773211F4BD7FF0089FA6A /* UITextView+FontChange.m */; };
 		2E5736FE1F3C29D10090855A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E5736FD1F3C29D10090855A /* main.m */; };
 		2E5737011F3C29D10090855A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E5737001F3C29D10090855A /* AppDelegate.m */; };
 		2E5737041F3C29D10090855A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E5737031F3C29D10090855A /* ViewController.m */; };
@@ -139,6 +141,7 @@
 		2E5739791F3C3E3E0090855A /* CountDownButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E5739631F3C3E3E0090855A /* CountDownButton.m */; };
 		2E57397E1F3C3E3E0090855A /* DDCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E57396D1F3C3E3E0090855A /* DDCache.m */; };
 		2E57397F1F3C3E3E0090855A /* DDNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E57396F1F3C3E3E0090855A /* DDNetworkManager.m */; };
+		2E66E14C1F4AE8EA00303BD7 /* loveway.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2E66E14B1F4AE8EA00303BD7 /* loveway.ttf */; };
 		2E76CFA41F3EF951006D7A06 /* UIBarButtonItem+setting.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E76CFA31F3EF951006D7A06 /* UIBarButtonItem+setting.m */; };
 		2E76CFA81F3EF9E0006D7A06 /* CMAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E76CFA71F3EF9E0006D7A06 /* CMAlertView.m */; };
 		2E76CFD21F3EFD9E006D7A06 /* CMNewFeaturesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E76CFD11F3EFD9E006D7A06 /* CMNewFeaturesController.m */; };
@@ -191,6 +194,10 @@
 
 /* Begin PBXFileReference section */
 		05228833CC5715708C1159EF /* libPods-HSFKitDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HSFKitDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E07731C1F4BD7C00089FA6A /* UILabel+FontChange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+FontChange.h"; sourceTree = "<group>"; };
+		2E07731D1F4BD7C00089FA6A /* UILabel+FontChange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+FontChange.m"; sourceTree = "<group>"; };
+		2E0773201F4BD7FF0089FA6A /* UITextView+FontChange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+FontChange.h"; sourceTree = "<group>"; };
+		2E0773211F4BD7FF0089FA6A /* UITextView+FontChange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+FontChange.m"; sourceTree = "<group>"; };
 		2E5736F91F3C29D10090855A /* HSFKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HSFKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E5736FD1F3C29D10090855A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2E5736FF1F3C29D10090855A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -449,6 +456,7 @@
 		2E57396E1F3C3E3E0090855A /* DDNetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDNetworkManager.h; sourceTree = "<group>"; };
 		2E57396F1F3C3E3E0090855A /* DDNetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDNetworkManager.m; sourceTree = "<group>"; };
 		2E5739701F3C3E3E0090855A /* DDNetworkObjSingle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDNetworkObjSingle.h; sourceTree = "<group>"; };
+		2E66E14B1F4AE8EA00303BD7 /* loveway.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = loveway.ttf; sourceTree = "<group>"; };
 		2E76CFA21F3EF951006D7A06 /* UIBarButtonItem+setting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+setting.h"; sourceTree = "<group>"; };
 		2E76CFA31F3EF951006D7A06 /* UIBarButtonItem+setting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+setting.m"; sourceTree = "<group>"; };
 		2E76CFA61F3EF9E0006D7A06 /* CMAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMAlertView.h; sourceTree = "<group>"; };
@@ -573,6 +581,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2E07731F1F4BD7E80089FA6A /* UITextView */ = {
+			isa = PBXGroup;
+			children = (
+				2E0773201F4BD7FF0089FA6A /* UITextView+FontChange.h */,
+				2E0773211F4BD7FF0089FA6A /* UITextView+FontChange.m */,
+			);
+			path = UITextView;
+			sourceTree = "<group>";
+		};
 		2E5736F01F3C29D10090855A = {
 			isa = PBXGroup;
 			children = (
@@ -616,6 +633,7 @@
 		2E5736FC1F3C29D10090855A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2E66E14B1F4AE8EA00303BD7 /* loveway.ttf */,
 				2E5736FD1F3C29D10090855A /* main.m */,
 			);
 			name = "Supporting Files";
@@ -639,6 +657,7 @@
 				2E5737451F3C2A5A0090855A /* UIView */,
 				2E57375A1F3C2A5A0090855A /* UIViewController */,
 				2E57375D1F3C2A5A0090855A /* 徽章 */,
+				2E07731F1F4BD7E80089FA6A /* UITextView */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -737,6 +756,8 @@
 		2E57373C1F3C2A5A0090855A /* UILable */ = {
 			isa = PBXGroup;
 			children = (
+				2E07731C1F4BD7C00089FA6A /* UILabel+FontChange.h */,
+				2E07731D1F4BD7C00089FA6A /* UILabel+FontChange.m */,
 				2E57373D1F3C2A5A0090855A /* UILabel+size.h */,
 				2E57373E1F3C2A5A0090855A /* UILabel+size.m */,
 			);
@@ -1735,6 +1756,7 @@
 				2E5738871F3C2A5A0090855A /* MBProgressHUD+JDragon.bundle in Resources */,
 				2E5738E51F3C319B0090855A /* HSFInfoCell_RightImg.xib in Resources */,
 				2E76D0071F3F001E006D7A06 /* Info.plist in Resources */,
+				2E66E14C1F4AE8EA00303BD7 /* loveway.ttf in Resources */,
 				2E5738D71F3C319B0090855A /* HSFDetailCell_IT.xib in Resources */,
 				2E57394A1F3C3B770090855A /* SGQRCode.bundle in Resources */,
 				2E5738E91F3C319B0090855A /* HSFSwitchCell_ITS.xib in Resources */,
@@ -1922,6 +1944,7 @@
 				2E5739131F3C37BA0090855A /* HSFProgressView.m in Sources */,
 				2E5739431F3C3B770090855A /* HSFQRCodeSuccessVC.m in Sources */,
 				2E76D0E61F3F03F1006D7A06 /* MSSBrowseZoomScrollView.m in Sources */,
+				2E0773221F4BD7FF0089FA6A /* UITextView+FontChange.m in Sources */,
 				2E57388C1F3C2A5A0090855A /* UIView+EasyFrame.m in Sources */,
 				2E5738501F3C2A5A0090855A /* UIView+WZLBadge.m in Sources */,
 				2E5738791F3C2A5A0090855A /* GYZCityHeaderView.m in Sources */,
@@ -1932,6 +1955,7 @@
 				2E5738E61F3C319B0090855A /* HSFSwitchCell_IT.m in Sources */,
 				2E5739441F3C3B770090855A /* QRCodeGenerateVC.m in Sources */,
 				2E76D0E21F3F03F1006D7A06 /* MSSBrowseLocalViewController.m in Sources */,
+				2E07731E1F4BD7C00089FA6A /* UILabel+FontChange.m in Sources */,
 				2E76D0E51F3F03F1006D7A06 /* MSSBrowseRemindView.m in Sources */,
 				2E5738511F3C2A5A0090855A /* BaseCell.m in Sources */,
 				2E76D0E81F3F03F1006D7A06 /* UIView+MSSLayout.m in Sources */,

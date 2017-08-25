@@ -40,6 +40,7 @@
 
 //UILabel
 #import "UILabel+size.h"
+#import "UILabel+FontChange.h"
 
 //UINavigationController
 #import "UINavigationController+FDFullscreenPopGesture.h"
@@ -65,6 +66,9 @@
 
 //NSMutableArray
 #import "NSMutableArray+sort.h"
+
+//UITextView
+#import "UITextView+FontChange.h"
 
 
 #endif /* MyCategory_h */

@@ -14,4 +14,8 @@
 
 HSFSingleton_h(ToolManager)
 
+
+/* 数据排空 */
++(id)noEmptyWithObject:(id)object;
+
 @end

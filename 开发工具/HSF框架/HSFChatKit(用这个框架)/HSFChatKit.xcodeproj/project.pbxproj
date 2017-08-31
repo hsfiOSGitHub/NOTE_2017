@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E69F3271F5822D400851089 /* NSDictionary+Json.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E69F3261F5822D400851089 /* NSDictionary+Json.m */; };
 		2E7BBD521F4D1CF900420180 /* BaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E7BBCD11F4D1CF900420180 /* BaseCell.m */; };
 		2E7BBD531F4D1CF900420180 /* BaseNavigationC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E7BBCD31F4D1CF900420180 /* BaseNavigationC.m */; };
 		2E7BBD541F4D1CF900420180 /* BaseTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E7BBCD51F4D1CF900420180 /* BaseTableVC.m */; };
@@ -227,6 +228,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2E69F3251F5822D400851089 /* NSDictionary+Json.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Json.h"; sourceTree = "<group>"; };
+		2E69F3261F5822D400851089 /* NSDictionary+Json.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Json.m"; sourceTree = "<group>"; };
 		2E7BBCD01F4D1CF900420180 /* BaseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseCell.h; sourceTree = "<group>"; };
 		2E7BBCD11F4D1CF900420180 /* BaseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseCell.m; sourceTree = "<group>"; };
 		2E7BBCD21F4D1CF900420180 /* BaseNavigationC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavigationC.h; sourceTree = "<group>"; };
@@ -1500,6 +1503,8 @@
 			children = (
 				2E7BBFE31F4D6BEE00420180 /* NSDictionary+Tool.h */,
 				2E7BBFE41F4D6BEE00420180 /* NSDictionary+Tool.m */,
+				2E69F3251F5822D400851089 /* NSDictionary+Json.h */,
+				2E69F3261F5822D400851089 /* NSDictionary+Json.m */,
 			);
 			path = NSDictionary;
 			sourceTree = "<group>";
@@ -2246,6 +2251,7 @@
 				2E7BBFCE1F4D68B700420180 /* UIView+firstResponder.m in Sources */,
 				2E7BBE191F4D26DC00420180 /* SearchDBManage.m in Sources */,
 				2E7BC0EC1F4DACFF00420180 /* UIImage+MSSScale.m in Sources */,
+				2E69F3271F5822D400851089 /* NSDictionary+Json.m in Sources */,
 				2E7BBEC51F4D296E00420180 /* HSFBaseTableVC.m in Sources */,
 				2E7BC0E01F4DACFF00420180 /* CMPictureBrowseSampleCell.m in Sources */,
 				2E7BBEBA1F4D296E00420180 /* UIImage+SGHelper.m in Sources */,

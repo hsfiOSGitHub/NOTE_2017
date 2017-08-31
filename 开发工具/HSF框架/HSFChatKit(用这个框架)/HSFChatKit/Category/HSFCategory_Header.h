@@ -108,6 +108,7 @@
 
 /* NSDictionary */
 #import "NSDictionary+Tool.h"
+#import "NSDictionary+Json.h"
 
 /* NSMutableDictionary */
 #import "NSMutableDictionary+Tool.h"

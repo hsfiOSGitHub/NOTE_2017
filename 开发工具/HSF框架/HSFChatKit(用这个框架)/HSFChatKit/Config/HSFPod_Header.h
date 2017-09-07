@@ -11,6 +11,8 @@
 
 /* 一般项目都要用到的 */
 #import <AFNetworking.h>
+#import <BANetManager/BANetManager.h>
+#import <BANetManager/BANetManagerCache.h>
 #import <FMDB/FMDB.h>
 #import <MJRefresh/MJRefresh.h>
 #import <SDWebImage/UIImageView+WebCache.h>

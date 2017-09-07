@@ -14,6 +14,7 @@
 //>>>>>>>>>>>>>>>>>>>>
 /* 快速创建单例 */
 #import "HSFSingleton.h"
+#import "ToolManager.h"
 
 
 

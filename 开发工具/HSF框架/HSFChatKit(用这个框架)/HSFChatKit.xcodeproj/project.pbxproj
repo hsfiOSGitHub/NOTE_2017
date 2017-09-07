@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E5FC7BC1F592D3A002D0395 /* HSFNetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E5FC7BB1F592D3A002D0395 /* HSFNetManager.m */; };
+		2E5FC7BF1F594349002D0395 /* HSFNetManager+Url.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E5FC7BE1F594349002D0395 /* HSFNetManager+Url.m */; };
 		2E69F3271F5822D400851089 /* NSDictionary+Json.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E69F3261F5822D400851089 /* NSDictionary+Json.m */; };
 		2E7BBD521F4D1CF900420180 /* BaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E7BBCD11F4D1CF900420180 /* BaseCell.m */; };
 		2E7BBD531F4D1CF900420180 /* BaseNavigationC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E7BBCD31F4D1CF900420180 /* BaseNavigationC.m */; };
@@ -228,6 +230,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2E5FC7BA1F592D3A002D0395 /* HSFNetManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSFNetManager.h; sourceTree = "<group>"; };
+		2E5FC7BB1F592D3A002D0395 /* HSFNetManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSFNetManager.m; sourceTree = "<group>"; };
+		2E5FC7BD1F594349002D0395 /* HSFNetManager+Url.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "HSFNetManager+Url.h"; sourceTree = "<group>"; };
+		2E5FC7BE1F594349002D0395 /* HSFNetManager+Url.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "HSFNetManager+Url.m"; sourceTree = "<group>"; };
 		2E69F3251F5822D400851089 /* NSDictionary+Json.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Json.h"; sourceTree = "<group>"; };
 		2E69F3261F5822D400851089 /* NSDictionary+Json.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Json.m"; sourceTree = "<group>"; };
 		2E7BBCD01F4D1CF900420180 /* BaseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseCell.h; sourceTree = "<group>"; };
@@ -697,6 +703,17 @@
 				9BC1DF98B9B26A4681C785ED /* libPods-HSFChatKit.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2E5FC7AA1F590728002D0395 /* 网络请求 */ = {
+			isa = PBXGroup;
+			children = (
+				2E5FC7BA1F592D3A002D0395 /* HSFNetManager.h */,
+				2E5FC7BB1F592D3A002D0395 /* HSFNetManager.m */,
+				2E5FC7BD1F594349002D0395 /* HSFNetManager+Url.h */,
+				2E5FC7BE1F594349002D0395 /* HSFNetManager+Url.m */,
+			);
+			path = "网络请求";
 			sourceTree = "<group>";
 		};
 		2E7BBC501F4D1C2E00420180 /* Category */ = {
@@ -1988,6 +2005,7 @@
 			isa = PBXGroup;
 			children = (
 				2E8EB1651F469BE400A8C2C2 /* HSFTool_Header.h */,
+				2E5FC7AA1F590728002D0395 /* 网络请求 */,
 				2E8613301F4FB0640084803F /* 单例 */,
 				2E7BC0051F4DACFE00420180 /* CityList(城市列表) */,
 				2E7BC0291F4DACFE00420180 /* CMAlertView(提示框) */,
@@ -2231,6 +2249,7 @@
 				2E7BBFBC1F4D68B700420180 /* UIImage+ImageEffects.m in Sources */,
 				2E7BBFC51F4D68B700420180 /* UITableView+Create.m in Sources */,
 				2E7BBFB61F4D68B700420180 /* UIDevice+System.m in Sources */,
+				2E5FC7BF1F594349002D0395 /* HSFNetManager+Url.m in Sources */,
 				2E7BBEB91F4D296E00420180 /* QRCodeGenerateVC.m in Sources */,
 				2E7BBEAC1F4D296E00420180 /* HSFSwitchCell_IT.m in Sources */,
 				2E7BBEAA1F4D296E00420180 /* HSFInfoCell_RightImg.m in Sources */,
@@ -2289,6 +2308,7 @@
 				2E7BBFC41F4D68B700420180 /* UIScrollView+Create.m in Sources */,
 				2E7BBFAA1F4D68B700420180 /* NSString+Size.m in Sources */,
 				2E7BBFAE1F4D68B700420180 /* UITabBarItem+WZLBadge.m in Sources */,
+				2E5FC7BC1F592D3A002D0395 /* HSFNetManager.m in Sources */,
 				2E7BBEC81F4D296E00420180 /* UIImage+color.m in Sources */,
 				2E7BBE1F1F4D26DC00420180 /* GYZCityHeaderView.m in Sources */,
 				2E7BC0CF1F4DACFF00420180 /* TOCropView.m in Sources */,

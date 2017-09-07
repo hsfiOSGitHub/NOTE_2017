@@ -4,6 +4,7 @@ target 'HSFChatKit' do
   
   #一般项目都要用到的
   pod 'AFNetworking'#网络请求
+  pod 'BANetManager'#网络请求
   pod 'FMDB'#数据库
   pod 'MJRefresh'#刷新
   pod 'SDWebImage'#图片加载
@@ -16,6 +17,7 @@ target 'HSFChatKit' do
   pod 'Masonry', '~> 1.0.2'#布局
   pod 'IQKeyboardManager'#键盘
   pod 'SDCycleScrollView','~> 1.64'#轮播图
+  
   
   #选择添加
   pod 'YBPopupMenu'#菜单

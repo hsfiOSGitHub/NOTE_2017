@@ -14,6 +14,9 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
+  - BANetManager (2.2.2):
+    - AFNetworking
+    - YYCache
   - DOPDropDownMenu-Enhanced (1.0.0)
   - FMDB (2.6.2):
     - FMDB/standard (= 2.6.2)
@@ -56,6 +59,7 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking
+  - BANetManager
   - DOPDropDownMenu-Enhanced (~> 1.0.0)
   - FMDB
   - FSCalendar
@@ -82,6 +86,7 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  BANetManager: bd2e6d0bcb5fc7397f3098b90c3bcf25a04127b5
   DOPDropDownMenu-Enhanced: 9ec473b16351b5b0b2d6ef87e7f666fe5ff54ad5
   FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
   FSCalendar: 8bda3534e8590b87124af9a236887314e0359a27
@@ -109,6 +114,6 @@ SPEC CHECKSUMS:
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
   YYWebImage: 5f7f36aee2ae293f016d418c7d6ba05c4863e928
 
-PODFILE CHECKSUM: 39b25bd61aeca2763451d68fe5d156f6d21ea501
+PODFILE CHECKSUM: 84c7624b4076b071908d6ec5d5a7e2be0f108f84
 
 COCOAPODS: 1.2.0

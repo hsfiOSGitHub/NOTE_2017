@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 
+#import "HSFNetManager.h"
 
 
 @interface ViewController ()
@@ -19,10 +20,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    UIImage *originImg = [UIImage imageNamed:@"meizi"];
-    UIImage *maskImg = [UIImage imageNamed:@"camera"];
+
     
-//    [self.img addCenterMotionEffectsXYWithOffset:100];
+    
 }
 
 
